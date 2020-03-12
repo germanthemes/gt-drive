@@ -1,0 +1,141 @@
+.header-search-enabled .site-header {
+	position: relative;
+
+	.header-main {
+		align-items: center;
+	}
+
+	.primary-menu-toggle {
+		order: 3;
+		margin-left: 0;
+	}
+
+	.primary-navigation {
+		order: 4;
+	}
+
+	.header-search-button {
+		order: 2;
+		margin-left: auto;
+		@include font-size(17);
+		@include font-family(--navi-font);
+		@include font-weight(--navi-font-weight);
+		@include text-transform(--navi-text-transform);
+
+		.header-search-icon {
+			margin: 0;
+			padding: 1rem;
+			@include color(--header-text-color);
+			background: none;
+			border: none;
+
+			&:hover,
+			&:active {
+				cursor: pointer;
+				@include color(--header-hover-color);
+			}
+
+			&:focus {
+				outline: thin dotted;
+				@include color(--header-text-color);
+			}
+
+			.icon-search {
+				margin: 0;
+				padding: 0;
+				width: 26px;
+				height: 26px;
+				vertical-align: middle;
+				fill: currentColor;
+				transition: fill 0.15s ease;
+			}
+		}
+	}
+
+	.header-search-dropdown {
+		position: absolute;
+		display: none;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 1.5rem;
+		width: 100%;
+		background: #fff;
+		box-shadow: 0 5px 10px #d5d5d5;
+		box-sizing: border-box;
+		z-index: 999;
+
+		.header-search-form {
+			display: flex;
+
+			.search-form {
+				flex-grow: 1;
+
+				.search-field {
+					background: #fff;
+				}
+			}
+
+			.header-search-close {
+				margin: 0 0 0 1.5rem;
+				padding: 0.5rem;
+				@include color(--header-text-color);
+				background: none;
+				border: none;
+
+				&:hover,
+				&:active {
+					cursor: pointer;
+					@include color(--header-hover-color);
+				}
+
+				&:focus {
+					outline: thin dotted;
+					@include color(--header-text-color);
+				}
+
+				.icon-close {
+					margin: 0;
+					padding: 0;
+					width: 28px;
+					height: 28px;
+					vertical-align: middle;
+					fill: currentColor;
+					transition: fill 0.15s ease;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.header-search-enabled.primary-navigation-active .site-header {
+		.primary-navigation {
+			order: 2;
+		}
+
+		.header-search-button {
+			order: 3;
+			margin-left: 1rem;
+
+			.header-search-icon {
+				.icon-search {
+					margin: 4px 0 0;
+					width: 20px;
+					height: 20px;
+					vertical-align: top;
+				}
+			}
+		}
+
+		.header-search-dropdown {
+			padding: 2rem;
+		}
+	}
+}
+
+/* Hide Header Search in Customizer for instant live preview */
+.header-search-hidden .site-header .header-search-button,
+.header-search-hidden .header-search-dropdown {
+	display: none;
+}

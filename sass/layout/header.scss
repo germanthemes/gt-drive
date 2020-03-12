@@ -1,0 +1,109 @@
+.site-header {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.header-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Site Branding */
+.site-branding {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.site-branding a:link,
+.site-branding a:visited,
+.site-branding a:hover {
+	padding: 0;
+	border: none;
+	text-decoration: none;
+}
+
+.site-logo {
+	margin-bottom: 1rem;
+}
+
+img.custom-logo {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: top;
+}
+
+.site-title {
+	margin: 0;
+	padding: 0;
+	@include color(--header-text-color);
+	text-decoration: none;
+	@include font-size(24);
+	@include font-family(--title-font);
+	@include font-weight(--title-font-weight);
+	@include text-transform(--title-text-transform);
+	line-height: 1.25;
+}
+
+.site-title a:link,
+.site-title a:visited {
+	@include color(--header-text-color);
+}
+
+.site-title a:hover,
+.site-title a:active {
+	@include color(--header-hover-color);
+}
+
+.site-description {
+	display: none;
+	margin: 0;
+	padding: 0;
+	@include color(--header-hover-color);
+	@include font-size(13);
+	font-weight: bold;
+}
+
+/* Hide site title and tagline if they are deactivated in settings */
+body.site-title-hidden .site-title,
+body.site-description-hidden .site-description {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+}
+
+/* Custom Header Image */
+.header-image {
+	margin: 0;
+	text-align: center;
+}
+
+.header-image img,
+.header-image .wp-post-image {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+/* Display logo and site title horizontally on larger screens */
+@media only screen and (min-width: 480px) {
+	.site-branding {
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+	}
+
+	.site-logo {
+		margin: 0 1.5rem 0 0;
+	}
+}

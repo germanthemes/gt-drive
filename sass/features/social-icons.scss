@@ -1,0 +1,84 @@
+.social-icons-nav .social-icons-menu {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+
+.social-icons-nav .social-icons-menu li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+
+.social-icons-nav .social-icons-menu li a {
+	display: block;
+	margin: 0;
+	padding: 1rem 0.6rem;
+	@include color(--header-text-color);
+}
+
+.social-icons-nav .social-icons-menu li a:hover,
+.social-icons-nav .social-icons-menu li a:active {
+	@include color(--header-hover-color);
+	text-decoration: none;
+}
+
+.social-icons-nav .social-icons-menu li a .icon {
+	margin: 4px 0 0;
+	width: 20px;
+	height: 20px;
+	vertical-align: top;
+	fill: currentColor;
+}
+
+/* Header Social Menu */
+.header-social-icons {
+	margin-left: 1rem;
+}
+
+@media only screen and (max-width: 960px) {
+	.header-social-icons {
+		display: none;
+		margin-left: -0.5rem;
+	}
+
+	.header-social-icons.toggled-on {
+		display: block;
+	}
+
+	.header-social-icons.social-icons-nav .social-icons-menu li a .icon {
+		margin: 0;
+		width: 24px;
+		height: 24px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.header-social-icons {
+		margin-left: 2rem;
+	}
+}
+
+/* Footer Social Icons */
+.footer-social-icons .social-icons-menu {
+	margin-left: -0.5rem;
+}
+
+.footer-social-icons .social-icons-menu li a {
+	@include color(--footer-link-color);
+
+	.icon {
+		margin: 0;
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.footer-social-icons .social-icons-menu li a:hover,
+.footer-social-icons .social-icons-menu li a:active {
+	@include color(--footer-link-hover-color);
+}

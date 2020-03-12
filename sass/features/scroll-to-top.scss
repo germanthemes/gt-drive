@@ -1,0 +1,35 @@
+.scroll-to-top-button {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	z-index: 9999;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	-webkit-transition: none;
+	transition: none;
+}
+
+.scroll-to-top-button:focus {
+	@include background(--button-color);
+}
+
+.scroll-to-top-button:focus:hover {
+	@include background(--button-hover-color);
+}
+
+.scroll-to-top-button .icon {
+	margin: 0.2rem 0 0;
+	width: 22px;
+	height: 22px;
+	vertical-align: top;
+	@include fill(--button-text-color);
+}
+
+.scroll-to-top-button:hover .icon,
+.scroll-to-top-button:active .icon {
+	@include fill(--button-hover-text-color);
+}

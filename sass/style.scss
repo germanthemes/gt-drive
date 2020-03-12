@@ -1,0 +1,174 @@
+/*
+Theme Name: GT Drive
+Theme URI: https://germanthemes.de/en/themes/gt-drive/
+Author: GermanThemes
+Author URI: https://germanthemes.de/en/
+Description: GT Drive is a modern Business WordPress Theme created with the new WordPress Block Editor in mind. The theme comes with Customizer options for colors and typography and a widgetized footer area. It is lightweight, GDPR-ready and works best in combination with our free GT Blocks plugin.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gt-drive
+Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool and share what you've learned with others.
+
+GT Drive is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# - CSS Variables
+# - Normalize
+# - Typography
+# - Elements
+# - Forms
+# - Accessibility
+# - Alignments
+# - Layout Structure
+# - Header
+# - Navigation
+# - Social Icons Menu
+# - Header Search Feature
+# - Sidebar
+# - Posts and pages
+# - Media
+# - Blocks
+# - Footer
+# - Scroll-to-Top Button
+# - Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# - CSS Variables
+--------------------------------------------------------------*/
+@import "_mixins";
+@import "_variables";
+@import "_root";
+
+/*--------------------------------------------------------------
+# - Normalize
+--------------------------------------------------------------*/
+@import "setup/normalize";
+
+/*--------------------------------------------------------------
+# - Typography
+--------------------------------------------------------------*/
+@import "setup/typography";
+
+/*--------------------------------------------------------------
+# - Elements
+--------------------------------------------------------------*/
+@import "setup/elements";
+
+/*--------------------------------------------------------------
+# - Forms
+--------------------------------------------------------------*/
+@import "setup/forms";
+
+/*--------------------------------------------------------------
+# - Accessibility
+--------------------------------------------------------------*/
+@import "setup/accessibility";
+
+/*--------------------------------------------------------------
+# - Alignments
+--------------------------------------------------------------*/
+@import "setup/alignments";
+
+/*--------------------------------------------------------------
+# - Layout Structure
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+# - Header
+--------------------------------------------------------------*/
+@import "layout/header";
+
+/*--------------------------------------------------------------
+# - Navigation
+--------------------------------------------------------------*/
+@import "layout/navigation";
+
+/*--------------------------------------------------------------
+# - Social Icons Menu
+--------------------------------------------------------------*/
+@import "features/social-icons";
+
+/*--------------------------------------------------------------
+# - Header Search Feature
+--------------------------------------------------------------*/
+@import "features/header-search";
+
+/*--------------------------------------------------------------
+# - Sidebar
+--------------------------------------------------------------*/
+@import "layout/sidebar";
+
+/*--------------------------------------------------------------
+# - Posts and pages
+--------------------------------------------------------------*/
+@import "content/content";
+@import "content/entry-meta";
+@import "content/more-link";
+@import "content/pagination";
+@import "content/archives";
+@import "content/comments";
+
+/*--------------------------------------------------------------
+# - Media
+--------------------------------------------------------------*/
+@import "content/media";
+
+/*--------------------------------------------------------------
+# - Blocks
+--------------------------------------------------------------*/
+@import "blocks/core-blocks";
+@import "blocks/gt-blocks";
+@import "blocks/colors";
+@import "blocks/font-sizes";
+
+/*--------------------------------------------------------------
+# - Footer
+--------------------------------------------------------------*/
+@import "layout/footer";
+
+/*--------------------------------------------------------------
+# - Scroll-to-Top Button
+--------------------------------------------------------------*/
+@import "features/scroll-to-top";
+
+/*--------------------------------------------------------------
+# - Media Queries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## - Media Queries for Typography
+--------------------------------------------------------------*/
+@import "media-queries/mq-typography";
+
+/*--------------------------------------------------------------
+## - Media Queries for Layout
+--------------------------------------------------------------*/
+@import "media-queries/mq-layout";
+
+/*--------------------------------------------------------------
+## - Media Queries for Navigation
+--------------------------------------------------------------*/
+@import "media-queries/mq-navigation";
+
+/*--------------------------------------------------------------
+## - Media Queries for Media
+--------------------------------------------------------------*/
+@import "media-queries/mq-media";
+
+/*--------------------------------------------------------------
+# - Page Templates
+--------------------------------------------------------------*/
+@import "content/templates";
