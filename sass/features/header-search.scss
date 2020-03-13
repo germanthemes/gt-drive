@@ -17,6 +17,7 @@
 	.header-search-button {
 		order: 2;
 		margin-left: auto;
+		margin-right: 0.5rem;
 		@include font-size(17);
 		@include font-family(--navi-font);
 		@include font-weight(--navi-font-weight);
@@ -24,7 +25,7 @@
 
 		.header-search-icon {
 			margin: 0;
-			padding: 1rem;
+			padding: 1rem 0.5rem;
 			@include color(--header-text-color);
 			background: none;
 			border: none;

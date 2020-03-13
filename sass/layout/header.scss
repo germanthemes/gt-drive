@@ -1,6 +1,6 @@
 .site-header {
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
 	@include background(--header-color);
 }
 
@@ -69,7 +69,6 @@ img.custom-logo {
 	padding: 0;
 	@include color(--header-hover-color);
 	@include font-size(13);
-	font-weight: bold;
 }
 
 /* Hide site title and tagline if they are deactivated in settings */

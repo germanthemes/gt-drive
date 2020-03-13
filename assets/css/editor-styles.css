@@ -44,7 +44,7 @@
 # - Layout
 --------------------------------------------------------------*/
 .editor-styles-wrapper .wp-block {
-	max-width: calc( 800px + 30px);
+	max-width: calc( 880px + 30px);
 }
 
 .editor-styles-wrapper .wp-block[data-align=wide] {
@@ -429,7 +429,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 /* GT Section Block */
 .gt-background-section .gt-section-content.gt-default-width {
-	max-width: 800px;
+	max-width: 880px;
 }
 
 .gt-background-section .gt-section-content.gt-wide-width {
@@ -507,7 +507,7 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 
 /* GT Section Block */
 .gt-background-section .gt-section-content.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-	max-width: calc( 800px + 30px);
+	max-width: calc( 880px + 30px);
 }
 
 .gt-background-section .gt-section-content.gt-wide-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {

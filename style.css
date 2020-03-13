@@ -709,8 +709,8 @@ textarea {
 .site-header,
 .site-content,
 .footer-main {
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
 }
 
 .header-main,
@@ -726,15 +726,15 @@ textarea {
 }
 
 .site-main {
-	max-width: 800px;
+	max-width: 880px;
 }
 
 /*--------------------------------------------------------------
 # - Header
 --------------------------------------------------------------*/
 .site-header {
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
 	background-color: #252525;
 	background-color: var(--header-color);
 }
@@ -813,7 +813,6 @@ img.custom-logo {
 	color: var(--header-hover-color);
 	font-size: 13px;
 	font-size: 0.8125rem;
-	font-weight: bold;
 }
 
 /* Hide site title and tagline if they are deactivated in settings */
@@ -951,7 +950,7 @@ body.site-description-hidden .site-description {
 	display: flex;
 	order: 3;
 	margin: 0;
-	padding: 1rem;
+	padding: 1rem 0.5rem;
 	border: none;
 	background: none;
 	color: #fff;
@@ -1171,6 +1170,7 @@ body.site-description-hidden .site-description {
 .header-search-enabled .site-header .header-search-button {
 	order: 2;
 	margin-left: auto;
+	margin-right: 0.5rem;
 	font-size: 17px;
 	font-size: 1.0625rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
@@ -1183,7 +1183,7 @@ body.site-description-hidden .site-description {
 
 .header-search-enabled .site-header .header-search-button .header-search-icon {
 	margin: 0;
-	padding: 1rem;
+	padding: 1rem 0.5rem;
 	color: #fff;
 	color: var(--header-text-color);
 	background: none;
@@ -1303,7 +1303,7 @@ body.site-description-hidden .site-description {
 .sidebar {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 800px;
+	max-width: 880px;
 }
 
 .sidebar .widget {
@@ -1852,7 +1852,7 @@ object {
 
 /* GT Section Block */
 .gt-background-section .gt-section-content.gt-default-width {
-	max-width: 800px;
+	max-width: 880px;
 }
 
 .gt-background-section .gt-section-content.gt-wide-width {
@@ -2181,16 +2181,6 @@ object {
 }
 
 @media only screen and (min-width: 640px) {
-	.site-title {
-		font-size: 28px;
-		font-size: 1.75rem;
-	}
-
-	.site-description {
-		font-size: 14px;
-		font-size: 0.875rem;
-	}
-
 	.entry-title {
 		font-size: 40px;
 		font-size: 2.5rem;
@@ -2217,13 +2207,13 @@ object {
 
 @media only screen and (min-width: 960px) {
 	.site-title {
-		font-size: 32px;
-		font-size: 2rem;
+		font-size: 28px;
+		font-size: 1.75rem;
 	}
 
 	.site-description {
-		font-size: 15px;
-		font-size: 0.9375rem;
+		font-size: 14px;
+		font-size: 0.875rem;
 	}
 
 	.entry-title {
@@ -2250,16 +2240,6 @@ object {
 }
 
 @media only screen and (min-width: 1280px) {
-	.site-title {
-		font-size: 36px;
-		font-size: 2.25rem;
-	}
-
-	.site-description {
-		font-size: 16px;
-		font-size: 1rem;
-	}
-
 	.entry-title {
 		font-size: 56px;
 		font-size: 3.5rem;
@@ -2291,13 +2271,13 @@ object {
 	.site-header,
 	.site-content,
 	.footer-main {
-		padding-left: 1.75rem;
-		padding-right: 1.75rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 
 	.site-header {
-		padding-top: 1.75rem;
-		padding-bottom: 1.75rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 
 	.site-description {
@@ -2350,13 +2330,13 @@ object {
 	.site-header,
 	.site-content,
 	.footer-main {
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-left: 1.75rem;
+		padding-right: 1.75rem;
 	}
 
 	.site-header {
-		padding-top: 2rem;
-		padding-bottom: 2rem;
+		padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
 	}
 
 	.site-content,
@@ -2405,13 +2385,18 @@ object {
 	.site-header,
 	.site-content,
 	.footer-main {
-		padding-left: 2.25rem;
-		padding-right: 2.25rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 
 	.site-header {
-		padding-top: 2.25rem;
-		padding-bottom: 2.25rem;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.site-branding {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
 	}
 
 	.site-content,
@@ -2464,18 +2449,6 @@ object {
 }
 
 @media only screen and (min-width: 1280px) {
-	.site-header,
-	.site-content,
-	.footer-main {
-		padding-left: 2.5rem;
-		padding-right: 2.5rem;
-	}
-
-	.site-header {
-		padding-top: 2.5rem;
-		padding-bottom: 2.5rem;
-	}
-
 	.site-content,
 	.site-footer {
 		padding-top: 4rem;
@@ -2548,7 +2521,7 @@ object {
 	}
 
 	.main-navigation ul a {
-		padding: 1rem;
+		padding: 2rem 1rem;
 	}
 
 	/* Dropdown Menus */
