@@ -47,7 +47,7 @@
 	menuToggle     = masthead.find( '.menu-toggle' );
 	siteNavContain = masthead.find( '.main-navigation' );
 	siteNavigation = masthead.find( '.main-navigation > ul.menu' );
-	socialIcons    = masthead.find( '.header-social-icons' );
+	socialIcons    = masthead.find( '.mobile-menu-social-icons' );
 
 	// Enable menuToggle.
 	(function() {

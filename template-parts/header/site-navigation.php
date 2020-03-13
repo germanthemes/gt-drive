@@ -37,7 +37,7 @@
 
 		<?php if ( has_nav_menu( 'social-header' ) ) : ?>
 
-			<div class="header-social-icons social-icons-nav">
+			<div class="mobile-menu-social-icons social-icons-nav">
 
 				<?php gt_drive_social_icons_menu( 'social-header' ); ?>
 

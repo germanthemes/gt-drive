@@ -109,7 +109,7 @@ function gt_drive_scripts() {
 
 	// Register and enqueue navigation.js.
 	if ( has_nav_menu( 'primary' ) or has_nav_menu( 'social-header' ) ) {
-		wp_enqueue_script( 'gt-drive-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '1.0', true );
+		wp_enqueue_script( 'gt-drive-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
 		$gt_drive_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'gt-drive' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'gt-drive' ),
