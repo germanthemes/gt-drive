@@ -714,9 +714,15 @@ textarea {
 }
 
 .header-main,
-.site-main {
+.site-main,
+.footer-main {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.header-main,
+.footer-main {
+	max-width: 1280px;
 }
 
 .site-main {
