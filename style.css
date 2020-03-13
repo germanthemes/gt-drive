@@ -61,8 +61,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--button-text-color: #fff;
 	--button-hover-color: #202020;
 	--button-text-hover-color: #fff;
-	--header-text-color: #202020;
-	--header-hover-color: #808080;
+	--header-color: #252525;
+	--header-text-color: #fff;
+	--header-hover-color: rgba(255, 255, 255, 0.5);
 	--title-color: #202020;
 	--title-hover-color: #e36355;
 	--footer-background-color: #202020;
@@ -728,6 +729,8 @@ textarea {
 .site-header {
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
+	background-color: #252525;
+	background-color: var(--header-color);
 }
 
 .header-main {
@@ -770,7 +773,7 @@ img.custom-logo {
 .site-title {
 	margin: 0;
 	padding: 0;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 	text-decoration: none;
 	font-size: 24px;
@@ -786,13 +789,13 @@ img.custom-logo {
 
 .site-title a:link,
 .site-title a:visited {
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 }
 
 .site-title a:hover,
 .site-title a:active {
-	color: #808080;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--header-hover-color);
 }
 
@@ -800,7 +803,7 @@ img.custom-logo {
 	display: none;
 	margin: 0;
 	padding: 0;
-	color: #808080;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--header-hover-color);
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -855,7 +858,7 @@ body.site-description-hidden .site-description {
 .main-navigation ul {
 	margin: 0;
 	padding: 0;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 	list-style: none;
 	font-size: 17px;
@@ -899,7 +902,7 @@ body.site-description-hidden .site-description {
 
 .main-navigation ul a:link,
 .main-navigation ul a:visited {
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 	text-decoration: none;
 }
@@ -907,7 +910,7 @@ body.site-description-hidden .site-description {
 .main-navigation ul a:hover,
 .main-navigation ul a:active,
 .main-navigation ul a:focus {
-	color: #808080;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--header-hover-color);
 }
 
@@ -944,7 +947,7 @@ body.site-description-hidden .site-description {
 	padding: 1rem;
 	border: none;
 	background: none;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 	text-decoration: none;
 	font-size: 17px;
@@ -965,14 +968,14 @@ body.site-description-hidden .site-description {
 
 .menu-toggle:focus {
 	outline: thin dotted;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 	background: none;
 }
 
 .menu-toggle:hover,
 .menu-toggle:active {
-	color: #808080;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--header-hover-color);
 	background: none;
 	cursor: pointer;
@@ -983,13 +986,13 @@ body.site-description-hidden .site-description {
 	width: 28px;
 	height: 28px;
 	vertical-align: top;
-	fill: #202020;
+	fill: #fff;
 	fill: var(--header-text-color);
 }
 
 .menu-toggle:hover .icon,
 .menu-toggle:active .icon {
-	fill: #808080;
+	fill: rgba(255, 255, 255, 0.5);
 	fill: var(--header-hover-color);
 }
 
@@ -1015,7 +1018,7 @@ body.site-description-hidden .site-description {
 
 .dropdown-toggle:focus {
 	outline: thin dotted;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 	background: none;
 }
@@ -1030,14 +1033,14 @@ body.site-description-hidden .site-description {
 	width: 19px;
 	height: 19px;
 	vertical-align: top;
-	fill: #202020;
+	fill: #fff;
 	fill: var(--header-text-color);
 }
 
 .dropdown-toggle:hover .icon,
 .dropdown-toggle:active .icon,
 .dropdown-toggle:focus .icon {
-	fill: #808080;
+	fill: rgba(255, 255, 255, 0.5);
 	fill: var(--header-hover-color);
 }
 
@@ -1079,13 +1082,13 @@ body.site-description-hidden .site-description {
 	display: block;
 	margin: 0;
 	padding: 1rem 0.6rem;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 }
 
 .social-icons-nav .social-icons-menu li a:hover,
 .social-icons-nav .social-icons-menu li a:active {
-	color: #808080;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--header-hover-color);
 	text-decoration: none;
 }
@@ -1184,7 +1187,7 @@ body.site-description-hidden .site-description {
 .header-search-enabled .site-header .header-search-button .header-search-icon {
 	margin: 0;
 	padding: 1rem;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 	background: none;
 	border: none;
@@ -1192,13 +1195,13 @@ body.site-description-hidden .site-description {
 
 .header-search-enabled .site-header .header-search-button .header-search-icon:hover, .header-search-enabled .site-header .header-search-button .header-search-icon:active {
 	cursor: pointer;
-	color: #808080;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--header-hover-color);
 }
 
 .header-search-enabled .site-header .header-search-button .header-search-icon:focus {
 	outline: thin dotted;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 }
 
@@ -1241,7 +1244,7 @@ body.site-description-hidden .site-description {
 .header-search-enabled .site-header .header-search-dropdown .header-search-form .header-search-close {
 	margin: 0 0 0 1.5rem;
 	padding: 0.5rem;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 	background: none;
 	border: none;
@@ -1249,13 +1252,13 @@ body.site-description-hidden .site-description {
 
 .header-search-enabled .site-header .header-search-dropdown .header-search-form .header-search-close:hover, .header-search-enabled .site-header .header-search-dropdown .header-search-form .header-search-close:active {
 	cursor: pointer;
-	color: #808080;
+	color: rgba(255, 255, 255, 0.5);
 	color: var(--header-hover-color);
 }
 
 .header-search-enabled .site-header .header-search-dropdown .header-search-form .header-search-close:focus {
 	outline: thin dotted;
-	color: #202020;
+	color: #fff;
 	color: var(--header-text-color);
 }
 
@@ -2558,9 +2561,9 @@ object {
 		top: 100%;
 		z-index: 99999;
 		padding: 0.5rem 0.75rem;
-		background: #fff;
-		border-radius: 5px;
-		box-shadow: 0 0 10px #d5d5d5;
+		background-color: #252525;
+		background-color: var(--header-color);
+		border-top: 1px solid #fff;
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -2601,13 +2604,13 @@ object {
 		top: 0.1rem;
 		width: 14px;
 		height: 14px;
-		fill: #202020;
+		fill: #fff;
 		fill: var(--header-text-color);
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon,
 	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		fill: #808080;
+		fill: rgba(255, 255, 255, 0.5);
 		fill: var(--header-hover-color);
 	}
 

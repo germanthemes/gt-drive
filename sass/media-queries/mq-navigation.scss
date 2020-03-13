@@ -44,9 +44,8 @@
 		top: 100%;
 		z-index: 99999;
 		padding: 0.5rem 0.75rem;
-		background: #fff;
-		border-radius: 5px;
-		box-shadow: 0 0 10px #d5d5d5;
+		@include background(--header-color);
+		border-top: 1px solid #fff;
 	}
 
 	.main-navigation ul ul li:hover > ul,
