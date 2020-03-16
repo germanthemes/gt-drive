@@ -23,6 +23,14 @@
 
 				<?php endif; ?>
 
+				<?php if ( '' !== gt_drive_get_option( 'header_email' ) || is_customize_preview() ) : ?>
+
+					<div class="header-email">
+						<span class="header-email-text"><?php echo wp_kses_post( gt_drive_get_option( 'header_email' ) ); ?>
+					</div>
+
+				<?php endif; ?>
+
 			</div>
 
 			<?php if ( has_nav_menu( 'social-header' ) ) : ?>

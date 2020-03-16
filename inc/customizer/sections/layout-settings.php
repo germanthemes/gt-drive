@@ -45,6 +45,29 @@ function gt_drive_customize_register_layout_settings( $wp_customize ) {
 		'fallback_refresh' => false,
 	) );
 
+	// Add Email setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[header_email]', array(
+		'default'           => $default['header_email'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'gt_drive_sanitize_header_text',
+	) );
+
+	$wp_customize->add_control( 'gt_drive_theme_options[header_email]', array(
+		'label'    => __( 'Email Address', 'gt-drive' ),
+		'section'  => 'gt_drive_section_layout',
+		'settings' => 'gt_drive_theme_options[header_email]',
+		'type'     => 'text',
+		'priority' => 20,
+	) );
+
+	// Add selective refresh for email address.
+	$wp_customize->selective_refresh->add_partial( 'gt_drive_theme_options[header_email]', array(
+		'selector'         => '.header-bar .header-bar-content .header-email-text',
+		'render_callback'  => 'gt_drive_customize_partial_header_email',
+		'fallback_refresh' => false,
+	) );
+
 	// Add Header Search Headline.
 	$wp_customize->add_control( new GT_Drive_Customize_Header_Control(
 		$wp_customize, 'gt_drive_theme_options[header_search_title]', array(
@@ -105,4 +128,12 @@ add_action( 'customize_register', 'gt_drive_customize_register_layout_settings' 
  */
 function gt_drive_customize_partial_header_phone() {
 	echo wp_kses_post( gt_drive_get_option( 'header_phone' ) );
+}
+
+
+/**
+ * Render the email address for the selective refresh partial.
+ */
+function gt_drive_customize_partial_header_email() {
+	echo wp_kses_post( gt_drive_get_option( 'header_email' ) );
 }
