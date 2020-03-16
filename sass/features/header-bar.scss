@@ -1,7 +1,13 @@
 .header-bar {
-	padding: 0.5rem 1rem;
+	padding: 0.25rem 1rem;
 	@include color(--header-bar-text-color);
 	@include background(--header-bar-color);
+}
+
+.header-bar-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .header-bar a:link,
@@ -12,4 +18,19 @@
 .header-bar a:hover,
 .header-bar a:active {
 	@include color(--header-bar-hover-color);
+}
+
+/* Contact Info */
+.header-bar-content {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.25rem 0;
+	@include font-size(15);
+
+	.header-phone,
+	.header-email,
+	.header-address {
+		display: flex;
+		margin-right: 1.5rem;
+	}
 }

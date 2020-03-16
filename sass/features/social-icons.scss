@@ -53,6 +53,28 @@
 	}
 }
 
+/* Header Bar Social Icons */
+.header-bar-social-icons {
+	display: none;
+}
+
+.header-bar-social-icons.social-icons-nav .social-icons-menu li a {
+	display: flex;
+	padding: 0.25rem 0.5rem;
+}
+
+.header-bar-social-icons.social-icons-nav .social-icons-menu li a .icon {
+	margin: 0;
+	width: 18px;
+	height: 18px;
+}
+
+@media only screen and (min-width: 960px) {
+	.header-bar-social-icons {
+		display: block;
+	}
+}
+
 /* Footer Social Icons */
 .footer-social-icons .social-icons-menu {
 	margin-left: -0.5rem;
