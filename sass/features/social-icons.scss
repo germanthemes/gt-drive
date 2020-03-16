@@ -61,6 +61,12 @@
 .header-bar-social-icons.social-icons-nav .social-icons-menu li a {
 	display: flex;
 	padding: 0.25rem 0.5rem;
+	@include color(--header-bar-text-color);
+}
+
+.header-bar-social-icons.social-icons-nav .social-icons-menu li a:hover,
+.header-bar-social-icons.social-icons-nav .social-icons-menu li a:active {
+	@include color(--header-bar-hover-color);
 }
 
 .header-bar-social-icons.social-icons-nav .social-icons-menu li a .icon {

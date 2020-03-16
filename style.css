@@ -61,9 +61,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--button-text-color: #fff;
 	--button-hover-color: #202020;
 	--button-text-hover-color: #fff;
-	--header-bar-color: #202020;
-	--header-bar-text-color: #fff;
-	--header-bar-hover-color: rgba(255, 255, 255, 0.5);
+	--header-bar-color: #fff;
+	--header-bar-text-color: #202020;
+	--header-bar-hover-color: rgba(0, 0, 0, 0.5);
 	--header-color: #252525;
 	--header-text-color: #fff;
 	--header-hover-color: rgba(255, 255, 255, 0.5);
@@ -1138,6 +1138,14 @@ body.site-description-hidden .site-description {
 .header-bar-social-icons.social-icons-nav .social-icons-menu li a {
 	display: flex;
 	padding: 0.25rem 0.5rem;
+	color: #202020;
+	color: var(--header-bar-text-color);
+}
+
+.header-bar-social-icons.social-icons-nav .social-icons-menu li a:hover,
+.header-bar-social-icons.social-icons-nav .social-icons-menu li a:active {
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--header-bar-hover-color);
 }
 
 .header-bar-social-icons.social-icons-nav .social-icons-menu li a .icon {
@@ -1179,9 +1187,9 @@ body.site-description-hidden .site-description {
 --------------------------------------------------------------*/
 .header-bar {
 	padding: 0.25rem 1rem;
-	color: #fff;
+	color: #202020;
 	color: var(--header-bar-text-color);
-	background-color: #202020;
+	background-color: #fff;
 	background-color: var(--header-bar-color);
 }
 
@@ -1193,13 +1201,13 @@ body.site-description-hidden .site-description {
 
 .header-bar a:link,
 .header-bar a:visited {
-	color: #fff;
+	color: #202020;
 	color: var(--header-bar-text-color);
 }
 
 .header-bar a:hover,
 .header-bar a:active {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(0, 0, 0, 0.5);
 	color: var(--header-bar-hover-color);
 }
 
