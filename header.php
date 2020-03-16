@@ -28,6 +28,8 @@
 		<?php do_action( 'gt_drive_before_header' ); ?>
 		<?php gt_drive_widget_area( 'before-header' ); ?>
 
+		<?php get_template_part( 'template-parts/header/header', 'bar' ); ?>
+
 		<header id="masthead" class="site-header" role="banner">
 
 			<div class="header-main">

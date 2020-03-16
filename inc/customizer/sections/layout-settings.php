@@ -40,7 +40,7 @@ function gt_drive_customize_register_layout_settings( $wp_customize ) {
 
 	// Add selective refresh for phone number.
 	$wp_customize->selective_refresh->add_partial( 'gt_drive_theme_options[header_phone]', array(
-		'selector'         => '.header-bar .header-content .header-text',
+		'selector'         => '.header-bar .header-bar-content .header-phone-text',
 		'render_callback'  => 'gt_drive_customize_partial_header_phone',
 		'fallback_refresh' => false,
 	) );
