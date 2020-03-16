@@ -1186,7 +1186,7 @@ body.site-description-hidden .site-description {
 # - Header Bar
 --------------------------------------------------------------*/
 .header-bar {
-	padding: 0.25rem 1rem;
+	padding: 0.25rem 0.75rem;
 	color: #202020;
 	color: var(--header-bar-text-color);
 	background-color: #fff;
@@ -1224,7 +1224,24 @@ body.site-description-hidden .site-description {
 .header-bar-content .header-email,
 .header-bar-content .header-address {
 	display: flex;
+	align-items: center;
 	margin-right: 1.5rem;
+}
+
+.header-bar-content .header-phone .icon,
+.header-bar-content .header-email .icon,
+.header-bar-content .header-address .icon {
+	margin: 0 0.25rem 0 0;
+	width: 18px;
+	height: 18px;
+	fill: rgba(0, 0, 0, 0.5);
+	fill: var(--header-bar-hover-color);
+}
+
+.header-bar-content .header-phone .icon-mail,
+.header-bar-content .header-email .icon-mail,
+.header-bar-content .header-address .icon-mail {
+	margin-top: 2px;
 }
 
 /*--------------------------------------------------------------

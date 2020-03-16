@@ -1,5 +1,5 @@
 .header-bar {
-	padding: 0.25rem 1rem;
+	padding: 0.25rem 0.75rem;
 	@include color(--header-bar-text-color);
 	@include background(--header-bar-color);
 }
@@ -31,6 +31,18 @@
 	.header-email,
 	.header-address {
 		display: flex;
+		align-items: center;
 		margin-right: 1.5rem;
+
+		.icon {
+			margin: 0 0.25rem 0 0;
+			width: 18px;
+			height: 18px;
+			@include fill(--header-bar-hover-color);
+		}
+
+		.icon-mail {
+			margin-top: 2px;
+		}
 	}
 }

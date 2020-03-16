@@ -18,6 +18,7 @@
 				<?php if ( '' !== gt_drive_get_option( 'header_phone' ) || is_customize_preview() ) : ?>
 
 					<div class="header-phone">
+						<?php echo gt_drive_get_svg( 'phone' ); ?>
 						<span class="header-phone-text"><?php echo wp_kses_post( gt_drive_get_option( 'header_phone' ) ); ?>
 					</div>
 
@@ -26,6 +27,7 @@
 				<?php if ( '' !== gt_drive_get_option( 'header_email' ) || is_customize_preview() ) : ?>
 
 					<div class="header-email">
+						<?php echo gt_drive_get_svg( 'mail' ); ?>
 						<span class="header-email-text"><?php echo wp_kses_post( gt_drive_get_option( 'header_email' ) ); ?>
 					</div>
 
@@ -34,6 +36,7 @@
 				<?php if ( '' !== gt_drive_get_option( 'header_address' ) || is_customize_preview() ) : ?>
 
 					<div class="header-address">
+						<?php echo gt_drive_get_svg( 'location' ); ?>
 						<span class="header-address-text"><?php echo wp_kses_post( gt_drive_get_option( 'header_address' ) ); ?>
 					</div>
 
