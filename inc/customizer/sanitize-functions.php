@@ -41,3 +41,18 @@ function gt_drive_sanitize_select( $input, $setting ) {
 	// If the input is a valid key, return it; otherwise, return the default.
 	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 }
+
+/**
+ *  Sanitize header text
+ *
+ * @param String $value / Value of the setting.
+ * @return string
+ */
+function gt_drive_sanitize_header_text( $value ) {
+
+	if ( current_user_can( 'unfiltered_html' ) ) :
+		return $value;
+	else :
+		return stripslashes( wp_filter_post_kses( addslashes( $value ) ) );
+	endif;
+}

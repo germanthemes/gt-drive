@@ -22,13 +22,36 @@ function gt_drive_customize_register_layout_settings( $wp_customize ) {
 	// Get Default Settings.
 	$default = gt_drive_default_options();
 
+	// Add Phone Number setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[header_phone]', array(
+		'default'           => $default['header_phone'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'gt_drive_sanitize_header_text',
+	) );
+
+	$wp_customize->add_control( 'gt_drive_theme_options[header_phone]', array(
+		'label'    => __( 'Phone Number', 'gt-drive' ),
+		'section'  => 'gt_drive_section_layout',
+		'settings' => 'gt_drive_theme_options[header_phone]',
+		'type'     => 'text',
+		'priority' => 10,
+	) );
+
+	// Add selective refresh for phone number.
+	$wp_customize->selective_refresh->add_partial( 'gt_drive_theme_options[header_phone]', array(
+		'selector'         => '.header-bar .header-content .header-text',
+		'render_callback'  => 'gt_drive_customize_partial_header_phone',
+		'fallback_refresh' => false,
+	) );
+
 	// Add Header Search Headline.
 	$wp_customize->add_control( new GT_Drive_Customize_Header_Control(
 		$wp_customize, 'gt_drive_theme_options[header_search_title]', array(
 			'label'    => esc_html__( 'Header Search', 'gt-drive' ),
 			'section'  => 'gt_drive_section_layout',
 			'settings' => array(),
-			'priority' => 10,
+			'priority' => 40,
 		)
 	) );
 
@@ -45,7 +68,7 @@ function gt_drive_customize_register_layout_settings( $wp_customize ) {
 		'section'  => 'gt_drive_section_layout',
 		'settings' => 'gt_drive_theme_options[header_search]',
 		'type'     => 'checkbox',
-		'priority' => 20,
+		'priority' => 50,
 	) );
 
 	// Add Scroll to Top Headline.
@@ -54,7 +77,7 @@ function gt_drive_customize_register_layout_settings( $wp_customize ) {
 			'label'    => esc_html__( 'Scroll-to-Top Button', 'gt-drive' ),
 			'section'  => 'gt_drive_section_layout',
 			'settings' => array(),
-			'priority' => 30,
+			'priority' => 60,
 		)
 	) );
 
@@ -71,7 +94,15 @@ function gt_drive_customize_register_layout_settings( $wp_customize ) {
 		'section'  => 'gt_drive_section_layout',
 		'settings' => 'gt_drive_theme_options[scroll_to_top]',
 		'type'     => 'checkbox',
-		'priority' => 40,
+		'priority' => 70,
 	) );
 }
 add_action( 'customize_register', 'gt_drive_customize_register_layout_settings' );
+
+
+/**
+ * Render the phone number for the selective refresh partial.
+ */
+function gt_drive_customize_partial_header_phone() {
+	echo wp_kses_post( gt_drive_get_option( 'header_phone' ) );
+}
