@@ -68,6 +68,29 @@ function gt_drive_customize_register_layout_settings( $wp_customize ) {
 		'fallback_refresh' => false,
 	) );
 
+	// Add Address Line setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[header_address]', array(
+		'default'           => $default['header_address'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'gt_drive_sanitize_header_text',
+	) );
+
+	$wp_customize->add_control( 'gt_drive_theme_options[header_address]', array(
+		'label'    => __( 'Location', 'gt-drive' ),
+		'section'  => 'gt_drive_section_layout',
+		'settings' => 'gt_drive_theme_options[header_address]',
+		'type'     => 'text',
+		'priority' => 40,
+	) );
+
+	// Add selective refresh for location address.
+	$wp_customize->selective_refresh->add_partial( 'gt_drive_theme_options[header_address]', array(
+		'selector'         => '.header-bar .header-bar-content .header-address-text',
+		'render_callback'  => 'gt_drive_customize_partial_header_address',
+		'fallback_refresh' => false,
+	) );
+
 	// Add Header Search Headline.
 	$wp_customize->add_control( new GT_Drive_Customize_Header_Control(
 		$wp_customize, 'gt_drive_theme_options[header_search_title]', array(
@@ -136,4 +159,12 @@ function gt_drive_customize_partial_header_phone() {
  */
 function gt_drive_customize_partial_header_email() {
 	echo wp_kses_post( gt_drive_get_option( 'header_email' ) );
+}
+
+
+/**
+ * Render the location for the selective refresh partial.
+ */
+function gt_drive_customize_partial_header_address() {
+	echo wp_kses_post( gt_drive_get_option( 'header_address' ) );
 }

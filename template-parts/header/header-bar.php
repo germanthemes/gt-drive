@@ -31,6 +31,14 @@
 
 				<?php endif; ?>
 
+				<?php if ( '' !== gt_drive_get_option( 'header_address' ) || is_customize_preview() ) : ?>
+
+					<div class="header-address">
+						<span class="header-address-text"><?php echo wp_kses_post( gt_drive_get_option( 'header_address' ) ); ?>
+					</div>
+
+				<?php endif; ?>
+
 			</div>
 
 			<?php if ( has_nav_menu( 'social-header' ) ) : ?>
