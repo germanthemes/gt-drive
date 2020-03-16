@@ -44,6 +44,27 @@
 		} );
 	} );
 
+	/* Phone Number textfield. */
+	wp.customize( 'gt_drive_theme_options[header_phone]', function( value ) {
+		value.bind( function( to ) {
+			$( '.header-bar .header-bar-content .header-phone-text' ).text( to );
+		} );
+	} );
+
+	/* Email address textfield. */
+	wp.customize( 'gt_drive_theme_options[header_email]', function( value ) {
+		value.bind( function( to ) {
+			$( '.header-bar .header-bar-content .header-email-text' ).text( to );
+		} );
+	} );
+
+	/* Location textfield. */
+	wp.customize( 'gt_drive_theme_options[header_address]', function( value ) {
+		value.bind( function( to ) {
+			$( '.header-bar .header-bar-content .header-address-text' ).text( to );
+		} );
+	} );
+
 	/* Header Search checkbox */
 	wp.customize( 'gt_drive_theme_options[header_search]', function( value ) {
 		value.bind( function( newval ) {
