@@ -1,0 +1,15 @@
+.header-bar {
+	padding: 0.5rem 1rem;
+	@include color(--header-bar-text-color);
+	@include background(--header-bar-color);
+}
+
+.header-bar a:link,
+.header-bar a:visited {
+	@include color(--header-bar-text-color);
+}
+
+.header-bar a:hover,
+.header-bar a:active {
+	@include color(--header-bar-hover-color);
+}
