@@ -29,7 +29,7 @@
 		width: 4rem;
 		height: 4px;
 		content: "";
-		@include background(--widget-title-color);
+		@include background(--title-border-color);
 	}
 }
 

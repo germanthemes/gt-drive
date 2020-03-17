@@ -54,7 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--highlight-color: #f9d26e;
 	--light-gray-color: #e4e4e4;
 	--gray-color: #848484;
-	--dark-gray-color: #202020;
+	--dark-gray-color: #303030;
 	--link-color: #e34333;
 	--link-hover-color: #c92919;
 	--button-color: #e34333;
@@ -62,15 +62,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--button-hover-color: #c92919;
 	--button-text-hover-color: #fff;
 	--header-bar-color: #fff;
-	--header-bar-text-color: #202020;
+	--header-bar-text-color: #303030;
 	--header-bar-icon-color: #e34333;
 	--header-color: #c92919;
 	--header-text-color: #fff;
 	--header-hover-color: rgba(255, 255, 255, 0.5);
-	--title-color: #202020;
+	--title-color: #303030;
 	--title-hover-color: #e34333;
+	--title-border-color: #e34333;
 	--widget-border-color: rgba(0, 0, 0, 0.1);
-	--widget-title-color: #e34333;
+	--widget-title-color: #242222;
+	--widget-title-border-color: #e34333;
 	--footer-background-color: #202020;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
@@ -312,7 +314,7 @@ button,
 input,
 select,
 textarea {
-	color: #242424;
+	color: #303030;
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
@@ -440,7 +442,7 @@ body {
 blockquote {
 	margin: 0 0 1.5em;
 	padding-left: 1.5em;
-	border-left: 4px solid #242424;
+	border-left: 4px solid #303030;
 	color: rgba(0, 0, 0, 0.5);
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -452,7 +454,7 @@ blockquote p {
 
 blockquote cite {
 	display: block;
-	color: #242424;
+	color: #303030;
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -603,7 +605,7 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
 	border: 2px solid rgba(0, 0, 0, 0.3);
-	color: #242424;
+	color: #303030;
 	outline: none;
 }
 
@@ -1138,7 +1140,7 @@ body.site-description-hidden .site-description {
 .header-bar-social-icons.social-icons-nav .social-icons-menu li a {
 	display: flex;
 	padding: 0.25rem 0.5rem;
-	color: #202020;
+	color: #303030;
 	color: var(--header-bar-text-color);
 }
 
@@ -1187,7 +1189,7 @@ body.site-description-hidden .site-description {
 --------------------------------------------------------------*/
 .header-bar {
 	padding: 0.25rem 0.75rem;
-	color: #202020;
+	color: #303030;
 	color: var(--header-bar-text-color);
 	background-color: #fff;
 	background-color: var(--header-bar-color);
@@ -1201,7 +1203,7 @@ body.site-description-hidden .site-description {
 
 .header-bar a:link,
 .header-bar a:visited {
-	color: #202020;
+	color: #303030;
 	color: var(--header-bar-text-color);
 	text-decoration: underline;
 }
@@ -1416,6 +1418,8 @@ body.site-description-hidden .site-description {
 	margin-top: 0;
 	margin-bottom: 2rem;
 	padding-bottom: 0.75rem;
+	color: #242222;
+	color: var(--widget-title-color);
 }
 
 .sidebar .widget-title::before {
@@ -1427,7 +1431,7 @@ body.site-description-hidden .site-description {
 	height: 4px;
 	content: "";
 	background-color: #e34333;
-	background-color: var(--widget-title-color);
+	background-color: var(--widget-title-border-color);
 }
 
 @media only screen and (min-width: 640px) {
@@ -1543,13 +1547,13 @@ body.site-description-hidden .site-description {
 	height: 4px;
 	content: "";
 	background-color: #e34333;
-	background-color: var(--widget-title-color);
+	background-color: var(--title-border-color);
 }
 
 .entry-title {
 	margin: 0;
 	padding: 0;
-	color: #202020;
+	color: #303030;
 	color: var(--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
@@ -1566,7 +1570,7 @@ body.site-description-hidden .site-description {
 
 .entry-title a:link,
 .entry-title a:visited {
-	color: #202020;
+	color: #303030;
 	color: var(--title-color);
 	text-decoration: none;
 }
@@ -1988,7 +1992,7 @@ object {
 }
 
 .wp-block-pullquote blockquote cite {
-	color: #242424;
+	color: #303030;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;
@@ -2058,7 +2062,7 @@ object {
 }
 
 .has-dark-gray-color {
-	color: #202020;
+	color: #303030;
 	color: var(--dark-gray-color);
 }
 
@@ -2102,7 +2106,7 @@ object {
 }
 
 .has-dark-gray-background-color {
-	background-color: #202020;
+	background-color: #303030;
 	background-color: var(--dark-gray-color);
 }
 

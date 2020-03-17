@@ -15,6 +15,7 @@
 		margin-top: 0;
 		margin-bottom: 2rem;
 		padding-bottom: 0.75rem;
+		@include color(--widget-title-color);
 
 		&::before {
 			display: inline-block;
@@ -24,7 +25,7 @@
 			width: 3rem;
 			height: 4px;
 			content: "";
-			@include background(--widget-title-color);
+			@include background(--widget-title-border-color);
 		}
 	}
 }

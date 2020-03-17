@@ -20,8 +20,10 @@
 	@include variable(--header-hover-color, $themeColors);
 	@include variable(--title-color, $themeColors);
 	@include variable(--title-hover-color, $themeColors);
+	@include variable(--title-border-color, $themeColors);
 	@include variable(--widget-border-color, $themeColors);
 	@include variable(--widget-title-color, $themeColors);
+	@include variable(--widget-title-border-color, $themeColors);
 	@include variable(--footer-background-color, $themeColors);
 	@include variable(--footer-text-color, $themeColors);
 	@include variable(--footer-link-color, $themeColors);
