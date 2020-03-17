@@ -729,7 +729,7 @@ textarea {
 .header-main,
 .header-bar-main,
 .footer-main {
-	max-width: 1280px;
+	max-width: 1200px;
 }
 
 .site-main {
@@ -1443,7 +1443,7 @@ body.site-description-hidden .site-description {
 		display: flex;
 		margin-left: auto;
 		margin-right: auto;
-		max-width: calc(1280px + 4rem);
+		max-width: calc(1200px + 4rem);
 	}
 
 	.has-sidebar .site-content .site-main,
@@ -1506,12 +1506,6 @@ body.site-description-hidden .site-description {
 @media only screen and (min-width: 1440px) {
 	.has-sidebar .site-content .sidebar {
 		padding-left: 5rem;
-	}
-}
-
-@media only screen and (min-width: 1600px) {
-	.has-sidebar .site-content .sidebar {
-		padding-left: 6rem;
 	}
 }
 
@@ -2014,7 +2008,7 @@ object {
 }
 
 .gt-background-section .gt-section-content.gt-full-width {
-	max-width: 1280px;
+	max-width: 1200px;
 }
 
 /* Block Text Colors */
@@ -2817,7 +2811,7 @@ object {
 /* Fullwidth Page Template */
 body.page-template-template-fullwidth .site-content .site-main,
 body.page-template-template-fullwidth-no-title .site-content .site-main {
-	max-width: 1280px;
+	max-width: 1200px;
 }
 
 /* Adjust Wide Blocks */
@@ -2835,7 +2829,7 @@ body.page-template-template-fullwidth-no-title .site-content .site-main {
 	body.page-template-template-fullwidth-no-title .entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
-		max-width: 1520px;
+		max-width: 1440px;
 	}
 }
 
