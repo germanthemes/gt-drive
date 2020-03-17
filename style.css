@@ -48,29 +48,29 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #003344;
-	--secondary-color: #268f97;
+	--primary-color: #e34333;
+	--secondary-color: #c92919;
 	--accent-color: #c9493b;
 	--highlight-color: #f9d26e;
 	--light-gray-color: #e4e4e4;
 	--gray-color: #848484;
 	--dark-gray-color: #202020;
-	--link-color: #e36355;
-	--link-hover-color: #c9493b;
-	--button-color: #e36355;
+	--link-color: #e34333;
+	--link-hover-color: #c92919;
+	--button-color: #e34333;
 	--button-text-color: #fff;
-	--button-hover-color: #202020;
+	--button-hover-color: #c92919;
 	--button-text-hover-color: #fff;
 	--header-bar-color: #fff;
 	--header-bar-text-color: #202020;
 	--header-bar-hover-color: rgba(0, 0, 0, 0.5);
-	--header-color: #e36355;
+	--header-color: #c92919;
 	--header-text-color: #fff;
 	--header-hover-color: rgba(255, 255, 255, 0.5);
 	--title-color: #202020;
-	--title-hover-color: #e36355;
+	--title-hover-color: #e34333;
 	--widget-border-color: rgba(0, 0, 0, 0.1);
-	--widget-title-color: #e36355;
+	--widget-title-color: #e34333;
 	--footer-background-color: #202020;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
@@ -522,7 +522,7 @@ td {
 }
 
 a {
-	color: #e36355;
+	color: #e34333;
 	color: var(--link-color);
 	text-decoration: underline;
 }
@@ -530,7 +530,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: #c9493b;
+	color: #c92919;
 	color: var(--link-hover-color);
 	text-decoration: none;
 }
@@ -557,7 +557,7 @@ input[type="submit"] {
 	border-radius: 5px;
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #e36355;
+	background-color: #e34333;
 	background-color: var(--button-color);
 	text-decoration: none;
 	font-weight: bold;
@@ -579,7 +579,7 @@ input[type="reset"]:active,
 input[type="submit"]:active {
 	color: #fff;
 	color: var(--button-text-hover-color);
-	background-color: #202020;
+	background-color: #c92919;
 	background-color: var(--button-hover-color);
 	text-decoration: none;
 }
@@ -742,7 +742,7 @@ textarea {
 .site-header {
 	padding-top: 0.75rem;
 	padding-bottom: 0.75rem;
-	background-color: #e36355;
+	background-color: #c92919;
 	background-color: var(--header-color);
 }
 
@@ -1428,7 +1428,7 @@ body.site-description-hidden .site-description {
 	width: 3rem;
 	height: 4px;
 	content: "";
-	background-color: #e36355;
+	background-color: #e34333;
 	background-color: var(--widget-title-color);
 }
 
@@ -1566,7 +1566,7 @@ body.site-description-hidden .site-description {
 
 .entry-title a:hover,
 .entry-title a:active {
-	color: #e36355;
+	color: #e34333;
 	color: var(--title-hover-color);
 }
 
@@ -1629,7 +1629,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	padding: 0.6em 1.2em;
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #e36355;
+	background-color: #e34333;
 	background-color: var(--button-color);
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -1641,7 +1641,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .more-link:visited {
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #e36355;
+	background-color: #e34333;
 	background-color: var(--button-color);
 	text-decoration: none;
 }
@@ -1650,7 +1650,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .more-link:active {
 	color: #fff;
 	color: var(--button-text-hover-color);
-	background-color: #202020;
+	background-color: #c92919;
 	background-color: var(--button-hover-color);
 	text-decoration: none;
 }
@@ -1673,7 +1673,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	text-decoration: none;
 	color: #fff;
 	color: var(--button-text-color);
-	background-color: #e36355;
+	background-color: #e34333;
 	background-color: var(--button-color);
 	border-radius: 5px;
 }
@@ -1687,7 +1687,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .pagination a:active {
 	color: #fff;
 	color: var(--button-text-hover-color);
-	background-color: #202020;
+	background-color: #c92919;
 	background-color: var(--button-hover-color);
 }
 
@@ -2019,12 +2019,12 @@ object {
 
 /* Block Text Colors */
 .has-primary-color {
-	color: #003344;
+	color: #e34333;
 	color: var(--primary-color);
 }
 
 .has-secondary-color {
-	color: #268f97;
+	color: #c92919;
 	color: var(--secondary-color);
 }
 
@@ -2063,12 +2063,12 @@ object {
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #003344;
+	background-color: #e34333;
 	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color {
-	background-color: #268f97;
+	background-color: #c92919;
 	background-color: var(--secondary-color);
 }
 
@@ -2297,12 +2297,12 @@ object {
 }
 
 .scroll-to-top-button:focus {
-	background-color: #e36355;
+	background-color: #e34333;
 	background-color: var(--button-color);
 }
 
 .scroll-to-top-button:focus:hover {
-	background-color: #202020;
+	background-color: #c92919;
 	background-color: var(--button-hover-color);
 }
 
@@ -2685,7 +2685,7 @@ object {
 		top: 100%;
 		z-index: 99999;
 		padding: 0.5rem 0.75rem;
-		background-color: #e36355;
+		background-color: #c92919;
 		background-color: var(--header-color);
 		border-top: 1px solid #fff;
 	}
