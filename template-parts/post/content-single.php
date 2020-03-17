@@ -13,9 +13,9 @@
 
 		<?php gt_drive_post_image(); ?>
 
-		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
-
 		<?php gt_drive_entry_meta(); ?>
+
+		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
 
 	</header><!-- .entry-header -->
 

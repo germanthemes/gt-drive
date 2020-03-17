@@ -1602,7 +1602,7 @@ body.site-description-hidden .site-description {
 }
 
 .entry-meta {
-	margin: 1rem 0 0;
+	margin: 0 0 1rem;
 	color: rgba(0, 0, 0, 0.4);
 	font-size: 14px;
 	font-size: 0.875rem;
