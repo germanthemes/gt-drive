@@ -101,7 +101,7 @@ function gt_drive_has_sidebar() {
 		return false;
 	}
 
-	if ( gt_drive_is_blog_page() ) {
+	if ( gt_drive_is_blog_page() && ! is_page_template( 'templates/template-no-sidebar.php' ) ) {
 		return true;
 	}
 
