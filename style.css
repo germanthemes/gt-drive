@@ -2334,15 +2334,15 @@ object {
 --------------------------------------------------------------*/
 @media only screen and (min-width: 320px) {
 	.entry-title {
-		font-size: 32px;
-		font-size: 2rem;
+		font-size: 30px;
+		font-size: 1.875rem;
 	}
 }
 
 @media only screen and (min-width: 640px) {
 	.entry-title {
-		font-size: 40px;
-		font-size: 2.5rem;
+		font-size: 34px;
+		font-size: 2.125rem;
 	}
 
 	.entry-content {
@@ -2376,8 +2376,8 @@ object {
 	}
 
 	.entry-title {
-		font-size: 48px;
-		font-size: 3rem;
+		font-size: 40px;
+		font-size: 2.5rem;
 	}
 
 	.entry-content {
@@ -2400,8 +2400,8 @@ object {
 
 @media only screen and (min-width: 1280px) {
 	.entry-title {
-		font-size: 56px;
-		font-size: 3.5rem;
+		font-size: 48px;
+		font-size: 3rem;
 	}
 
 	.entry-content {
