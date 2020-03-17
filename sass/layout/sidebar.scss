@@ -69,6 +69,18 @@
 			}
 		}
 	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content {
+		.site-main {
+			order: 2;
+		}
+
+		.sidebar {
+			order: 1;
+			padding-left: 0;
+			padding-right: 2rem;
+		}
+	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -85,6 +97,10 @@
 			}
 		}
 	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+		padding-right: 2.5rem;
+	}
 }
 
 @media only screen and (min-width: 1120px) {
@@ -100,6 +116,10 @@
 				padding-left: 3rem;
 			}
 		}
+	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+		padding-right: 3rem;
 	}
 }
 
@@ -125,6 +145,10 @@
 			}
 		}
 	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+		padding-right: 4rem;
+	}
 }
 
 @media only screen and (min-width: 1440px) {
@@ -134,5 +158,9 @@
 				padding-left: 5rem;
 			}
 		}
+	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+		padding-right: 5rem;
 	}
 }

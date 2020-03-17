@@ -61,8 +61,13 @@ function gt_drive_body_classes( $classes ) {
 		$classes[] = 'tags-hidden';
 	}
 
+	// Add Blog Page class?
+	if ( gt_drive_is_blog_page() ) {
+		$classes[] = 'is-blog-page';
+	}
+
 	// Add Sidebar class.
-	if ( is_active_sidebar( 'sidebar-1' ) && gt_drive_is_blog_page() ) {
+	if ( gt_drive_has_sidebar() ) {
 		$classes[] = 'has-sidebar';
 	}
 
@@ -83,6 +88,28 @@ add_filter( 'body_class', 'gt_drive_body_classes' );
  */
 function gt_drive_is_blog_page() {
 	return ( 'post' === get_post_type() ) && ( is_home() || is_archive() || is_single() );
+}
+
+
+/**
+ * Check if sidebar should be displayed.
+ *
+ * @return bool
+ */
+function gt_drive_has_sidebar() {
+	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+		return false;
+	}
+
+	if ( gt_drive_is_blog_page() ) {
+		return true;
+	}
+
+	if ( is_page_template( 'templates/template-sidebar-left.php' ) or is_page_template( 'templates/template-sidebar-right.php' ) ) {
+		return true;
+	}
+
+	return false;
 }
 
 

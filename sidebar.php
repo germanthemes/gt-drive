@@ -5,8 +5,8 @@
  * @package GT Drive
  */
 
-// Check if Blog Sidebar has widgets.
-if ( is_active_sidebar( 'sidebar-1' ) && gt_drive_is_blog_page() ) : ?>
+// Check if Sidebar should be displayed.
+if ( gt_drive_has_sidebar() ) : ?>
 
 	<section id="secondary" class="sidebar widget-area" role="complementary">
 

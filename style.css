@@ -1467,6 +1467,16 @@ body.site-description-hidden .site-description {
 		padding-left: 2rem;
 		flex-grow: 1;
 	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .site-main {
+		order: 2;
+	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+		order: 1;
+		padding-left: 0;
+		padding-right: 2rem;
+	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -1477,6 +1487,10 @@ body.site-description-hidden .site-description {
 	.has-sidebar .site-content .sidebar {
 		padding-left: 2.5rem;
 	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+		padding-right: 2.5rem;
+	}
 }
 
 @media only screen and (min-width: 1120px) {
@@ -1486,6 +1500,10 @@ body.site-description-hidden .site-description {
 
 	.has-sidebar .site-content .sidebar {
 		padding-left: 3rem;
+	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+		padding-right: 3rem;
 	}
 }
 
@@ -1503,11 +1521,19 @@ body.site-description-hidden .site-description {
 	.has-sidebar .site-content .sidebar {
 		padding-left: 4rem;
 	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+		padding-right: 4rem;
+	}
 }
 
 @media only screen and (min-width: 1440px) {
 	.has-sidebar .site-content .sidebar {
 		padding-left: 5rem;
+	}
+
+	.page-template-template-sidebar-left.has-sidebar .site-content .sidebar {
+		padding-right: 5rem;
 	}
 }
 
