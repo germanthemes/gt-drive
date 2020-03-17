@@ -64,11 +64,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--header-bar-color: #fff;
 	--header-bar-text-color: #202020;
 	--header-bar-hover-color: rgba(0, 0, 0, 0.5);
-	--header-color: #252525;
+	--header-color: #e36355;
 	--header-text-color: #fff;
 	--header-hover-color: rgba(255, 255, 255, 0.5);
 	--title-color: #202020;
 	--title-hover-color: #e36355;
+	--widget-border-color: rgba(0, 0, 0, 0.1);
+	--widget-title-color: #e36355;
 	--footer-background-color: #202020;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
@@ -740,7 +742,7 @@ textarea {
 .site-header {
 	padding-top: 0.75rem;
 	padding-bottom: 0.75rem;
-	background-color: #252525;
+	background-color: #e36355;
 	background-color: var(--header-color);
 }
 
@@ -1404,9 +1406,30 @@ body.site-description-hidden .site-description {
 }
 
 .sidebar .widget {
-	border: 1px solid #ddd;
-	padding: 1rem 2rem;
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--widget-border-color);
+	padding: 2rem 2rem 0;
 	margin-bottom: 1.5rem;
+}
+
+.sidebar .widget-title {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 2rem;
+	padding-bottom: 0.75rem;
+}
+
+.sidebar .widget-title::before {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 3rem;
+	height: 4px;
+	content: "";
+	background-color: #e36355;
+	background-color: var(--widget-title-color);
 }
 
 @media only screen and (min-width: 640px) {
@@ -2662,7 +2685,7 @@ object {
 		top: 100%;
 		z-index: 99999;
 		padding: 0.5rem 0.75rem;
-		background-color: #252525;
+		background-color: #e36355;
 		background-color: var(--header-color);
 		border-top: 1px solid #fff;
 	}

@@ -24,11 +24,13 @@
 	--header-bar-color: #fff;
 	--header-bar-text-color: #202020;
 	--header-bar-hover-color: rgba(0, 0, 0, 0.5);
-	--header-color: #252525;
+	--header-color: #e36355;
 	--header-text-color: #fff;
 	--header-hover-color: rgba(255, 255, 255, 0.5);
 	--title-color: #202020;
 	--title-hover-color: #e36355;
+	--widget-border-color: rgba(0, 0, 0, 0.1);
+	--widget-title-color: #e36355;
 	--footer-background-color: #202020;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);

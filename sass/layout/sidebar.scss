@@ -4,9 +4,28 @@
 	max-width: $contentWidth;
 
 	.widget {
-		border: 1px solid #ddd;
-		padding: 1rem 2rem;
+		border: 1px solid;
+		@include border-color(--widget-border-color);
+		padding: 2rem 2rem 0;
 		margin-bottom: 1.5rem;
+	}
+
+	.widget-title {
+		position: relative;
+		margin-top: 0;
+		margin-bottom: 2rem;
+		padding-bottom: 0.75rem;
+
+		&::before {
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 3rem;
+			height: 4px;
+			content: "";
+			@include background(--widget-title-color);
+		}
 	}
 }
 

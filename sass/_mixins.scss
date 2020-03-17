@@ -40,6 +40,12 @@
 	fill: var($colorVar);
 }
 
+// Color CSS Variable
+@mixin border-color($colorVar) {
+	border-color: map-get($themeColors, $colorVar);
+	border-color: var($colorVar);
+}
+
 // CSS Variable
 @mixin variable($variable, $map) {
 	#{$variable}: map-get($map, $variable);
