@@ -196,7 +196,7 @@ function gt_drive_widgets_init() {
 
 	// Register Blog Sidebar widget area.
 	register_sidebar( array(
-		'name'          => esc_html__( 'Blog Sidebar', 'gt-drive' ),
+		'name'          => esc_html__( 'Sidebar', 'gt-drive' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html_x( 'Appears on blog pages and single posts.', 'widget area description', 'gt-drive' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',

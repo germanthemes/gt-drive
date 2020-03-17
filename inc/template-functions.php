@@ -61,9 +61,9 @@ function gt_drive_body_classes( $classes ) {
 		$classes[] = 'tags-hidden';
 	}
 
-	// Add Blog Sidebar class.
+	// Add Sidebar class.
 	if ( is_active_sidebar( 'sidebar-1' ) && gt_drive_is_blog_page() ) {
-		$classes[] = 'has-blog-sidebar';
+		$classes[] = 'has-sidebar';
 	}
 
 	// Adds a class of hfeed to non-singular pages.
