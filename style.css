@@ -554,7 +554,6 @@ input[type="submit"] {
 	margin: 0;
 	padding: 0.6em 1.2em;
 	border: none;
-	border-radius: 5px;
 	color: #fff;
 	color: var(--button-text-color);
 	background-color: #e34333;
@@ -593,7 +592,6 @@ textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
 	background: none;
 	color: #777;
 }
@@ -1628,7 +1626,6 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: bold;
-	border-radius: 5px;
 }
 
 .more-link:link,
@@ -1669,7 +1666,6 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	color: var(--button-text-color);
 	background-color: #e34333;
 	background-color: var(--button-color);
-	border-radius: 5px;
 }
 
 .pagination .page-numbers.dots {

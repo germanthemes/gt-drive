@@ -15,7 +15,6 @@
 	text-decoration: none;
 	@include color(--button-text-color);
 	@include background(--button-color);
-	border-radius: 5px;
 }
 
 .pagination .page-numbers.dots {
