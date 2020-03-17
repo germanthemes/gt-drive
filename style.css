@@ -63,7 +63,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--button-text-hover-color: #fff;
 	--header-bar-color: #fff;
 	--header-bar-text-color: #202020;
-	--header-bar-hover-color: rgba(0, 0, 0, 0.5);
+	--header-bar-icon-color: #e34333;
 	--header-color: #c92919;
 	--header-text-color: #fff;
 	--header-hover-color: rgba(255, 255, 255, 0.5);
@@ -1144,8 +1144,8 @@ body.site-description-hidden .site-description {
 
 .header-bar-social-icons.social-icons-nav .social-icons-menu li a:hover,
 .header-bar-social-icons.social-icons-nav .social-icons-menu li a:active {
-	color: rgba(0, 0, 0, 0.5);
-	color: var(--header-bar-hover-color);
+	color: #e34333;
+	color: var(--header-bar-icon-color);
 }
 
 .header-bar-social-icons.social-icons-nav .social-icons-menu li a .icon {
@@ -1203,12 +1203,12 @@ body.site-description-hidden .site-description {
 .header-bar a:visited {
 	color: #202020;
 	color: var(--header-bar-text-color);
+	text-decoration: underline;
 }
 
 .header-bar a:hover,
 .header-bar a:active {
-	color: rgba(0, 0, 0, 0.5);
-	color: var(--header-bar-hover-color);
+	text-decoration: none;
 }
 
 /* Contact Info */
@@ -1234,8 +1234,8 @@ body.site-description-hidden .site-description {
 	margin: 0 0.25rem 0 0;
 	width: 18px;
 	height: 18px;
-	fill: rgba(0, 0, 0, 0.5);
-	fill: var(--header-bar-hover-color);
+	fill: #e34333;
+	fill: var(--header-bar-icon-color);
 }
 
 .header-bar-content .header-phone .icon-mail,

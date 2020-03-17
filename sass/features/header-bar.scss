@@ -13,11 +13,12 @@
 .header-bar a:link,
 .header-bar a:visited {
 	@include color(--header-bar-text-color);
+	text-decoration: underline;
 }
 
 .header-bar a:hover,
 .header-bar a:active {
-	@include color(--header-bar-hover-color);
+	text-decoration: none;
 }
 
 /* Contact Info */
@@ -38,7 +39,7 @@
 			margin: 0 0.25rem 0 0;
 			width: 18px;
 			height: 18px;
-			@include fill(--header-bar-hover-color);
+			@include fill(--header-bar-icon-color);
 		}
 
 		.icon-mail {
