@@ -40,9 +40,9 @@
 
 			</div><!-- .header-main -->
 
-			<?php gt_drive_header_search_form(); ?>
-
 		</header><!-- #masthead -->
+
+		<?php gt_drive_header_search_form(); ?>
 
 		<?php gt_drive_widget_area( 'after-header' ); ?>
 		<?php do_action( 'gt_drive_after_header' ); ?>

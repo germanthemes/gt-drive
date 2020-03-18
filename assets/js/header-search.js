@@ -11,10 +11,8 @@
 		var searchForm = $( '.site .header-search-dropdown' );
 
 		function closeSearchForm() {
-			searchForm.slideUp( 250, function() {
-				$( this ).removeClass( 'active' );
-				searchToggle.attr( 'aria-expanded', $( this ).hasClass( 'active' ) );
-			});
+			searchForm.hide().removeClass( 'active' );
+			searchToggle.attr( 'aria-expanded', searchForm.hasClass( 'active' ) );
 		}
 
 		// Add an initial value for the attribute.
@@ -22,11 +20,10 @@
 
 		/* Display Search Form when search icon is clicked */
 		searchToggle.on( 'click', function() {
-			searchForm.slideDown( 250, function() {
-				$( this ).addClass( 'active' );
-				searchToggle.attr( 'aria-expanded', $( this ).hasClass( 'active' ) );
-			});
+			searchForm.toggle().addClass( 'active' );
 			searchForm.find( '.search-form .search-field' ).focus();
+
+			$( this ).attr( 'aria-expanded', searchForm.hasClass( 'active' ) );
 		});
 
 		/* Close search form if close button is clicked */
@@ -40,6 +37,21 @@
 				closeSearchForm();
 			}
 		});
+
+		/* Do not close search form if click is inside header search element */
+		searchForm.click( function(e) {
+			e.stopPropagation();
+		});
+
+		console.log( searchForm.hasClass( 'active' ) )
+
+		/* Close search form if click is outside header search element 
+		$( document ).click( function() {
+			if ( searchForm.hasClass( 'active' ) ) {
+				closeSearchForm();
+			}
+		});*/
+
 	} );
 
 } )( jQuery );

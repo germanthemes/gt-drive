@@ -119,13 +119,15 @@ if ( ! function_exists( 'gt_drive_header_search_form' ) ) :
 			?>
 
 			<div class="header-search-dropdown">
-				<div class="header-search-form">
-					<?php get_search_form(); ?>
+				<div class="header-search-main">
+					<div class="header-search-form">
+						<?php get_search_form(); ?>
 
-					<button class="header-search-close">
-						<?php echo gt_drive_get_svg( 'close' ); ?>
-						<span class="screen-reader-text"><?php esc_html_e( 'Close', 'gt-drive' ); ?></span>
-					</button>
+						<button class="header-search-close">
+							<?php echo gt_drive_get_svg( 'close' ); ?>
+							<span class="screen-reader-text"><?php esc_html_e( 'Close', 'gt-drive' ); ?></span>
+						</button>
+					</div>
 				</div>
 			</div>
 
