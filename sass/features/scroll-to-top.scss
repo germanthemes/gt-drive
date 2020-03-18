@@ -31,5 +31,5 @@
 
 .scroll-to-top-button:hover .icon,
 .scroll-to-top-button:active .icon {
-	@include fill(--button-hover-text-color);
+	@include fill(--button-text-hover-color);
 }
