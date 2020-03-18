@@ -1372,7 +1372,8 @@ body.site-description-hidden .site-description {
 	}
 
 	.header-search-enabled.primary-navigation-active .header-search-dropdown .header-search-main .header-search-form {
-		max-width: 400px;
+		max-width: 350px;
+		flex-grow: 1;
 	}
 }
 

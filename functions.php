@@ -121,7 +121,7 @@ function gt_drive_scripts() {
 	// Register and enqueue header-search.js if enabled
 	if ( true === gt_drive_get_option( 'header_search' ) || is_customize_preview() ) :
 
-		wp_enqueue_script( 'gt-drive-header-search', get_theme_file_uri( '/assets/js/header-search.js' ), array( 'jquery' ), '20200314', true );
+		wp_enqueue_script( 'gt-drive-header-search', get_theme_file_uri( '/assets/js/header-search.js' ), array( 'jquery' ), '20200318', true );
 
 	endif;
 

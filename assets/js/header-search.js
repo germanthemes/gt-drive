@@ -11,24 +11,20 @@
 		var searchForm = $( '.site .header-search-dropdown' );
 
 		function closeSearchForm() {
-			searchForm.hide().removeClass( 'active' );
+			searchForm.removeClass( 'active' ).hide();
 			searchToggle.attr( 'aria-expanded', searchForm.hasClass( 'active' ) );
 		}
 
 		// Add an initial value for the attribute.
 		searchToggle.attr( 'aria-expanded', 'false' );
 
-		/* Display Search Form when search icon is clicked */
-		searchToggle.on( 'click', function() {
-			searchForm.toggle().addClass( 'active' );
+		/* Display and hide Search Form when search icon is clicked */
+		searchToggle.click( function(e) {
+			searchForm.toggle().toggleClass( 'active' );
 			searchForm.find( '.search-form .search-field' ).focus();
 
 			$( this ).attr( 'aria-expanded', searchForm.hasClass( 'active' ) );
-		});
-
-		/* Close search form if close button is clicked */
-		searchForm.find( '.header-search-close' ).click( function() {
-			closeSearchForm();
+			e.stopPropagation();
 		});
 
 		/* Close search form if Escape key is pressed */
@@ -38,20 +34,15 @@
 			}
 		});
 
-		/* Do not close search form if click is inside header search element */
-		searchForm.click( function(e) {
+		/* Do not close search form if click is inside header search dropdown */
+		searchForm.find( '.header-search-form' ).click( function(e) {
 			e.stopPropagation();
 		});
 
-		console.log( searchForm.hasClass( 'active' ) )
-
-		/* Close search form if click is outside header search element 
+		/* Close search form if click is outside header search element */
 		$( document ).click( function() {
-			if ( searchForm.hasClass( 'active' ) ) {
-				closeSearchForm();
-			}
-		});*/
-
+			closeSearchForm();
+		});
 	} );
 
 } )( jQuery );
