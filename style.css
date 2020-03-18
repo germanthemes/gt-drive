@@ -1472,6 +1472,10 @@ body.site-description-hidden .site-description {
 		box-sizing: border-box;
 	}
 
+	.has-sidebar .site-content .site-main {
+		flex-basis: 70%;
+	}
+
 	.has-sidebar .site-content .site-main .entry-content > .alignwide,
 	.has-sidebar .site-content .site-main .entry-content > .alignfull {
 		margin-left: -40px;
@@ -1484,6 +1488,7 @@ body.site-description-hidden .site-description {
 		min-width: 300px;
 		padding-left: 2rem;
 		flex-grow: 1;
+		flex-basis: 30%;
 	}
 
 	.page-template-template-sidebar-left.has-sidebar .site-content .site-main {
