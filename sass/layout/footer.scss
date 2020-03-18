@@ -59,29 +59,11 @@
 	@include color(--footer-border-color);
 }
 
-/* Footer Widgets */
-.footer-widgets .widget {
-	margin-bottom: 1.5rem;
-}
-
-.footer-widgets .widget-title {
-	margin-top: 0;
-	margin-bottom: 1.5rem;
-	@include color(--footer-link-color);
-	@include font-size(20);
-	@include font-family(--navi-font);
-	@include font-weight(--navi-font-weight);
-	@include text-transform(--navi-text-transform);
-}
-
-.footer-widgets .widget ul li a {
-	text-decoration: none;
-}
-
 /* Footer Navigation */
-.footer-menus {
-	padding-top: 1.25rem;
-	border-top: 1px solid;
+.footer-menus-inner {
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.25rem;
+	border-bottom: 1px solid;
 	@include border-color(--footer-border-color);
 }
 
@@ -115,6 +97,29 @@
 	.footer-navigation-menu a {
 		padding-right: 1.5rem;
 	}
+}
+
+/* Footer Widgets */
+.footer-widgets {
+	padding-top: 0.5rem;
+}
+
+.footer-widgets .widget {
+	margin-bottom: 1.5rem;
+}
+
+.footer-widgets .widget-title {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	@include color(--footer-link-color);
+	@include font-size(20);
+	@include font-family(--navi-font);
+	@include font-weight(--navi-font-weight);
+	@include text-transform(--navi-text-transform);
+}
+
+.footer-widgets .widget ul li a {
+	text-decoration: none;
 }
 
 /* Footer Copyright */
