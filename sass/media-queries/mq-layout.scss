@@ -1,7 +1,7 @@
 @media only screen and (min-width: 480px) {
 	.site-header,
 	.site-content,
-	.footer-main {
+	.site-footer {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}
@@ -42,14 +42,14 @@
 	.footer-widgets-columns {
 		display: flex;
 		flex-wrap: wrap;
+		margin-right: -1.5rem;
 	}
 
 	.footer-widget-column {
 		display: flex;
 		flex-grow: 1;
 		box-sizing: border-box;
-		padding-left: 0.75rem;
-		padding-right: 0.75rem;
+		padding-right: 1.5rem;
 		width: 50%;
 		flex-direction: column;
 	}
@@ -65,7 +65,7 @@
 @media only screen and (min-width: 640px) {
 	.site-header,
 	.site-content,
-	.footer-main {
+	.site-footer {
 		padding-left: 1.75rem;
 		padding-right: 1.75rem;
 	}
@@ -97,9 +97,12 @@
 	}
 
 	/* Footer Widgets */
+	.footer-widgets-columns {
+		margin-right: -2rem;
+	}
+
 	.footer-widget-column {
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-right: 2rem;
 	}
 
 	.footer-widgets .widget {
@@ -125,7 +128,7 @@
 @media only screen and (min-width: 960px) {
 	.site-header,
 	.site-content,
-	.footer-main {
+	.site-footer {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
@@ -162,13 +165,16 @@
 	}
 
 	/* Footer Widgets */
+	.footer-widgets-columns {
+		margin-right: -3rem;
+	}
+
 	.footer-widget-column {
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
+		padding-right: 3rem;
 	}
 
 	.footer-widgets .widget {
-		margin-bottom: 3rem;
+		margin-bottom: 2.5rem;
 	}
 
 	.footer-copyright {
@@ -217,13 +223,16 @@
 	}
 
 	/* Footer Widgets */
+	.footer-widgets-columns {
+		margin-right: -4rem;
+	}
+
 	.footer-widget-column {
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-right: 4rem;
 	}
 
 	.footer-widgets .widget {
-		margin-bottom: 4rem;
+		margin-bottom: 3rem;
 	}
 
 	.footer-copyright {

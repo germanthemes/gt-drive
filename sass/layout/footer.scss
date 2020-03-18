@@ -81,8 +81,8 @@
 /* Footer Navigation */
 .footer-menus {
 	padding-top: 1.25rem;
-	border-top: 2px solid rgba(255, 255, 255, 0.1);
-	border-top: 2px solid var(--footer-border-color);
+	border-top: 1px solid;
+	@include border-color(--footer-border-color);
 }
 
 .footer-navigation-menu {
@@ -121,8 +121,8 @@
 .footer-copyright {
 	margin-bottom: 1.25rem;
 	padding-top: 1.25rem;
-	border-top: 2px solid rgba(255, 255, 255, 0.1);
-	border-top: 2px solid var(--footer-border-color);
+	border-top: 1px solid;
+	@include border-color(--footer-border-color);
 }
 
 .footer-copyright .widget {
