@@ -28,6 +28,24 @@
 			@include background(--widget-title-border-color);
 		}
 	}
+
+	.widget > ul a:link,
+	.widget > ul a:visited,
+	.widget > ol a:link,
+	.widget > ol a:visited,
+	.widget .menu-navigation-container > ul a:link,
+	.widget .menu-navigation-container > ul a:visited {
+		text-decoration: none;
+	}
+
+	.widget > ul a:hover,
+	.widget > ul a:active,
+	.widget > ol a:hover,
+	.widget > ol a:active,
+	.widget .menu-navigation-container > ul a:hover,
+	.widget .menu-navigation-container > ul a:active {
+		text-decoration: underline;
+	}
 }
 
 @media only screen and (min-width: 640px) {

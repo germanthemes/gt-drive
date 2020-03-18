@@ -477,7 +477,7 @@ ol {
 }
 
 ul {
-	list-style: disc;
+	list-style: circle;
 }
 
 ol {
@@ -1432,6 +1432,24 @@ body.site-description-hidden .site-description {
 	content: "";
 	background-color: #e34333;
 	background-color: var(--widget-title-border-color);
+}
+
+.sidebar .widget > ul a:link,
+.sidebar .widget > ul a:visited,
+.sidebar .widget > ol a:link,
+.sidebar .widget > ol a:visited,
+.sidebar .widget .menu-navigation-container > ul a:link,
+.sidebar .widget .menu-navigation-container > ul a:visited {
+	text-decoration: none;
+}
+
+.sidebar .widget > ul a:hover,
+.sidebar .widget > ul a:active,
+.sidebar .widget > ol a:hover,
+.sidebar .widget > ol a:active,
+.sidebar .widget .menu-navigation-container > ul a:hover,
+.sidebar .widget .menu-navigation-container > ul a:active {
+	text-decoration: underline;
 }
 
 @media only screen and (min-width: 640px) {
