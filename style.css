@@ -2260,7 +2260,7 @@ object {
 }
 
 .footer-navigation-menu {
-	margin: 0;
+	margin: 0 0 1rem;
 	padding: 0;
 	list-style: none;
 }
@@ -2274,6 +2274,7 @@ object {
 	margin: 0;
 	padding: 0.5rem 0;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .footer-navigation-menu li.current-menu-item > a {
@@ -2284,10 +2285,22 @@ object {
 	.footer-navigation-menu {
 		display: flex;
 		flex-flow: row wrap;
+		margin-bottom: 0.5rem;
 	}
 
 	.footer-navigation-menu a {
-		padding-right: 1.5rem;
+		padding-right: 2rem;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.footer-menus-inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.footer-navigation-menu {
+		margin-bottom: 0;
 	}
 }
 
