@@ -1092,22 +1092,18 @@ body.site-description-hidden .site-description {
 }
 
 .social-icons-nav .social-icons-menu li a {
-	display: block;
+	display: flex;
 	margin: 0;
-	padding: 1rem 0.6rem;
-	color: #fff;
-	color: var(--header-text-color);
+	padding: 0.75rem;
 }
 
 .social-icons-nav .social-icons-menu li a:hover,
 .social-icons-nav .social-icons-menu li a:active {
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--header-hover-color);
 	text-decoration: none;
 }
 
 .social-icons-nav .social-icons-menu li a .icon {
-	margin: 4px 0 0;
+	margin: 0;
 	width: 20px;
 	height: 20px;
 	vertical-align: top;
@@ -1117,7 +1113,18 @@ body.site-description-hidden .site-description {
 /* Mobile Menu Social Icons */
 .mobile-menu-social-icons {
 	display: none;
-	margin-left: -0.5rem;
+	margin-left: -0.75rem;
+}
+
+.mobile-menu-social-icons.social-icons-nav .social-icons-menu li a {
+	color: #fff;
+	color: var(--header-text-color);
+}
+
+.mobile-menu-social-icons.social-icons-nav .social-icons-menu li a:hover,
+.mobile-menu-social-icons.social-icons-nav .social-icons-menu li a:active {
+	color: rgba(255, 255, 255, 0.5);
+	color: var(--header-hover-color);
 }
 
 .mobile-menu-social-icons.social-icons-nav .social-icons-menu li a .icon {
@@ -1138,7 +1145,6 @@ body.site-description-hidden .site-description {
 }
 
 .header-bar-social-icons.social-icons-nav .social-icons-menu li a {
-	display: flex;
 	padding: 0.25rem 0.5rem;
 	color: #303030;
 	color: var(--header-bar-text-color);
