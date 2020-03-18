@@ -1341,37 +1341,6 @@ body.site-description-hidden .site-description {
 	fill: var(--header-color);
 }
 
-.header-search-enabled .header-search-dropdown .header-search-form .header-search-close {
-	margin: 0 0 0 1.5rem;
-	padding: 0.5rem;
-	color: #fff;
-	color: var(--header-text-color);
-	background: none;
-	border: none;
-}
-
-.header-search-enabled .header-search-dropdown .header-search-form .header-search-close:hover, .header-search-enabled .header-search-dropdown .header-search-form .header-search-close:active {
-	cursor: pointer;
-	color: rgba(255, 255, 255, 0.5);
-	color: var(--header-hover-color);
-}
-
-.header-search-enabled .header-search-dropdown .header-search-form .header-search-close:focus {
-	outline: thin dotted;
-	color: #fff;
-	color: var(--header-text-color);
-}
-
-.header-search-enabled .header-search-dropdown .header-search-form .header-search-close .icon-close {
-	margin: 0;
-	padding: 0;
-	width: 28px;
-	height: 28px;
-	vertical-align: middle;
-	fill: currentColor;
-	transition: fill 0.15s ease;
-}
-
 @media only screen and (min-width: 960px) {
 	.header-search-enabled.primary-navigation-active .primary-navigation {
 		order: 2;

@@ -79,35 +79,6 @@
 					}
 				}
 			}
-
-			.header-search-close {
-				margin: 0 0 0 1.5rem;
-				padding: 0.5rem;
-				@include color(--header-text-color);
-				background: none;
-				border: none;
-
-				&:hover,
-				&:active {
-					cursor: pointer;
-					@include color(--header-hover-color);
-				}
-
-				&:focus {
-					outline: thin dotted;
-					@include color(--header-text-color);
-				}
-
-				.icon-close {
-					margin: 0;
-					padding: 0;
-					width: 28px;
-					height: 28px;
-					vertical-align: middle;
-					fill: currentColor;
-					transition: fill 0.15s ease;
-				}
-			}
 		}
 	}
 }
