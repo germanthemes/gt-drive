@@ -1328,6 +1328,17 @@ body.site-description-hidden .site-description {
 
 .header-search-enabled .header-search-dropdown .header-search-form .search-form .search-field {
 	background: #fff;
+	border: none;
+}
+
+.header-search-enabled .header-search-dropdown .header-search-form .search-form .search-submit {
+	background-color: #fff;
+	background-color: var(--header-text-color);
+}
+
+.header-search-enabled .header-search-dropdown .header-search-form .search-form .search-submit .icon-search {
+	fill: #c92919;
+	fill: var(--header-color);
 }
 
 .header-search-enabled .header-search-dropdown .header-search-form .header-search-close {

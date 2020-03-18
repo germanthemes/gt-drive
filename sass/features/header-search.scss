@@ -68,6 +68,15 @@
 
 				.search-field {
 					background: #fff;
+					border: none;
+				}
+
+				.search-submit {
+					@include background(--header-text-color);
+
+					.icon-search {
+						@include fill(--header-color);
+					}
 				}
 			}
 
