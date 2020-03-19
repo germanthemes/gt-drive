@@ -1743,6 +1743,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	padding: 0.3em 0.9em;
 	text-align: center;
 	text-decoration: none;
+}
+
+.pagination .current {
 	color: #fff;
 	color: var(--button-text-color);
 	background-color: #e34333;
@@ -1753,13 +1756,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	padding: 0 0.5rem;
 }
 
-.pagination .current,
 .pagination a:hover,
 .pagination a:active {
-	color: #fff;
-	color: var(--button-text-hover-color);
-	background-color: #c92919;
-	background-color: var(--button-hover-color);
+	text-decoration: underline;
 }
 
 /* Search & Archive Header */

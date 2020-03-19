@@ -13,6 +13,9 @@
 	padding: 0.3em 0.9em;
 	text-align: center;
 	text-decoration: none;
+}
+
+.pagination .current {
 	@include color(--button-text-color);
 	@include background(--button-color);
 }
@@ -21,9 +24,7 @@
 	padding: 0 0.5rem;
 }
 
-.pagination .current,
 .pagination a:hover,
 .pagination a:active {
-	@include color(--button-text-hover-color);
-	@include background(--button-hover-color);
+	text-decoration: underline;
 }
