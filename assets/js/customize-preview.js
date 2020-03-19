@@ -176,41 +176,48 @@
 		} );
 	} );
 
-	/* Link Color Option */
-	wp.customize( 'gt_drive_theme_options[link_color]', function( value ) {
+	/* Header Bar Color Option */
+	wp.customize( 'gt_drive_theme_options[header_bar_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--link-color', newval );
-			document.documentElement.style.setProperty( '--button-color', newval );
+			var text_color, hover_color;
+
+			if( isColorDark( newval ) ) {
+				text_color = '#ffffff';
+				hover_color = 'rgba(255, 255, 255, 0.5)';
+			} else {
+				text_color = '#303030';
+				hover_color = 'rgba(0, 0, 0, 0.5)';
+			}
+
+			document.documentElement.style.setProperty( '--header-bar-color', newval );
+			document.documentElement.style.setProperty( '--header-bar-text-color', text_color );
+			document.documentElement.style.setProperty( '--header-bar-hover-color', hover_color );
 		} );
 	} );
 
-	/* Link Color Hover Option */
-	wp.customize( 'gt_drive_theme_options[link_hover_color]', function( value ) {
+	/* Header Bar Icon Color Option */
+	wp.customize( 'gt_drive_theme_options[header_bar_icon_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--link-hover-color', newval );
-			document.documentElement.style.setProperty( '--button-hover-color', newval );
+			document.documentElement.style.setProperty( '--header-bar-icon-color', newval );
 		} );
 	} );
 
 	/* Header Color Option */
 	wp.customize( 'gt_drive_theme_options[header_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, hover_color, border_color;
+			var text_color, hover_color;
 
 			if( isColorLight( newval ) ) {
 				text_color = 'rgba(0, 0, 0, 0.95)';
 				hover_color = 'rgba(0, 0, 0, 0.5)';
-				border_color = 'rgba(0, 0, 0, 0.1)';
 			} else {
-				text_color = 'rgba(255, 255, 255, 0.95)';
+				text_color = '#ffffff';
 				hover_color = 'rgba(255, 255, 255, 0.5)';
-				border_color = 'rgba(255, 255, 255, 0.1)';
 			}
 
-			document.documentElement.style.setProperty( '--header-background-color', newval );
+			document.documentElement.style.setProperty( '--header-color', newval );
 			document.documentElement.style.setProperty( '--header-text-color', text_color );
-			document.documentElement.style.setProperty( '--header-text-hover-color', hover_color );
-			document.documentElement.style.setProperty( '--header-border-color', border_color );
+			document.documentElement.style.setProperty( '--header-hover-color', hover_color );
 		} );
 	} );
 
@@ -218,6 +225,7 @@
 	wp.customize( 'gt_drive_theme_options[title_color]', function( value ) {
 		value.bind( function( newval ) {
 			document.documentElement.style.setProperty( '--title-color', newval );
+			document.documentElement.style.setProperty( '--widget-title-color', newval );
 		} );
 	} );
 
@@ -225,26 +233,84 @@
 	wp.customize( 'gt_drive_theme_options[title_hover_color]', function( value ) {
 		value.bind( function( newval ) {
 			document.documentElement.style.setProperty( '--title-hover-color', newval );
+			document.documentElement.style.setProperty( '--widget-title-hover-color', newval );
+		} );
+	} );
+
+	/* Title Border Option */
+	wp.customize( 'gt_drive_theme_options[title_border_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--title-border-color', newval );
+			document.documentElement.style.setProperty( '--widget-title-border-color', newval );
+		} );
+	} );
+
+	/* Link Color Option */
+	wp.customize( 'gt_drive_theme_options[link_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--link-color', newval );
+		} );
+	} );
+
+	/* Link Color Hover Option */
+	wp.customize( 'gt_drive_theme_options[link_hover_color]', function( value ) {
+		value.bind( function( newval ) {
+			document.documentElement.style.setProperty( '--link-hover-color', newval );
+		} );
+	} );
+
+	/* Button Color Option */
+	wp.customize( 'gt_drive_theme_options[button_color]', function( value ) {
+		value.bind( function( newval ) {
+			var text_color;
+
+			if( isColorLight( newval ) ) {
+				text_color = 'rgba(0, 0, 0, 0.95)';
+			} else {
+				text_color = '#ffffff';
+			}
+
+			document.documentElement.style.setProperty( '--button-color', newval );
+			document.documentElement.style.setProperty( '--button-text-color', text_color );
+		} );
+	} );
+
+	/* Button Hover Color Option */
+	wp.customize( 'gt_drive_theme_options[button_hover_color]', function( value ) {
+		value.bind( function( newval ) {
+			var text_color;
+
+			if( isColorLight( newval ) ) {
+				text_color = 'rgba(0, 0, 0, 0.95)';
+			} else {
+				text_color = '#ffffff';
+			}
+
+			document.documentElement.style.setProperty( '--button-hover-color', newval );
+			document.documentElement.style.setProperty( '--button-text-hover-color', text_color );
 		} );
 	} );
 
 	/* Footer Color Option */
 	wp.customize( 'gt_drive_theme_options[footer_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, link_color;
+			var text_color, link_color, border_color;
 
 			if( isColorLight( newval ) ) {
-				text_color = '#242424';
-				link_color = 'rgba(0, 0, 0, 0.6)';
+				text_color   = 'rgba(0, 0, 0, 0.5)';
+				link_color   = 'rgba(0, 0, 0, 0.95)';
+				border_color = 'rgba(0, 0, 0, 0.1)';
 			} else {
-				text_color = '#ffffff';
-				link_color = 'rgba(255, 255, 255, 0.6)';
+				text_color   = 'rgba(255, 255, 255, 0.5)';
+				link_color   = 'rgba(255, 255, 255, 0.95)';
+				border_color = 'rgba(255, 255, 255, 0.1)';
 			}
 
 			document.documentElement.style.setProperty( '--footer-background-color', newval );
 			document.documentElement.style.setProperty( '--footer-text-color', text_color );
 			document.documentElement.style.setProperty( '--footer-link-color', link_color );
 			document.documentElement.style.setProperty( '--footer-link-hover-color', text_color );
+			document.documentElement.style.setProperty( '--footer-border-color', border_color );
 		} );
 	} );
 
