@@ -22,34 +22,34 @@ function gt_drive_customize_register_theme_color_settings( $wp_customize ) {
 	// Get Default Colors from settings.
 	$default = gt_drive_default_options();
 
-	// Add Link Color setting.
-	$wp_customize->add_setting( 'gt_drive_theme_options[link_color]', array(
-		'default'           => $default['link_color'],
+	// Add Header Bar Color setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[header_bar_color]', array(
+		'default'           => $default['header_bar_color'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
 		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control(
-		$wp_customize, 'gt_drive_theme_options[link_color]', array(
-			'label'    => esc_html_x( 'Links', 'Color Option', 'gt-drive' ),
+		$wp_customize, 'gt_drive_theme_options[header_bar_color]', array(
+			'label'    => esc_html_x( 'Header Bar', 'Color Option', 'gt-drive' ),
 			'section'  => 'gt_drive_section_theme_colors',
-			'settings' => 'gt_drive_theme_options[link_color]',
+			'settings' => 'gt_drive_theme_options[header_bar_color]',
 			'priority' => 10,
 		)
 	) );
 
-	// Add Link Hover Color setting.
-	$wp_customize->add_setting( 'gt_drive_theme_options[link_hover_color]', array(
-		'default'           => $default['link_hover_color'],
+	// Add Header Bar Icons setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[header_bar_icons_color]', array(
+		'default'           => $default['header_bar_icons_color'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
 		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control(
-		$wp_customize, 'gt_drive_theme_options[link_hover_color]', array(
-			'label'    => esc_html_x( 'Link Hover', 'Color Option', 'gt-drive' ),
+		$wp_customize, 'gt_drive_theme_options[header_bar_icons_color]', array(
+			'label'    => esc_html_x( 'Header Bar Icons', 'Color Option', 'gt-drive' ),
 			'section'  => 'gt_drive_section_theme_colors',
-			'settings' => 'gt_drive_theme_options[link_hover_color]',
+			'settings' => 'gt_drive_theme_options[header_bar_icons_color]',
 			'priority' => 20,
 		)
 	) );
@@ -102,6 +102,86 @@ function gt_drive_customize_register_theme_color_settings( $wp_customize ) {
 		)
 	) );
 
+	// Add Title Border Color setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[title_border_color]', array(
+		'default'           => $default['title_border_color'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize, 'gt_drive_theme_options[title_border_color]', array(
+			'label'    => esc_html_x( 'Title Border', 'Color Option', 'gt-drive' ),
+			'section'  => 'gt_drive_section_theme_colors',
+			'settings' => 'gt_drive_theme_options[title_border_color]',
+			'priority' => 60,
+		)
+	) );
+
+	// Add Link Color setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[link_color]', array(
+		'default'           => $default['link_color'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize, 'gt_drive_theme_options[link_color]', array(
+			'label'    => esc_html_x( 'Links', 'Color Option', 'gt-drive' ),
+			'section'  => 'gt_drive_section_theme_colors',
+			'settings' => 'gt_drive_theme_options[link_color]',
+			'priority' => 70,
+		)
+	) );
+
+	// Add Link Hover Color setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[link_hover_color]', array(
+		'default'           => $default['link_hover_color'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize, 'gt_drive_theme_options[link_hover_color]', array(
+			'label'    => esc_html_x( 'Link Hover', 'Color Option', 'gt-drive' ),
+			'section'  => 'gt_drive_section_theme_colors',
+			'settings' => 'gt_drive_theme_options[link_hover_color]',
+			'priority' => 80,
+		)
+	) );
+
+	// Add Button Color setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[button_color]', array(
+		'default'           => $default['button_color'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize, 'gt_drive_theme_options[button_color]', array(
+			'label'    => esc_html_x( 'Buttons', 'Color Option', 'gt-drive' ),
+			'section'  => 'gt_drive_section_theme_colors',
+			'settings' => 'gt_drive_theme_options[button_color]',
+			'priority' => 90,
+		)
+	) );
+
+	// Add Button Hover Color setting.
+	$wp_customize->add_setting( 'gt_drive_theme_options[button_hover_color]', array(
+		'default'           => $default['button_hover_color'],
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_hex_color',
+	) );
+	$wp_customize->add_control( new WP_Customize_Color_Control(
+		$wp_customize, 'gt_drive_theme_options[button_hover_color]', array(
+			'label'    => esc_html_x( 'Button Hover', 'Color Option', 'gt-drive' ),
+			'section'  => 'gt_drive_section_theme_colors',
+			'settings' => 'gt_drive_theme_options[button_hover_color]',
+			'priority' => 100,
+		)
+	) );
+
 	// Add Footer Color setting.
 	$wp_customize->add_setting( 'gt_drive_theme_options[footer_color]', array(
 		'default'           => $default['footer_color'],
@@ -111,10 +191,10 @@ function gt_drive_customize_register_theme_color_settings( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control(
 		$wp_customize, 'gt_drive_theme_options[footer_color]', array(
-			'label'    => esc_html_x( 'Footer Widgets', 'Color Option', 'gt-drive' ),
+			'label'    => esc_html_x( 'Footer', 'Color Option', 'gt-drive' ),
 			'section'  => 'gt_drive_section_theme_colors',
 			'settings' => 'gt_drive_theme_options[footer_color]',
-			'priority' => 60,
+			'priority' => 110,
 		)
 	) );
 }
