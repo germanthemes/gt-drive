@@ -69,7 +69,7 @@ function gt_drive_default_options() {
 		'gray_color'             => '#848484',
 		'dark_gray_color'        => '#242424',
 		'header_bar_color'       => '#ffffff',
-		'header_bar_icons_color' => '#e34333',
+		'header_bar_icon_color'  => '#e34333',
 		'header_color'           => '#c92919',
 		'title_color'            => '#303030',
 		'title_hover_color'      => '#e34333',

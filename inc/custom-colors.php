@@ -91,38 +91,79 @@ class GT_Drive_Custom_Colors {
 			$color_variables .= '--dark-gray-color: ' . $theme_options['dark_gray_color'] . ';';
 		}
 
-		// Set Link Color.
-		if ( $theme_options['link_color'] !== $default['link_color'] ) {
-			$color_variables .= '--link-color: ' . $theme_options['link_color'] . ';';
-			$color_variables .= '--button-color: ' . $theme_options['link_color'] . ';';
+		// Set Header Bar Color.
+		if ( $theme_options['header_bar_color'] !== $default['header_bar_color'] ) {
+			$color_variables .= '--header-bar-color: ' . $theme_options['header_bar_color'] . ';';
+
+			// Check if a dark background color was chosen.
+			if ( self::is_color_dark( $theme_options['header_bar_color'] ) ) {
+				$color_variables .= '--header-bar-text-color :#ffffff;';
+				$color_variables .= '--header-bar-hover-color: rgba(255, 255, 255, 0.5);';
+			}
 		}
 
-		// Set Link Hover Color.
-		if ( $theme_options['link_hover_color'] !== $default['link_hover_color'] ) {
-			$color_variables .= '--link-hover-color: ' . $theme_options['link_hover_color'] . ';';
-			$color_variables .= '--button-hover-color: ' . $theme_options['link_hover_color'] . ';';
+		// Set Header Bar Color.
+		if ( $theme_options['header_bar_icon_color'] !== $default['header_bar_icon_color'] ) {
+			$color_variables .= '--header-bar-icon-color: ' . $theme_options['header_bar_icon_color'] . ';';
 		}
 
 		// Set Header Color.
 		if ( $theme_options['header_color'] !== $default['header_color'] ) {
-			$color_variables .= '--header-background-color: ' . $theme_options['header_color'] . ';';
+			$color_variables .= '--header-color: ' . $theme_options['header_color'] . ';';
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['header_color'] ) ) {
 				$color_variables .= '--header-text-color: rgba(0, 0, 0, 0.95);';
-				$color_variables .= '--header-text-hover-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--header-border-color: rgba(0, 0, 0, 0.1);';
+				$color_variables .= '--header-hover-color: rgba(0, 0, 0, 0.5);';
 			}
 		}
 
 		// Set Title Color.
 		if ( $theme_options['title_color'] !== $default['title_color'] ) {
 			$color_variables .= '--title-color: ' . $theme_options['title_color'] . ';';
+			$color_variables .= '--widget-title-color: ' . $theme_options['title_color'] . ';';
 		}
 
 		// Set Title Hover Color.
 		if ( $theme_options['title_hover_color'] !== $default['title_hover_color'] ) {
 			$color_variables .= '--title-hover-color: ' . $theme_options['title_hover_color'] . ';';
+			$color_variables .= '--widget-title-hover-color: ' . $theme_options['title_hover_color'] . ';';
+		}
+
+		// Set Title Border Color.
+		if ( $theme_options['title_border_color'] !== $default['title_border_color'] ) {
+			$color_variables .= '--title-border-color: ' . $theme_options['title_border_color'] . ';';
+			$color_variables .= '--widget-title-border-color: ' . $theme_options['title_border_color'] . ';';
+		}
+
+		// Set Link Color.
+		if ( $theme_options['link_color'] !== $default['link_color'] ) {
+			$color_variables .= '--link-color: ' . $theme_options['link_color'] . ';';
+		}
+
+		// Set Link Hover Color.
+		if ( $theme_options['link_hover_color'] !== $default['link_hover_color'] ) {
+			$color_variables .= '--link-hover-color: ' . $theme_options['link_hover_color'] . ';';
+		}
+
+		// Set Button Color.
+		if ( $theme_options['button_color'] !== $default['button_color'] ) {
+			$color_variables .= '--button-color: ' . $theme_options['button_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['button_color'] ) ) {
+				$color_variables .= '--button-text-color: rgba(0, 0, 0, 0.95);';
+			}
+		}
+
+		// Set Button Hover Color.
+		if ( $theme_options['button_hover_color'] !== $default['button_hover_color'] ) {
+			$color_variables .= '--button-hover-color: ' . $theme_options['button_hover_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['button_hover_color'] ) ) {
+				$color_variables .= '--button-text-hover-color: rgba(0, 0, 0, 0.95);';
+			}
 		}
 
 		// Set Footer Color.
@@ -131,9 +172,10 @@ class GT_Drive_Custom_Colors {
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['footer_color'] ) ) {
-				$color_variables .= '--footer-text-color: #242424;';
-				$color_variables .= '--footer-link-color: rgba(0, 0, 0, 0.6);';
-				$color_variables .= '--footer-link-hover-color: #242424;';
+				$color_variables .= '--footer-text-color: rgba(0, 0, 0, 0.5);';
+				$color_variables .= '--footer-link-color: rgba(0, 0, 0, 0.95);';
+				$color_variables .= '--footer-link-hover-color: rgba(0, 0, 0, 0.5);';
+				$color_variables .= '--footer-border-color: rgba(0, 0, 0, 0.1);';
 			}
 		}
 

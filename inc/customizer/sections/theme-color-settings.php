@@ -39,17 +39,17 @@ function gt_drive_customize_register_theme_color_settings( $wp_customize ) {
 	) );
 
 	// Add Header Bar Icons setting.
-	$wp_customize->add_setting( 'gt_drive_theme_options[header_bar_icons_color]', array(
-		'default'           => $default['header_bar_icons_color'],
+	$wp_customize->add_setting( 'gt_drive_theme_options[header_bar_icon_color]', array(
+		'default'           => $default['header_bar_icon_color'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
 		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control(
-		$wp_customize, 'gt_drive_theme_options[header_bar_icons_color]', array(
+		$wp_customize, 'gt_drive_theme_options[header_bar_icon_color]', array(
 			'label'    => esc_html_x( 'Header Bar Icons', 'Color Option', 'gt-drive' ),
 			'section'  => 'gt_drive_section_theme_colors',
-			'settings' => 'gt_drive_theme_options[header_bar_icons_color]',
+			'settings' => 'gt_drive_theme_options[header_bar_icon_color]',
 			'priority' => 20,
 		)
 	) );
