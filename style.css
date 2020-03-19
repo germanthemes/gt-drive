@@ -1414,9 +1414,11 @@ body.site-description-hidden .site-description {
 	position: relative;
 	margin-top: 0;
 	margin-bottom: 2rem;
-	padding-bottom: 0.75rem;
+	padding-bottom: 1rem;
 	color: #303030;
 	color: var(--widget-title-color);
+	font-size: 22px;
+	font-size: 1.375rem;
 }
 
 .sidebar .widget-title::before {
@@ -1768,11 +1770,16 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	margin-top: 1rem;
 }
 
+.comments-area {
+	margin: 0 0 1.25rem;
+	padding: 0;
+}
+
 /* Comment Header */
 .comments-title,
 .comment-reply-title {
 	position: relative;
-	margin: 0 0 1rem;
+	margin: 0 0 2rem;
 	padding: 0 0 1rem;
 	color: #303030;
 	color: var(--title-color);
@@ -1786,7 +1793,6 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	font-weight: var(--title-font-weight);
 	text-transform: none;
 	text-transform: var(--title-text-transform);
-	line-height: 1.25;
 }
 
 .comments-title::before,
@@ -1816,7 +1822,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	padding: 0 0 1.5rem;
 	font-size: 16px;
 	font-size: 1rem;
-	border-bottom: 3px solid;
+	border-bottom: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--comments-border-color);
 }
@@ -1888,7 +1894,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .comment ol.children .comment {
 	margin: 0;
 	padding: 1.5rem 0 0;
-	border-top: 3px solid;
+	border-top: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--comments-border-color);
 	border-bottom: none;
@@ -1925,7 +1931,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .comment .comment-respond {
 	margin: 1.5rem 0 0;
 	padding: 1.5rem 0 0;
-	border-top: 3px solid;
+	border-top: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--comments-border-color);
 }
@@ -2728,7 +2734,8 @@ object {
 	.type-post,
 	.type-page,
 	.type-attachment,
-	.pagination {
+	.pagination,
+	.comments-area {
 		margin-bottom: 1.5rem;
 	}
 
@@ -2787,7 +2794,8 @@ object {
 	.type-post,
 	.type-page,
 	.type-attachment,
-	.pagination {
+	.pagination,
+	.comments-area {
 		margin-bottom: 2rem;
 	}
 
@@ -2862,7 +2870,8 @@ object {
 	.type-post,
 	.type-page,
 	.type-attachment,
-	.pagination {
+	.pagination,
+	.comments-area {
 		margin-bottom: 3rem;
 	}
 
@@ -2927,7 +2936,8 @@ object {
 	.type-post,
 	.type-page,
 	.type-attachment,
-	.pagination {
+	.pagination,
+	.comments-area {
 		margin-bottom: 4rem;
 	}
 

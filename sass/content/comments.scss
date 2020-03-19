@@ -1,9 +1,13 @@
+.comments-area {
+	margin: 0 0 1.25rem;
+	padding: 0;
+}
 
 /* Comment Header */
 .comments-title,
 .comment-reply-title {
 	position: relative;
-	margin: 0 0 1rem;
+	margin: 0 0 2rem;
 	padding: 0 0 1rem;
 	@include color(--title-color);
 	-ms-word-wrap: break-word;
@@ -12,7 +16,6 @@
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
 	@include text-transform(--title-text-transform);
-	line-height: 1.25;
 
 	&::before {
 		display: inline-block;
@@ -39,7 +42,7 @@
 	margin: 0 0 1.5rem;
 	padding: 0 0 1.5rem;
 	@include font-size(16);
-	border-bottom: 3px solid;
+	border-bottom: 1px solid;
 	@include border-color(--comments-border-color);
 }
 
@@ -106,7 +109,7 @@
 .comment ol.children .comment {
 	margin: 0;
 	padding: 1.5rem 0 0;
-	border-top: 3px solid;
+	border-top: 1px solid;
 	@include border-color(--comments-border-color);
 	border-bottom: none;
 }
@@ -139,7 +142,7 @@
 .comment .comment-respond {
 	margin: 1.5rem 0 0;
 	padding: 1.5rem 0 0;
-	border-top: 3px solid;
+	border-top: 1px solid;
 	@include border-color(--comments-border-color);
 }
 

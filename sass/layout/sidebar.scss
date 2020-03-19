@@ -14,8 +14,9 @@
 		position: relative;
 		margin-top: 0;
 		margin-bottom: 2rem;
-		padding-bottom: 0.75rem;
+		padding-bottom: 1rem;
 		@include color(--widget-title-color);
+		@include font-size(22);
 
 		&::before {
 			display: inline-block;
