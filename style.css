@@ -1406,8 +1406,8 @@ body.site-description-hidden .site-description {
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--widget-border-color);
-	padding: 2rem 2rem 0;
-	margin-bottom: 1.5rem;
+	padding: 1.5rem 1.5rem 0;
+	margin-bottom: 1.25rem;
 }
 
 .sidebar .widget-title {
@@ -1455,6 +1455,13 @@ body.site-description-hidden .site-description {
 .sidebar .widget .menu-navigation-container > ul a:hover,
 .sidebar .widget .menu-navigation-container > ul a:active {
 	text-decoration: underline;
+}
+
+@media only screen and (min-width: 480px) {
+	.sidebar .widget {
+		padding: 2rem 2rem 0;
+		margin-bottom: 1.5rem;
+	}
 }
 
 @media only screen and (min-width: 640px) {

@@ -6,8 +6,8 @@
 	.widget {
 		border: 1px solid;
 		@include border-color(--widget-border-color);
-		padding: 2rem 2rem 0;
-		margin-bottom: 1.5rem;
+		padding: 1.5rem 1.5rem 0;
+		margin-bottom: 1.25rem;
 	}
 
 	.widget-title {
@@ -49,6 +49,15 @@
 	.widget .menu-navigation-container > ul a:hover,
 	.widget .menu-navigation-container > ul a:active {
 		text-decoration: underline;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	.sidebar {
+		.widget {
+			padding: 2rem 2rem 0;
+			margin-bottom: 1.5rem;
+		}
 	}
 }
 
