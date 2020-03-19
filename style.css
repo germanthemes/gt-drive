@@ -55,6 +55,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--light-gray-color: #e4e4e4;
 	--gray-color: #848484;
 	--dark-gray-color: #303030;
+	--text-color: #303030;
 	--link-color: #e34333;
 	--link-hover-color: #c92919;
 	--button-color: #e34333;
@@ -70,9 +71,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--title-color: #303030;
 	--title-hover-color: #e34333;
 	--title-border-color: #e34333;
-	--widget-border-color: rgba(0, 0, 0, 0.1);
-	--widget-title-color: #242222;
+	--post-meta-color: rgba(0, 0, 0, 0.5);
+	--widget-title-color: #303030;
 	--widget-title-border-color: #e34333;
+	--widget-border-color: rgba(0, 0, 0, 0.1);
+	--comments-border-color: rgba(0, 0, 0, 0.1);
 	--footer-background-color: #202020;
 	--footer-text-color: rgba(255, 255, 255, 0.5);
 	--footer-link-color: rgba(255, 255, 255, 0.95);
@@ -1412,7 +1415,7 @@ body.site-description-hidden .site-description {
 	margin-top: 0;
 	margin-bottom: 2rem;
 	padding-bottom: 0.75rem;
-	color: #242222;
+	color: #303030;
 	color: var(--widget-title-color);
 }
 
@@ -1650,7 +1653,8 @@ body.site-description-hidden .site-description {
 
 .entry-meta {
 	margin: 0 0 1rem;
-	color: rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--post-meta-color);
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: bold;
@@ -1814,7 +1818,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	font-size: 1rem;
 	border-bottom: 3px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--widget-border-color);
+	border-color: var(--comments-border-color);
 }
 
 .comment .comment-body {
@@ -1843,7 +1847,8 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	margin-top: 0.3em;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	color: var(--light-text-color);
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--post-meta-color);
 }
 
 .comment-meta .comment-metadata a {
@@ -1852,12 +1857,14 @@ body.tags-hidden.single-post .type-post .entry-tags {
 
 .comment-meta .comment-metadata a:link,
 .comment-meta .comment-metadata a:visited {
-	color: var(--light-text-color);
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--post-meta-color);
 	text-decoration: none;
 }
 
 .comment-meta .comment-metadata a:hover,
 .comment-meta .comment-metadata a:active {
+	color: #303030;
 	color: var(--text-color);
 }
 
@@ -1883,7 +1890,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	padding: 1.5rem 0 0;
 	border-top: 3px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--widget-border-color);
+	border-color: var(--comments-border-color);
 	border-bottom: none;
 }
 
@@ -1920,7 +1927,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	padding: 1.5rem 0 0;
 	border-top: 3px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--widget-border-color);
+	border-color: var(--comments-border-color);
 }
 
 /* Comment Pagination */

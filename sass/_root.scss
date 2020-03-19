@@ -6,6 +6,7 @@
 	@include variable(--light-gray-color, $themeColors);
 	@include variable(--gray-color, $themeColors);
 	@include variable(--dark-gray-color, $themeColors);
+	@include variable(--text-color, $themeColors);
 	@include variable(--link-color, $themeColors);
 	@include variable(--link-hover-color, $themeColors);
 	@include variable(--button-color, $themeColors);
@@ -21,9 +22,11 @@
 	@include variable(--title-color, $themeColors);
 	@include variable(--title-hover-color, $themeColors);
 	@include variable(--title-border-color, $themeColors);
-	@include variable(--widget-border-color, $themeColors);
+	@include variable(--post-meta-color, $themeColors);
 	@include variable(--widget-title-color, $themeColors);
 	@include variable(--widget-title-border-color, $themeColors);
+	@include variable(--widget-border-color, $themeColors);
+	@include variable(--comments-border-color, $themeColors);
 	@include variable(--footer-background-color, $themeColors);
 	@include variable(--footer-text-color, $themeColors);
 	@include variable(--footer-link-color, $themeColors);

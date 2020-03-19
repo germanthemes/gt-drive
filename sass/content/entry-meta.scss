@@ -1,6 +1,6 @@
 .entry-meta {
 	margin: 0 0 1rem;
-	color: rgba(0, 0, 0, 0.4);
+	@include color(--post-meta-color);
 	@include font-size(14);
 	font-weight: bold;
 }
