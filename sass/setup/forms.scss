@@ -49,7 +49,7 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
 	border: 1px solid rgba(0, 0, 0, 0.3);
-	color: $textColor;
+	@include color(--text-color);
 	outline: none;
 }
 

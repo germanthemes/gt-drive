@@ -172,7 +172,7 @@
 
 .comment-navigation a:hover,
 .comment-navigation a:active {
-	color: $textColor;
+	@include color(--text-color);
 }
 
 .comment-navigation .nav-previous a::before {

@@ -2,9 +2,12 @@ html {
 	box-sizing: border-box;
 }
 
+/* Inherit box-sizing to make it easier to change the property
+for components that leverage other behavior;
+see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
-*:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 
@@ -15,8 +18,9 @@ body {
 blockquote {
 	margin: 0 0 1.5em;
 	padding-left: 1.5em;
-	border-left: 4px solid $textColor;
-	color: rgba(0,0,0,0.5);
+	border-left: 4px solid;
+	@include border-color(--text-color);
+	color: rgba(0, 0, 0, 0.5);
 	@include font-size(18);
 }
 
@@ -26,11 +30,11 @@ blockquote p {
 
 blockquote cite {
 	display: block;
-	color: $textColor;
+	@include color(--text-color);
 	@include font-size(16);
 }
 
-blockquote cite:before {
+blockquote cite::before {
 	content: "\2014\00a0";
 }
 
@@ -38,7 +42,7 @@ hr {
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0,0,0,0.15);
+	background-color: rgba(0, 0, 0, 0.15);
 }
 
 ul,
@@ -91,7 +95,7 @@ table {
 th,
 td {
 	padding: 0.4em 0.6em;
-	border: 1px solid rgba(0,0,0,0.15);
+	border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 a {
