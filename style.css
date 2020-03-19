@@ -1637,8 +1637,8 @@ body.site-description-hidden .site-description {
 
 /* Entry Content */
 .entry-content {
-	font-size: 17px;
-	font-size: 1.0625rem;
+	font-size: 16px;
+	font-size: 1rem;
 }
 
 .entry-content > .alignwide,
@@ -1835,6 +1835,10 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	display: block;
 	margin: 0;
 	padding: 0;
+}
+
+.comment-list > .comment:last-child {
+	border-bottom: none;
 }
 
 /* Comment Meta */
@@ -2634,8 +2638,8 @@ object {
 	}
 
 	.entry-content {
-		font-size: 18px;
-		font-size: 1.125rem;
+		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 
 	.entry-meta,
@@ -2669,8 +2673,8 @@ object {
 	}
 
 	.entry-content {
-		font-size: 19px;
-		font-size: 1.1875rem;
+		font-size: 18px;
+		font-size: 1.125rem;
 	}
 
 	.entry-meta,
@@ -2693,8 +2697,8 @@ object {
 	}
 
 	.entry-content {
-		font-size: 20px;
-		font-size: 1.25rem;
+		font-size: 19px;
+		font-size: 1.1875rem;
 	}
 
 	.entry-meta,
