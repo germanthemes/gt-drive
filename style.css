@@ -1680,6 +1680,11 @@ body.site-description-hidden .site-description {
 	text-decoration: none;
 }
 
+.entry-meta a:hover,
+.entry-meta a:active {
+	text-decoration: underline;
+}
+
 .entry-meta .updated:not(.published) {
 	display: none;
 }
