@@ -1419,6 +1419,12 @@ body.site-description-hidden .site-description {
 	color: var(--widget-title-color);
 	font-size: 22px;
 	font-size: 1.375rem;
+	font-family: "Barlow", arial, helvetica, sans-serif;
+	font-family: var(--title-font);
+	font-weight: bold;
+	font-weight: var(--title-font-weight);
+	text-transform: none;
+	text-transform: var(--title-text-transform);
 }
 
 .sidebar .widget-title::before {
@@ -1751,19 +1757,17 @@ body.tags-hidden.single-post .type-post .entry-tags {
 
 /* Search & Archive Header */
 .archive-header.entry-header {
-	margin-bottom: 2em;
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
-.archive-header .archive-title,
-.search-header .search-title {
-	font-size: 20px;
-	font-size: 1.25rem;
-	font-family: "Barlow", arial, helvetica, sans-serif;
-	font-family: var(--navi-font);
-	font-weight: normal;
-	font-weight: var(--navi-font-weight);
-	text-transform: none;
-	text-transform: var(--navi-text-transform);
+.archive-header.entry-header::before {
+	width: 3rem;
+}
+
+.archive-header.entry-header .entry-title {
+	font-size: 22px;
+	font-size: 1.375rem;
 }
 
 .search-header .search-form {

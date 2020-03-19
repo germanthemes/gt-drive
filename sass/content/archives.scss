@@ -1,14 +1,15 @@
 /* Search & Archive Header */
 .archive-header.entry-header {
-	margin-bottom: 2em;
-}
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
 
-.archive-header .archive-title,
-.search-header .search-title {
-	@include font-size(20);
-	@include font-family(--navi-font);
-	@include font-weight(--navi-font-weight);
-	@include text-transform(--navi-text-transform);
+	&::before {
+		width: 3rem;
+	}
+
+	.entry-title {
+		@include font-size(22);
+	}
 }
 
 .search-header .search-form {
