@@ -1675,6 +1675,10 @@ body.site-description-hidden .site-description {
 
 .entry-meta {
 	margin: 0 0 1rem;
+}
+
+.entry-meta,
+.entry-tags {
 	color: rgba(0, 0, 0, 0.5);
 	color: var(--post-meta-color);
 	font-size: 14px;
@@ -1683,12 +1687,16 @@ body.site-description-hidden .site-description {
 }
 
 .entry-meta a:link,
-.entry-meta a:visited {
+.entry-meta a:visited,
+.entry-tags a:link,
+.entry-tags a:visited {
 	text-decoration: none;
 }
 
 .entry-meta a:hover,
-.entry-meta a:active {
+.entry-meta a:active,
+.entry-tags a:hover,
+.entry-tags a:active {
 	text-decoration: underline;
 }
 
@@ -2663,6 +2671,7 @@ object {
 	}
 
 	.entry-meta,
+	.entry-tags,
 	.more-link,
 	.pagination {
 		font-size: 16px;
@@ -2698,6 +2707,7 @@ object {
 	}
 
 	.entry-meta,
+	.entry-tags,
 	.more-link,
 	.pagination {
 		font-size: 17px;
@@ -2722,6 +2732,7 @@ object {
 	}
 
 	.entry-meta,
+	.entry-tags,
 	.more-link,
 	.pagination {
 		font-size: 18px;

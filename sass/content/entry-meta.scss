@@ -1,17 +1,25 @@
 .entry-meta {
 	margin: 0 0 1rem;
+}
+
+.entry-meta,
+.entry-tags {
 	@include color(--post-meta-color);
 	@include font-size(14);
 	font-weight: bold;
 }
 
 .entry-meta a:link,
-.entry-meta a:visited {
+.entry-meta a:visited,
+.entry-tags a:link,
+.entry-tags a:visited {
 	text-decoration: none;
 }
 
 .entry-meta a:hover,
-.entry-meta a:active {
+.entry-meta a:active,
+.entry-tags a:hover,
+.entry-tags a:active {
 	text-decoration: underline;
 }
 
