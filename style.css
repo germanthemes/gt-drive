@@ -50,10 +50,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 :root {
 	--primary-color: #e34333;
 	--secondary-color: #c92919;
-	--accent-color: #c9493b;
-	--highlight-color: #f9d26e;
-	--light-gray-color: #e4e4e4;
-	--gray-color: #848484;
+	--accent-color: #33a2e3;
+	--highlight-color: #7aca56;
+	--light-gray-color: #e0e0e0;
+	--gray-color: #808080;
 	--dark-gray-color: #303030;
 	--text-color: #303030;
 	--link-color: #e34333;
@@ -2333,12 +2333,12 @@ object {
 }
 
 .has-accent-color {
-	color: #c9493b;
+	color: #33a2e3;
 	color: var(--accent-color);
 }
 
 .has-highlight-color {
-	color: #f9d26e;
+	color: #7aca56;
 	color: var(--highlight-color);
 }
 
@@ -2347,12 +2347,12 @@ object {
 }
 
 .has-light-gray-color {
-	color: #e4e4e4;
+	color: #e0e0e0;
 	color: var(--light-gray-color);
 }
 
 .has-gray-color {
-	color: #848484;
+	color: #808080;
 	color: var(--gray-color);
 }
 
@@ -2377,12 +2377,12 @@ object {
 }
 
 .has-accent-background-color {
-	background-color: #c9493b;
+	background-color: #33a2e3;
 	background-color: var(--accent-color);
 }
 
 .has-highlight-background-color {
-	background-color: #f9d26e;
+	background-color: #7aca56;
 	background-color: var(--highlight-color);
 }
 
@@ -2391,12 +2391,12 @@ object {
 }
 
 .has-light-gray-background-color {
-	background-color: #e4e4e4;
+	background-color: #e0e0e0;
 	background-color: var(--light-gray-color);
 }
 
 .has-gray-background-color {
-	background-color: #848484;
+	background-color: #808080;
 	background-color: var(--gray-color);
 }
 
