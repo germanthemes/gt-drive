@@ -152,8 +152,8 @@ class GT_Drive_Custom_Fonts {
 	static function remove_default_theme_fonts() {
 		$selected_fonts = self::get_selected_fonts();
 
-		// Remove default Barlow font if not needed.
-		if ( ! in_array( 'Barlow', $selected_fonts ) ) {
+		// Remove default Roboto font if not needed.
+		if ( ! in_array( 'Roboto', $selected_fonts ) ) {
 			wp_dequeue_style( 'gt-drive-theme-fonts' );
 		}
 	}
@@ -179,12 +179,12 @@ class GT_Drive_Custom_Fonts {
 		$fonts = array(
 			'Arial'                       => 'Arial',
 			'Arial Black'                 => 'Arial Black',
-			'Barlow'                      => 'Barlow', // default font from /assets/css/theme-fonts.css
 			'Courier New'                 => 'Courier New',
 			'Georgia'                     => 'Georgia',
 			'Helvetica'                   => 'Helvetica',
 			'Impact'                      => 'Impact',
 			'Palatino, Palatino Linotype' => 'Palatino',
+			'Roboto'                      => 'Roboto', // default font from /assets/css/theme-fonts.css
 			'SystemFontStack'             => 'System Font Stack',
 			'Tahoma'                      => 'Tahoma',
 			'Trebuchet MS, Trebuchet'     => 'Trebuchet MS',

@@ -65,3 +65,7 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 5. svgxuse - https://github.com/Keyamoon/svgxuse
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
+
+6. Roboto Font - https://fonts.google.com/specimen/Roboto
+License: Distributed under the terms of the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+Copyright: Christian Robertson
