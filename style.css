@@ -3074,7 +3074,9 @@ object {
 		padding: 0.5rem 0.75rem;
 		background-color: #c92919;
 		background-color: var(--header-color);
-		border-top: 1px solid #fff;
+		border-top: 1px solid;
+		border-color: #fff;
+		border-color: var(--header-text-color);
 	}
 
 	.main-navigation ul ul li:hover > ul,
