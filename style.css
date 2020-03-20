@@ -1263,6 +1263,13 @@ body.site-description-hidden .site-description {
 	margin-top: 2px;
 }
 
+/* Customizer Buttons */
+.customize-partial-edit-shortcut-gt_drive_theme_options-header_phone,
+.customize-partial-edit-shortcut-gt_drive_theme_options-header_email,
+.customize-partial-edit-shortcut-gt_drive_theme_options-header_address {
+	margin-left: -18px;
+}
+
 /*--------------------------------------------------------------
 # - Header Search Feature
 --------------------------------------------------------------*/

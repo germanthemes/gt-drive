@@ -15,11 +15,11 @@
 	margin-bottom: 4px;
 }
 
-#customize-control-gt_drive_theme_options-retina_logo_title,
-#customize-control-gt_drive_theme_options-header_search_title {
+#customize-control-gt_drive_theme_options-retina_logo_title {
 	margin-bottom: 0;
 }
 
+#customize-control-gt_drive_theme_options-header_search_title,
 #customize-control-gt_drive_theme_options-scroll_top_title,
 #customize-control-gt_drive_theme_options-post_details,
 #customize-control-gt_drive_theme_options-single_post {
