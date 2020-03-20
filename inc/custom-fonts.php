@@ -152,8 +152,8 @@ class GT_Drive_Custom_Fonts {
 	static function remove_default_theme_fonts() {
 		$selected_fonts = self::get_selected_fonts();
 
-		// Remove default Roboto font if not needed.
-		if ( ! in_array( 'Roboto', $selected_fonts ) ) {
+		// Remove default Roboto font if not needed or GT Local Font plugin already loads it.
+		if ( ! in_array( 'Roboto', $selected_fonts ) or class_exists( 'GermanThemes_Local_Fonts' ) ) {
 			wp_dequeue_style( 'gt-drive-theme-fonts' );
 		}
 	}
