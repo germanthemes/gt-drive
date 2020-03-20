@@ -85,7 +85,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--title-font: "Barlow", arial, helvetica, sans-serif;
 	--navi-font: "Barlow", arial, helvetica, sans-serif;
 	--title-font-weight: bold;
-	--navi-font-weight: normal;
+	--navi-font-weight: bold;
 	--title-text-transform: none;
 	--navi-text-transform: none;
 }
@@ -888,7 +888,7 @@ body.site-description-hidden .site-description {
 	font-size: 1.0625rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
-	font-weight: normal;
+	font-weight: bold;
 	font-weight: var(--navi-font-weight);
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
@@ -978,7 +978,7 @@ body.site-description-hidden .site-description {
 	font-size: 1.0625rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
-	font-weight: normal;
+	font-weight: bold;
 	font-weight: var(--navi-font-weight);
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
@@ -1288,7 +1288,7 @@ body.site-description-hidden .site-description {
 	font-size: 1.0625rem;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
-	font-weight: normal;
+	font-weight: bold;
 	font-weight: var(--navi-font-weight);
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
@@ -2518,7 +2518,7 @@ object {
 	list-style: none;
 	font-family: "Barlow", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
-	font-weight: normal;
+	font-weight: bold;
 	font-weight: var(--navi-font-weight);
 	text-transform: none;
 	text-transform: var(--navi-text-transform);

@@ -84,7 +84,7 @@ function gt_drive_default_options() {
 		'title_is_bold'         => true,
 		'title_is_uppercase'    => false,
 		'navi_font'             => 'SystemFontStack',
-		'navi_is_bold'          => false,
+		'navi_is_bold'          => true,
 		'navi_is_uppercase'     => false,
 		'license_key'           => '',
 		'license_status'        => 'inactive',
