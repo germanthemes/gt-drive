@@ -27,6 +27,10 @@ class GT_Drive_Custom_Fonts {
 
 		// Add theme support for GT Typography plugin.
 		add_action( 'after_setup_theme', array( __CLASS__, 'add_typography_theme_support' ) );
+
+		// Remove default theme fonts if they are not used.
+		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'remove_default_theme_fonts' ), 2 );
+		add_action( 'enqueue_block_editor_assets', array( __CLASS__, 'remove_default_theme_fonts' ), 2 );
 	}
 
 	/**
@@ -125,9 +129,9 @@ class GT_Drive_Custom_Fonts {
 	}
 
 	/**
-	 * Register support for GT Typography plugin.
+	 * Retrieve selected fonts from Customizer options.
 	 */
-	static function add_typography_theme_support() {
+	static function get_selected_fonts() {
 
 		// Get theme options from database.
 		$theme_options = gt_drive_theme_options();
@@ -138,6 +142,27 @@ class GT_Drive_Custom_Fonts {
 			$theme_options['title_font'],
 			$theme_options['navi_font'],
 		);
+
+		return $selected_fonts;
+	}
+
+	/**
+	 * Remove default theme fonts.
+	 */
+	static function remove_default_theme_fonts() {
+		$selected_fonts = self::get_selected_fonts();
+
+		// Remove default Barlow font if not needed.
+		if ( ! in_array( 'Barlow', $selected_fonts ) ) {
+			wp_dequeue_style( 'gt-drive-theme-fonts' );
+		}
+	}
+
+	/**
+	 * Register support for GT Typography plugin.
+	 */
+	static function add_typography_theme_support() {
+		$selected_fonts = self::get_selected_fonts();
 
 		add_theme_support( 'gt-typography', array(
 			'selected_fonts' => $selected_fonts,
@@ -154,6 +179,7 @@ class GT_Drive_Custom_Fonts {
 		$fonts = array(
 			'Arial'                       => 'Arial',
 			'Arial Black'                 => 'Arial Black',
+			'Barlow'                      => 'Barlow', // default font from /assets/css/theme-fonts.css
 			'Courier New'                 => 'Courier New',
 			'Georgia'                     => 'Georgia',
 			'Helvetica'                   => 'Helvetica',
