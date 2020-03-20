@@ -56,6 +56,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--gray-color: #808080;
 	--dark-gray-color: #303030;
 	--text-color: #303030;
+	--light-text-color: rgba(0, 0, 0, 0.5);
+	--light-border-color: rgba(0, 0, 0, 0.1);
+	--medium-border-color: rgba(0, 0, 0, 0.3);
 	--link-color: #e34333;
 	--link-hover-color: #c92919;
 	--button-color: #e34333;
@@ -393,8 +396,11 @@ pre {
 	margin-bottom: 1.5em;
 	padding: 1.5em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	background: rgba(0, 0, 0, 0.025);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--light-border-color);
+	background-color: rgba(0, 0, 0, 0.1);
+	background-color: var(--light-border-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -452,6 +458,7 @@ blockquote {
 	border-color: #303030;
 	border-color: var(--text-color);
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	font-size: 18px;
 	font-size: 1.125rem;
 }
@@ -476,7 +483,8 @@ hr {
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0, 0, 0, 0.15);
+	background-color: rgba(0, 0, 0, 0.1);
+	background-color: var(--light-border-color);
 }
 
 ul,
@@ -529,7 +537,9 @@ table {
 th,
 td {
 	padding: 0.4em 0.6em;
-	border: 1px solid rgba(0, 0, 0, 0.15);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--light-border-color);
 }
 
 a {
@@ -602,7 +612,9 @@ input[type="search"],
 textarea {
 	padding: 0.3em 0.6em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--light-border-color);
 	background: none;
 	color: #777;
 }
@@ -613,7 +625,9 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	border: 1px solid rgba(0, 0, 0, 0.3);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.3);
+	border-color: var(--medium-border-color);
 	color: #303030;
 	color: var(--text-color);
 	outline: none;
@@ -2239,6 +2253,7 @@ object {
 	max-width: 120px;
 	height: 4px;
 	background-color: rgba(0, 0, 0, 0.1);
+	background-color: var(--light-border-color);
 }
 
 /* Video Embed Block */
@@ -2273,8 +2288,10 @@ object {
 .wp-block-pullquote {
 	margin-bottom: 1.5em;
 	padding: 1.5em 0;
-	border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-	border-top: 4px solid rgba(0, 0, 0, 0.15);
+	border-bottom: 4px solid;
+	border-top: 4px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--light-border-color);
 }
 
 .wp-block-pullquote blockquote {

@@ -7,6 +7,9 @@
 	@include variable(--gray-color, $themeColors);
 	@include variable(--dark-gray-color, $themeColors);
 	@include variable(--text-color, $themeColors);
+	@include variable(--light-text-color, $themeColors);
+	@include variable(--light-border-color, $themeColors);
+	@include variable(--medium-border-color, $themeColors);
 	@include variable(--link-color, $themeColors);
 	@include variable(--link-hover-color, $themeColors);
 	@include variable(--button-color, $themeColors);
