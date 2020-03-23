@@ -1,41 +1,49 @@
 /* Typography */
 .editor-styles-wrapper {
+	background: #fff;
 	@include color(--text-color);
+}
+
+.editor-styles-wrapper > * {
 	@include font-family(--text-font);
 	@include font-size(17);
 	line-height: 1.75;
 }
 
-.editor-styles-wrapper p {
-	font-size: inherit;
+.editor-styles-wrapper .wp-block p {
+	@include font-family(--text-font);
+	@include font-size(16);
 	line-height: 1.75;
 	margin-bottom: 1.5em;
 }
 
 @media only screen and (min-width: 640px) {
-	.editor-styles-wrapper {
-		@include font-size(18);
+	.editor-styles-wrapper > *,
+	.editor-styles-wrapper .wp-block p {
+		@include font-size(17);
 	}
 }
 
 @media only screen and (min-width: 960px) {
-	.editor-styles-wrapper {
-		@include font-size(19);
+	.editor-styles-wrapper > *,
+	.editor-styles-wrapper .wp-block p {
+		@include font-size(18);
 	}
 }
 
 @media only screen and (min-width: 1280px) {
-	.editor-styles-wrapper {
-		@include font-size(20);
+	.editor-styles-wrapper > *,
+	.editor-styles-wrapper .wp-block p {
+		@include font-size(19);
 	}
-}
-
-.editor-styles-wrapper .mce-content-body {
-	line-height: 1.75;
 }
 
 .editor-styles-wrapper a {
 	@include color(--link-color);
+}
+
+.editor-styles-wrapper .has-text-color a {
+	color: inherit;
 }
 
 .editor-styles-wrapper hr {
