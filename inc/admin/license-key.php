@@ -17,7 +17,7 @@ class GT_Drive_License_Key {
 	static function setup() {
 
 		// Define Product ID.
-		define( 'GT_DRIVE_PRODUCT_ID', 336 );
+		define( 'GT_DRIVE_PRODUCT_ID', 1869 );
 
 		// Define Update API URL.
 		define( 'GT_DRIVE_STORE_API_URL', 'https://germanthemes.de' );
