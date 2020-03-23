@@ -99,6 +99,12 @@ td {
 	@include border-color(--light-border-color);
 }
 
+th {
+	font-weight: normal;
+	text-align: inherit;
+	@include background(--light-background-color);
+}
+
 a {
 	@include color(--link-color);
 	text-decoration: underline;

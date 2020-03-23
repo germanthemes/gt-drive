@@ -23,22 +23,6 @@
 	}
 }
 
-/* Cover Block */
-.wp-block-cover {
-	display: flex;
-}
-
-.wp-block-cover-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	@include font-size(32);
-}
-
-.wp-block-cover.alignwide,
-.wp-block-cover.alignfull {
-	width: auto;
-}
-
 /* Separator Block */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 4rem;

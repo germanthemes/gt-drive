@@ -548,6 +548,13 @@ td {
 	border-color: var(--light-border-color);
 }
 
+th {
+	font-weight: normal;
+	text-align: inherit;
+	background-color: rgba(0, 0, 0, 0.05);
+	background-color: var(--light-background-color);
+}
+
 a {
 	color: #e34333;
 	color: var(--link-color);
@@ -2240,23 +2247,6 @@ figcaption,
 /* Image Block */
 .wp-block-image img {
 	vertical-align: top;
-}
-
-/* Cover Block */
-.wp-block-cover {
-	display: flex;
-}
-
-.wp-block-cover-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 32px;
-	font-size: 2rem;
-}
-
-.wp-block-cover.alignwide,
-.wp-block-cover.alignfull {
-	width: auto;
 }
 
 /* Separator Block */

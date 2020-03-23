@@ -1,22 +1,3 @@
-/* Cover Block */
-body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	@include font-size(32);
-	line-height: 1.25;
-}
-
-/* Preformatted Block */
-.wp-block-preformatted pre {
-	white-space: normal;
-}
-
-/* Separator Block */
-.wp-block-separator {
-	margin: 1.5em auto;
-	border: none;
-}
-
 /* Table Block */
 .wp-block-table td,
 .wp-block-table th {
@@ -62,14 +43,14 @@ body.block-editor-page .editor-styles-wrapper p.wp-block-cover-text {
 /* GT Section Block */
 .gt-background-section .gt-section-content {
 	&.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-		max-width: calc( #{$contentWidth} + 30px );
+		max-width: calc(#{$contentWidth} + 30px);
 	}
 
 	&.gt-wide-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-		max-width: calc( #{$wideBlockWidth} + 30px );
+		max-width: calc(#{$wideBlockWidth} + 30px);
 	}
 
 	&.gt-full-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
-		max-width: calc( #{$contentFullwidth} + 30px );
+		max-width: calc(#{$contentFullwidth} + 30px);
 	}
 }
