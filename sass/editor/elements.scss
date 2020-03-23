@@ -122,7 +122,7 @@
 	margin: 0 0 1.5em;
 	padding-left: 1.5em;
 	border-left: 4px solid;
-	@include border-color(--title-border-color);
+	@include border-color(--text-color);
 	@include color(--light-text-color);
 	@include font-size(18);
 }
@@ -131,14 +131,22 @@
 	margin-bottom: 0.75em;
 }
 
-.editor-styles-wrapper blockquote cite {
+.editor-styles-wrapper blockquote cite,
+.wp-block-quote cite,
+.wp-block-quote footer,
+.wp-block-quote__citation,
+.wp-block-pullquote cite,
+.wp-block-pullquote footer,
+.wp-block-pullquote .wp-block-pullquote__citation {
 	display: block;
 	@include color(--text-color);
 	@include font-size(16);
-}
+	text-transform: none;
+	font-style: inherit;
 
-.editor-styles-wrapper blockquote cite::before {
-	content: "\2014\00a0";
+	&::before {
+		content: "\2014\00a0";
+	}
 }
 
 /* Lists */

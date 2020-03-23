@@ -287,8 +287,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin: 0 0 1.5em;
 	padding-left: 1.5em;
 	border-left: 4px solid;
-	border-color: #e34333;
-	border-color: var(--title-border-color);
+	border-color: #303030;
+	border-color: var(--text-color);
 	color: rgba(0, 0, 0, 0.5);
 	color: var(--light-text-color);
 	font-size: 18px;
@@ -299,15 +299,29 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-bottom: 0.75em;
 }
 
-.editor-styles-wrapper blockquote cite {
+.editor-styles-wrapper blockquote cite,
+.wp-block-quote cite,
+.wp-block-quote footer,
+.wp-block-quote__citation,
+.wp-block-pullquote cite,
+.wp-block-pullquote footer,
+.wp-block-pullquote .wp-block-pullquote__citation {
 	display: block;
 	color: #303030;
 	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
+	text-transform: none;
+	font-style: inherit;
 }
 
-.editor-styles-wrapper blockquote cite::before {
+.editor-styles-wrapper blockquote cite::before,
+.wp-block-quote cite::before,
+.wp-block-quote footer::before,
+.wp-block-quote__citation::before,
+.wp-block-pullquote cite::before,
+.wp-block-pullquote footer::before,
+.wp-block-pullquote .wp-block-pullquote__citation::before {
 	content: "\2014\00a0";
 }
 
@@ -505,39 +519,6 @@ figcaption,
 
 .wp-block-table__cell-content {
 	padding: 0.4em 0.6em;
-}
-
-/* Quote Block */
-.wp-block-quote:not(.is-large):not(.is-style-large) {
-	padding-left: 1.5em;
-}
-
-.wp-block-quote cite,
-.wp-block-quote footer,
-.wp-block-quote__citation,
-.wp-block-pullquote cite,
-.wp-block-pullquote footer,
-.wp-block-pullquote .wp-block-pullquote__citation {
-	font-size: 16px;
-	font-size: 1rem;
-	text-transform: none;
-}
-
-.wp-block-quote cite:before,
-.wp-block-quote footer:before,
-.wp-block-quote__citation:before,
-.wp-block-pullquote cite:before,
-.wp-block-pullquote footer:before,
-.wp-block-pullquote__citation:before {
-	content: "\2014\00a0";
-}
-
-.wp-block-pullquote.is-style-solid-color blockquote > .editor-rich-text p {
-	font-size: inherit;
-}
-
-.wp-block-pullquote.is-style-solid-color .wp-block-pullquote__citation {
-	color: inherit;
 }
 
 /* GT Section Block */
