@@ -284,10 +284,13 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 /* Blockquotes */
 .editor-styles-wrapper blockquote {
-	margin-top: 0;
-	margin-bottom: 1.5em;
+	margin: 0 0 1.5em;
 	padding-left: 1.5em;
+	border-left: 4px solid;
+	border-color: #e34333;
+	border-color: var(--title-border-color);
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	font-size: 18px;
 	font-size: 1.125rem;
 }
@@ -298,6 +301,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .editor-styles-wrapper blockquote cite {
 	display: block;
+	color: #303030;
+	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -334,8 +339,10 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 .editor-styles-wrapper th,
 .editor-styles-wrapper td {
-	padding: 0.3em 0.6em;
-	border: 1px solid rgba(0, 0, 0, 0.15);
+	padding: 0.4em 0.6em;
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--light-border-color);
 }
 
 /*--------------------------------------------------------------
