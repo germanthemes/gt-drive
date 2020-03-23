@@ -19,7 +19,7 @@ blockquote {
 	margin: 0 0 1.5em;
 	padding-left: 1.5em;
 	border-left: 4px solid;
-	@include border-color(--text-color);
+	@include border-color(--title-border-color);
 	@include color(--light-text-color);
 	@include font-size(18);
 }
