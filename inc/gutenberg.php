@@ -118,22 +118,6 @@ add_action( 'enqueue_block_editor_assets', 'gt_drive_block_editor_assets' );
 
 
 /**
- * Remove inline styling in Gutenberg.
- *
- * @return array $editor_settings
- */
-function gt_drive_block_editor_settings( $editor_settings ) {
-	// Remove editor styling.
-	if ( ! current_theme_supports( 'editor-styles' ) ) {
-		$editor_settings['styles'] = '';
-	}
-
-	return $editor_settings;
-}
-add_filter( 'block_editor_settings', 'gt_drive_block_editor_settings', 11 );
-
-
-/**
  * Add body classes in Gutenberg Editor.
  */
 function gt_drive_gutenberg_add_admin_body_class( $classes ) {
