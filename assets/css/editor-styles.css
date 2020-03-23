@@ -17,6 +17,8 @@
 	--dark-gray-color: #303030;
 	--text-color: #303030;
 	--light-text-color: rgba(0, 0, 0, 0.5);
+	--light-background-color: rgba(0, 0, 0, 0.05);
+	--medium-background-color: rgba(0, 0, 0, 0.15);
 	--light-border-color: rgba(0, 0, 0, 0.1);
 	--medium-border-color: rgba(0, 0, 0, 0.3);
 	--link-color: #e34333;
@@ -245,7 +247,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0, 0, 0, 0.15);
+	background-color: rgba(0, 0, 0, 0.1);
+	background-color: var(--light-border-color);
 }
 
 /* Code */
@@ -254,12 +257,29 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	margin-bottom: 1.5em;
 	padding: 1.5em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	background: rgba(0, 0, 0, 0.025);
+	border: 1px solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-color: var(--light-border-color);
+	background-color: rgba(0, 0, 0, 0.05);
+	background-color: var(--light-background-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	line-height: 1.5;
+}
+
+.editor-styles-wrapper code,
+.editor-styles-wrapper kbd,
+.editor-styles-wrapper tt,
+.editor-styles-wrapper var {
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	background-color: rgba(0, 0, 0, 0.05);
+	background-color: var(--light-background-color);
+	color: inherit;
+	border-radius: 3px;
+	padding: 2px 4px;
 }
 
 /* Blockquotes */
@@ -282,7 +302,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	font-size: 1rem;
 }
 
-.editor-styles-wrapper blockquote cite:before {
+.editor-styles-wrapper blockquote cite::before {
 	content: "\2014\00a0";
 }
 

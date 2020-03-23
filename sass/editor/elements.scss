@@ -88,7 +88,7 @@
 	margin-bottom: 1.5em;
 	height: 1px;
 	border: 0;
-	background-color: rgba(0, 0, 0, 0.15);
+	@include background(--light-border-color);
 }
 
 /* Code */
@@ -97,12 +97,24 @@
 	margin-bottom: 1.5em;
 	padding: 1.5em;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	background: rgba(0, 0, 0, 0.025);
-	font-size: 15px;
-	font-size: 0.9375rem;
+	border: 1px solid;
+	@include border-color(--light-border-color);
+	@include background(--light-background-color);
+	@include font-size(15);
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	line-height: 1.5;
+}
+
+.editor-styles-wrapper code,
+.editor-styles-wrapper kbd,
+.editor-styles-wrapper tt,
+.editor-styles-wrapper var {
+	@include font-size(15);
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	@include background(--light-background-color);
+	color: inherit;
+	border-radius: 3px;
+	padding: 2px 4px;
 }
 
 /* Blockquotes */
@@ -123,7 +135,7 @@
 	@include font-size(16);
 }
 
-.editor-styles-wrapper blockquote cite:before {
+.editor-styles-wrapper blockquote cite::before {
 	content: "\2014\00a0";
 }
 

@@ -8,6 +8,8 @@
 	@include variable(--dark-gray-color, $themeColors);
 	@include variable(--text-color, $themeColors);
 	@include variable(--light-text-color, $themeColors);
+	@include variable(--light-background-color, $themeColors);
+	@include variable(--medium-background-color, $themeColors);
 	@include variable(--light-border-color, $themeColors);
 	@include variable(--medium-border-color, $themeColors);
 	@include variable(--link-color, $themeColors);

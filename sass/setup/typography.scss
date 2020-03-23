@@ -69,9 +69,8 @@ pre {
 	max-width: 100%;
 	border: 1px solid;
 	@include border-color(--light-border-color);
-	@include background(--light-border-color);
-	font-size: 15px;
-	font-size: 0.9375rem;
+	@include background(--light-background-color);
+	@include font-size(15);
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	line-height: 1.5;
 }
@@ -80,8 +79,10 @@ code,
 kbd,
 tt,
 var {
-	font-size: 15px;
-	font-size: 0.9375rem;
+	border-radius: 3px;
+	padding: 2px 4px;
+	@include background(--light-background-color);
+	@include font-size(15);
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 

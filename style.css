@@ -57,6 +57,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--dark-gray-color: #303030;
 	--text-color: #303030;
 	--light-text-color: rgba(0, 0, 0, 0.5);
+	--light-background-color: rgba(0, 0, 0, 0.05);
+	--medium-background-color: rgba(0, 0, 0, 0.15);
 	--light-border-color: rgba(0, 0, 0, 0.1);
 	--medium-border-color: rgba(0, 0, 0, 0.3);
 	--link-color: #e34333;
@@ -399,8 +401,8 @@ pre {
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--light-border-color);
-	background-color: rgba(0, 0, 0, 0.1);
-	background-color: var(--light-border-color);
+	background-color: rgba(0, 0, 0, 0.05);
+	background-color: var(--light-background-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
@@ -411,6 +413,10 @@ code,
 kbd,
 tt,
 var {
+	border-radius: 3px;
+	padding: 2px 4px;
+	background-color: rgba(0, 0, 0, 0.05);
+	background-color: var(--light-background-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
