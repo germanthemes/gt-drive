@@ -44,4 +44,6 @@
 	@include variable(--navi-font-weight, $fontWeight);
 	@include variable(--title-text-transform, $textTransform);
 	@include variable(--navi-text-transform, $textTransform);
+	@include variable(--text-line-height, $lineHeight);
+	@include variable(--title-line-height, $lineHeight);
 }

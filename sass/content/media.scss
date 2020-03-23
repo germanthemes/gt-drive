@@ -74,7 +74,6 @@ figcaption,
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	vertical-align: top;
 	text-align: center;
 }
 
@@ -86,8 +85,7 @@ figcaption,
 	display: block;
 	margin: 0.5rem 0 0;
 	@include font-size(15);
-	color: rgba(0,0,0,0.6);
-	line-height: 1.4;
+	@include color(--light-text-color);
 }
 
 /* IE Fallback */

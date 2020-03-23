@@ -7,13 +7,13 @@
 .editor-styles-wrapper > * {
 	@include font-family(--text-font);
 	@include font-size(17);
-	line-height: 1.75;
+	@include line-height(--text-line-height);
 }
 
 .editor-styles-wrapper .wp-block p {
 	@include font-family(--text-font);
 	@include font-size(16);
-	line-height: 1.75;
+	@include line-height(--text-line-height);
 	margin-bottom: 1.5em;
 }
 
@@ -56,7 +56,7 @@
 	clear: both;
 	margin: 1em 0 0.75em;
 	@include font-family(--title-font);
-	line-height: 1.25;
+	@include line-height(--title-line-height);
 }
 
 .editor-styles-wrapper .wp-block h1 {

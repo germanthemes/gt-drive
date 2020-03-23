@@ -93,6 +93,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--navi-font-weight: bold;
 	--title-text-transform: none;
 	--navi-text-transform: none;
+	--text-line-height: 1.75;
+	--title-line-height: 1.25;
 }
 
 /*--------------------------------------------------------------
@@ -329,6 +331,7 @@ textarea {
 	font-family: "Roboto", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	line-height: 1.75;
+	line-height: var(--text-line-height);
 }
 
 h1,
@@ -346,6 +349,7 @@ h6 {
 	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.25;
+	line-height: var(--title-line-height);
 }
 
 h1 {
@@ -836,6 +840,7 @@ img.custom-logo {
 	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.25;
+	line-height: var(--title-line-height);
 }
 
 .site-title a:link,
@@ -1668,6 +1673,7 @@ body.site-description-hidden .site-description {
 	text-transform: none;
 	text-transform: var(--title-text-transform);
 	line-height: 1.25;
+	line-height: var(--title-line-height);
 }
 
 .entry-title a:link,
@@ -2161,7 +2167,6 @@ figcaption,
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	vertical-align: top;
 	text-align: center;
 }
 
@@ -2174,8 +2179,8 @@ figcaption,
 	margin: 0.5rem 0 0;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	color: rgba(0, 0, 0, 0.6);
-	line-height: 1.4;
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 }
 
 /* IE Fallback */
