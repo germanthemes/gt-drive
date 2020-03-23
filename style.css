@@ -2095,22 +2095,29 @@ object {
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
-.wp-caption {
-	margin-bottom: 1em;
-	max-width: 100%;
+figcaption,
+.wp-caption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption,
+.wp-block-audio figcaption {
 	font-size: 15px;
 	font-size: 0.9375rem;
-	color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
+}
+
+.wp-block-embed figcaption,
+.wp-block-image figcaption,
+.wp-block-audio figcaption {
+	margin: 0.75em 0 1em;
+	max-width: 100%;
 	width: auto !important;
+	text-align: center;
 }
 
 .wp-caption img[class*="wp-image-"] {
 	display: block;
 	margin: 0 auto;
-}
-
-.wp-caption-text {
-	text-align: center;
 }
 
 .wp-caption .wp-caption-text {
@@ -2212,6 +2219,13 @@ object {
 # - Blocks
 --------------------------------------------------------------*/
 
+/* Block Spacing */
+.wp-block-audio,
+.wp-block-embed,
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
 /* Button Block */
 .wp-block-button__link:link,
 .wp-block-button__link:visited {
@@ -2224,17 +2238,8 @@ object {
 }
 
 /* Image Block */
-.wp-block-image {
-	margin-bottom: 1.5em;
-}
-
 .wp-block-image img {
 	vertical-align: top;
-}
-
-/* Media Text Block */
-.wp-block-media-text {
-	margin-bottom: 1.5em;
 }
 
 /* Cover Block */

@@ -173,3 +173,22 @@
 	border: 1px solid;
 	@include border-color(--light-border-color);
 }
+
+/* Captions */
+figcaption,
+.wp-caption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption,
+.wp-block-audio figcaption {
+	@include font-size(15);
+	@include color(--light-text-color);
+}
+
+.wp-block-embed figcaption,
+.wp-block-image figcaption,
+.wp-block-audio figcaption {
+	margin: 0.5em 0 1em;
+	max-width: 100%;
+	width: auto !important;
+	text-align: center;
+}

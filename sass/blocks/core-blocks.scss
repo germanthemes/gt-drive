@@ -1,3 +1,10 @@
+/* Block Spacing */
+.wp-block-audio,
+.wp-block-embed,
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
 /* Button Block */
 .wp-block-button__link:link,
 .wp-block-button__link:visited {
@@ -11,16 +18,9 @@
 
 /* Image Block */
 .wp-block-image {
-	margin-bottom: 1.5em;
-
 	img {
 		vertical-align: top;
 	}
-}
-
-/* Media Text Block */
-.wp-block-media-text {
-	margin-bottom: 1.5em;
 }
 
 /* Cover Block */
