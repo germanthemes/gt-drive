@@ -343,7 +343,7 @@ h6 {
 	font-weight: var(--title-font-weight);
 	text-transform: none;
 	text-transform: var(--title-text-transform);
-	line-height: 1.4;
+	line-height: 1.25;
 }
 
 h1 {

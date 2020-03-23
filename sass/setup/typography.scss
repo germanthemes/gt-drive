@@ -20,7 +20,7 @@ h6 {
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
 	@include text-transform(--title-text-transform);
-	line-height: 1.4;
+	line-height: 1.25;
 }
 
 h1 {
