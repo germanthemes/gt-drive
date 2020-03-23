@@ -307,31 +307,21 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 /* Lists */
-.block-library-list .editor-rich-text__tinymce,
-.block-library-list .editor-rich-text__tinymce ol,
-.block-library-list .editor-rich-text__tinymce ul {
+.editor-styles-wrapper .block-library-list ol,
+.editor-styles-wrapper .block-library-list ul {
 	margin: 0 0 1.5em;
 	padding: 0 0 0 1.25em;
 }
 
-.block-library-list .editor-rich-text__tinymce li > ul,
-.block-library-list .editor-rich-text__tinymce li > ol {
+.editor-styles-wrapper .block-library-list li > ul,
+.editor-styles-wrapper .block-library-list li > ol {
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	margin-left: 1.5em;
 }
 
-.editor-styles-wrapper ul {
-	list-style: disc;
-}
-
-.editor-styles-wrapper ol {
-	list-style: decimal;
-}
-
-.editor-styles-wrapper ul ul,
-.editor-styles-wrapper ol ul {
-	list-style-type: circle;
+.editor-styles-wrapper .block-library-list ul {
+	list-style: circle;
 }
 
 /* Tables */
