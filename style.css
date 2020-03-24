@@ -2303,11 +2303,11 @@ p.has-background {
 }
 
 .wp-block-group .wp-block-group.alignwide {
-	max-width: 1040px;
+	max-width: 1200px;
 }
 
 .wp-block-group .wp-block-group.alignfull {
-	max-width: 1200px;
+	max-width: 100%;
 }
 
 /* Image Block */
@@ -2426,7 +2426,7 @@ p.has-background {
 }
 
 .gt-background-section .gt-section-content.gt-wide-width {
-	max-width: 1040px;
+	max-width: 1200px;
 }
 
 .gt-background-section .gt-section-content.gt-full-width {
@@ -3062,9 +3062,9 @@ p.has-background {
 	}
 
 	.entry-content > .alignwide {
-		margin-left: -120px;
-		margin-right: -120px;
-		max-width: 1040px;
+		margin-left: -60px;
+		margin-right: -60px;
+		max-width: 1200px;
 	}
 }
 
@@ -3075,6 +3075,13 @@ p.has-background {
 	.footer-widget-column:nth-child(3):nth-last-child(2),
 	.footer-widget-column:nth-child(4):nth-last-child(1) {
 		width: 25%;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.entry-content > .alignwide {
+		margin-left: -120px;
+		margin-right: -120px;
 	}
 }
 
@@ -3098,6 +3105,11 @@ p.has-background {
 
 	.post-image {
 		margin-bottom: 2rem;
+	}
+
+	.entry-content > .alignwide {
+		margin-left: -200px;
+		margin-right: -200px;
 	}
 
 	/* Footer Area */

@@ -202,8 +202,8 @@
 	}
 
 	.entry-content > .alignwide {
-		margin-left: -120px;
-		margin-right: -120px;
+		margin-left: -60px;
+		margin-right: -60px;
 		max-width: $wideBlockWidth;
 	}
 }
@@ -216,6 +216,13 @@
 	.footer-widget-column:nth-child(3):nth-last-child(2),
 	.footer-widget-column:nth-child(4):nth-last-child(1) {
 		width: 25%;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.entry-content > .alignwide {
+		margin-left: -120px;
+		margin-right: -120px;
 	}
 }
 
@@ -239,6 +246,11 @@
 
 	.post-image {
 		margin-bottom: 2rem;
+	}
+
+	.entry-content > .alignwide {
+		margin-left: -200px;
+		margin-right: -200px;
 	}
 
 	/* Footer Area */
