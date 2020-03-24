@@ -1700,6 +1700,9 @@ body.site-description-hidden .site-description {
 .entry-content::after {
 	display: table;
 	content: "";
+}
+
+.entry-content::after {
 	clear: both;
 }
 
@@ -1732,6 +1735,7 @@ body.site-description-hidden .site-description {
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: bold;
+	clear: both;
 }
 
 .entry-meta a:link,
@@ -1851,6 +1855,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .comments-area {
 	margin: 0 0 1.25rem;
 	padding: 0;
+	clear: both;
 }
 
 /* Comment Header */

@@ -66,6 +66,9 @@
 .entry-content::after {
 	display: table;
 	content: "";
+}
+
+.entry-content::after {
 	clear: both;
 }
 
