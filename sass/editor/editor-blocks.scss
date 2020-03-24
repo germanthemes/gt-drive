@@ -1,3 +1,16 @@
+/* Nested Group Blocks */
+.wp-block-group {
+	.wp-block-group {
+		max-width: 100%;
+	}
+}
+
+.wp-block[data-align="full"] .wp-block-group {
+	.wp-block[data-align="full"] .wp-block-group {
+		max-width: $contentFullwidth;
+	}
+}
+
 /* GT Section Block */
 .gt-background-section .gt-section-content {
 	&.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
