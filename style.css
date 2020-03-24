@@ -1536,9 +1536,8 @@ body.site-description-hidden .site-description {
 
 	.has-sidebar .site-content .site-main .entry-content > .alignwide,
 	.has-sidebar .site-content .site-main .entry-content > .alignfull {
-		margin-left: -40px;
+		margin-left: 0;
 		margin-right: 0;
-		max-width: 840px;
 	}
 
 	.has-sidebar .site-content .sidebar {
@@ -1591,12 +1590,6 @@ body.site-description-hidden .site-description {
 @media only screen and (min-width: 1280px) {
 	.sidebar .widget {
 		margin-bottom: 4rem;
-	}
-
-	.has-sidebar .site-content .site-main .entry-content > .alignwide,
-	.has-sidebar .site-content .site-main .entry-content > .alignfull {
-		margin-left: -120px;
-		max-width: 920px;
 	}
 
 	.has-sidebar .site-content .sidebar {
@@ -2265,6 +2258,12 @@ figcaption,
 /* Image Block */
 .wp-block-image img {
 	vertical-align: top;
+}
+
+/* Cover Block */
+.wp-block-cover,
+.wp-block-cover-image {
+	width: auto;
 }
 
 /* Separator Block */

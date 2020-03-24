@@ -88,9 +88,8 @@
 
 				.entry-content > .alignwide,
 				.entry-content > .alignfull {
-					margin-left: -40px;
+					margin-left: 0;
 					margin-right: 0;
-					max-width: 840px;
 				}
 			}
 
@@ -166,14 +165,6 @@
 
 	.has-sidebar {
 		.site-content {
-			.site-main {
-				.entry-content > .alignwide,
-				.entry-content > .alignfull {
-					margin-left: -120px;
-					max-width: 920px;
-				}
-			}
-
 			.sidebar {
 				padding-left: 4rem;
 			}
