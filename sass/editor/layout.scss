@@ -19,6 +19,10 @@
 	max-width: calc(#{$wideBlockFullwidth} + 30px);
 }
 
+.gt-fullwidth-page-layout .wp-block[data-align="full"] {
+	max-width: none;
+}
+
 /* Page Title */
 .editor-post-title__block {
 	.editor-post-title__input {
