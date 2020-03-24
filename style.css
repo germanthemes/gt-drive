@@ -2107,7 +2107,10 @@ body.tags-hidden.single-post .type-post .entry-tags {
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
-object {
+object,
+figure,
+img,
+picture {
 	max-width: 100%;
 }
 
