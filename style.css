@@ -1706,6 +1706,10 @@ body.site-description-hidden .site-description {
 	max-width: 100vw;
 }
 
+.post-nav-links {
+	clear: both;
+}
+
 /* Featured Images */
 .post-image {
 	margin-bottom: 1rem;
