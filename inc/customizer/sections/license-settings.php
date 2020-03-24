@@ -47,5 +47,18 @@ function gt_drive_customize_register_license_settings( $wp_customize ) {
 			'priority' => 20,
 		)
 	) );
+
+	// Add GT Blocks Plugin control.
+	if ( ! class_exists( 'GermanThemes_Blocks' ) ) {
+		$wp_customize->add_control( new GT_Drive_Customize_Plugin_Control(
+			$wp_customize, 'gt_blocks_plugin', array(
+				'label'       => esc_html__( 'GT Blocks', 'gt-drive' ),
+				'description' => esc_html__( 'With our flexible and innovative blocks for the new WordPress Editor, you can create complex layouts for your business website in just a few minutes.', 'gt-drive' ),
+				'section'     => 'gt_drive_section_license',
+				'settings'    => array(),
+				'priority'    => 30,
+			)
+		) );
+	}
 }
 add_action( 'customize_register', 'gt_drive_customize_register_license_settings' );

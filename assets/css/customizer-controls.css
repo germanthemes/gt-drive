@@ -98,6 +98,7 @@
 }
 
 /* Plugin Control Styling */
-#customize-control-gt_local_fonts_plugin {
+#customize-control-gt_local_fonts_plugin,
+#customize-control-gt_blocks_plugin {
 	margin-top: 24px;
 }

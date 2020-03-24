@@ -76,6 +76,6 @@ add_action( 'customize_controls_enqueue_scripts', 'gt_drive_customizer_controls_
  * Embed CSS styles Customizer Controls.
  */
 function gt_drive_customizer_controls_css() {
-	wp_enqueue_style( 'gt-drive-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20200320' );
+	wp_enqueue_style( 'gt-drive-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20200321' );
 }
 add_action( 'customize_controls_print_styles', 'gt_drive_customizer_controls_css' );
