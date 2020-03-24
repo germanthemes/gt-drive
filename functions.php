@@ -161,6 +161,17 @@ add_action( 'enqueue_block_editor_assets', 'gt_drive_theme_fonts', 1 );
  */
 function gt_drive_widgets_init() {
 
+	// Register Blog Sidebar widget area.
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'gt-drive' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html_x( 'Appears on blog pages and single posts.', 'widget area description', 'gt-drive' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+
 	// Register Before Header widget area.
 	register_sidebar( array(
 		'name'          => esc_html__( 'Before Header', 'gt-drive' ),
@@ -188,17 +199,6 @@ function gt_drive_widgets_init() {
 		'name'          => esc_html__( 'Before Content', 'gt-drive' ),
 		'id'            => 'before-content',
 		'description'   => esc_html_x( 'Appears above the content area.', 'widget area description', 'gt-drive' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-
-	// Register Blog Sidebar widget area.
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'gt-drive' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html_x( 'Appears on blog pages and single posts.', 'widget area description', 'gt-drive' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-title">',
