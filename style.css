@@ -1696,6 +1696,13 @@ body.site-description-hidden .site-description {
 	font-size: 1rem;
 }
 
+.entry-content::before,
+.entry-content::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
 .entry-content > .alignwide,
 .entry-content > .alignfull {
 	margin-left: calc(-100vw / 2 + 100% / 2);
