@@ -2242,7 +2242,8 @@ figcaption,
 .wp-block-audio,
 .wp-block-embed,
 .wp-block-media-text,
-.wp-block-gallery {
+.wp-block-gallery,
+.wp-block-cover {
 	margin-bottom: 1.5em;
 }
 
@@ -2266,6 +2267,16 @@ figcaption,
 .wp-block-cover,
 .wp-block-cover-image {
 	width: auto;
+}
+
+.wp-block-cover .wp-block-cover__inner-container > *:first-child,
+.wp-block-cover-image .wp-block-cover__inner-container > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-cover .wp-block-cover__inner-container > *:last-child,
+.wp-block-cover-image .wp-block-cover__inner-container > *:last-child {
+	margin-bottom: 0;
 }
 
 /* Gallery Block */
