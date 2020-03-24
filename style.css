@@ -410,7 +410,8 @@ pre {
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	line-height: 1.5;
+	line-height: 1.75;
+	line-height: var(--text-line-height);
 }
 
 code,
@@ -424,6 +425,11 @@ var {
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+pre > code {
+	background: none;
+	padding: 0;
 }
 
 abbr,

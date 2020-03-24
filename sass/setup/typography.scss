@@ -72,7 +72,7 @@ pre {
 	@include background(--light-background-color);
 	@include font-size(15);
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	line-height: 1.5;
+	@include line-height(--text-line-height);
 }
 
 code,
@@ -84,6 +84,11 @@ var {
 	@include background(--light-background-color);
 	@include font-size(15);
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+pre > code {
+	background: none;
+	padding: 0;
 }
 
 abbr,

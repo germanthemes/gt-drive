@@ -194,6 +194,17 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	}
 }
 
+/* Paragraph Block */
+.editor-styles-wrapper p.has-background {
+	padding: 1em 1.5em;
+}
+
+.editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter {
+	font-size: 4em;
+	line-height: 0.7;
+	font-weight: bold;
+}
+
 .editor-styles-wrapper a {
 	color: #e34333;
 	color: var(--link-color);
@@ -258,20 +269,36 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 }
 
 /* Code */
-.editor-styles-wrapper pre {
+.editor-styles-wrapper pre,
+.wp-block-code {
 	overflow: auto;
 	margin-bottom: 1.5em;
 	padding: 1.5em;
 	max-width: 100%;
 	border: 1px solid;
+	border-radius: 0;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--light-border-color);
+	color: #303030;
+	color: var(--text-color);
 	background-color: rgba(0, 0, 0, 0.05);
 	background-color: var(--light-background-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	line-height: 1.5;
+	line-height: 1.75;
+	line-height: var(--text-line-height);
+}
+
+.wp-block-code {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+.wp-block-code .block-editor-plain-text {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
 }
 
 .editor-styles-wrapper code,
@@ -553,17 +580,6 @@ p.has-background {
 
 .gt-background-section .gt-section-content.gt-full-width {
 	max-width: 1200px;
-}
-
-/* Paragraph Block */
-.editor-styles-wrapper p.has-background {
-	padding: 1em 1.5em;
-}
-
-.editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter {
-	font-size: 4em;
-	line-height: 0.7;
-	font-weight: bold;
 }
 
 /* GT Section Block */

@@ -1,14 +1,3 @@
-/* Paragraph Block */
-.editor-styles-wrapper p.has-background {
-	padding: 1em 1.5em;
-}
-
-.editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter {
-	font-size: 4em;
-	line-height: 0.7;
-	font-weight: bold;
-}
-
 /* GT Section Block */
 .gt-background-section .gt-section-content {
 	&.gt-default-width .editor-inner-blocks > .editor-block-list__layout > .editor-block-list__block {
