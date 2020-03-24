@@ -10,7 +10,7 @@
 }
 
 .sticky {
-	background: #eee;
+	@include background(--light-background-color);
 	padding: 2rem;
 }
 

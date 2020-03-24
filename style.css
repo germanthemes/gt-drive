@@ -1633,7 +1633,8 @@ body.site-description-hidden .site-description {
 }
 
 .sticky {
-	background: #eee;
+	background-color: rgba(0, 0, 0, 0.05);
+	background-color: var(--light-background-color);
 	padding: 2rem;
 }
 
