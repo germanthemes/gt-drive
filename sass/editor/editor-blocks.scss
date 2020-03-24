@@ -1,3 +1,14 @@
+/* Paragraph Block */
+.editor-styles-wrapper p.has-background {
+	padding: 1em 1.5em;
+}
+
+.editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter {
+	font-size: 4em;
+	line-height: 0.7;
+	font-weight: bold;
+}
+
 /* Table Block */
 .wp-block-table td,
 .wp-block-table th {

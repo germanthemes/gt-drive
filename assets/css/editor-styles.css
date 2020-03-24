@@ -406,6 +406,17 @@ figcaption,
 	margin-bottom: 1.5em;
 }
 
+/* Paragraph Block */
+p.has-background {
+	padding: 1em 1.5em;
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+	font-size: 4em;
+	line-height: 0.7;
+	font-weight: bold;
+}
+
 /* Button Block */
 .wp-block-button__link:link,
 .wp-block-button__link:visited {
@@ -538,6 +549,17 @@ figcaption,
 
 .gt-background-section .gt-section-content.gt-full-width {
 	max-width: 1200px;
+}
+
+/* Paragraph Block */
+.editor-styles-wrapper p.has-background {
+	padding: 1em 1.5em;
+}
+
+.editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter {
+	font-size: 4em;
+	line-height: 0.7;
+	font-weight: bold;
 }
 
 /* Table Block */
