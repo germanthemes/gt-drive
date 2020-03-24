@@ -372,6 +372,10 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	background-color: var(--light-background-color);
 }
 
+.wp-block-table__cell-content {
+	padding: 0;
+}
+
 /* Captions */
 figcaption,
 .wp-caption,
@@ -560,16 +564,6 @@ p.has-background {
 	font-size: 4em;
 	line-height: 0.7;
 	font-weight: bold;
-}
-
-/* Table Block */
-.wp-block-table td,
-.wp-block-table th {
-	padding: 0;
-}
-
-.wp-block-table__cell-content {
-	padding: 0.4em 0.6em;
 }
 
 /* GT Section Block */

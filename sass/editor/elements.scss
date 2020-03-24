@@ -188,6 +188,10 @@
 	@include background(--light-background-color);
 }
 
+.wp-block-table__cell-content {
+	padding: 0;
+}
+
 /* Captions */
 figcaption,
 .wp-caption,
