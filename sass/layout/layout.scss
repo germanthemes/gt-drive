@@ -7,7 +7,6 @@
 }
 
 .site-header,
-.site-content,
 .site-footer {
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
@@ -15,18 +14,63 @@
 
 .header-main,
 .header-bar-main,
-.site-main,
 .footer-main {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.header-main,
-.header-bar-main,
-.footer-main {
 	max-width: $contentFullwidth;
 }
 
-.site-main {
+.site-content {
+	padding-top: 1.25rem;
+}
+
+.type-post,
+.type-page,
+.type-attachment {
+	margin: 0 0 1.25rem;
+	padding: 0;
+}
+
+/* Alignments */
+.entry-header,
+.entry-content > *,
+.comments-area {
+	margin-left: auto;
+	margin-right: auto;
 	max-width: $contentWidth;
+	width: calc(100% - 2.5rem);
+}
+
+@media only screen and (min-width: 480px) {
+	.entry-header,
+	.entry-content > *,
+	.comments-area {
+		width: calc(100% - 3rem);
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.entry-header,
+	.entry-content > *,
+	.comments-area {
+		width: calc(100% - 3.5rem);
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.entry-header,
+	.entry-content > *,
+	.comments-area {
+		width: calc(100% - 4rem);
+	}
+}
+
+.entry-content > .alignwide {
+	max-width: $wideBlockWidth;
+	width: auto;
+}
+
+.entry-content > .alignfull {
+	max-width: 100%;
+	width: auto;
 }

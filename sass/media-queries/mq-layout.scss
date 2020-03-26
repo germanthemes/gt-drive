@@ -1,6 +1,5 @@
 @media only screen and (min-width: 480px) {
 	.site-header,
-	.site-content,
 	.site-footer {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
@@ -39,7 +38,6 @@
 
 @media only screen and (min-width: 640px) {
 	.site-header,
-	.site-content,
 	.site-footer {
 		padding-left: 1.75rem;
 		padding-right: 1.75rem;
@@ -74,7 +72,6 @@
 
 @media only screen and (min-width: 960px) {
 	.site-header,
-	.site-content,
 	.site-footer {
 		padding-left: 2rem;
 		padding-right: 2rem;
@@ -110,19 +107,6 @@
 	.post-image {
 		margin-bottom: 1.75rem;
 	}
-
-	.entry-content > .alignwide {
-		margin-left: -60px;
-		margin-right: -60px;
-		max-width: $wideBlockWidth;
-	}
-}
-
-@media only screen and (min-width: 1120px) {
-	.entry-content > .alignwide {
-		margin-left: -120px;
-		margin-right: -120px;
-	}
 }
 
 @media only screen and (min-width: 1280px) {
@@ -145,10 +129,5 @@
 
 	.post-image {
 		margin-bottom: 2rem;
-	}
-
-	.entry-content > .alignwide {
-		margin-left: -200px;
-		margin-right: -200px;
 	}
 }
