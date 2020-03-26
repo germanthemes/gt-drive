@@ -8,8 +8,8 @@ body.page-template-template-fullwidth-no-title .site-content .site-main {
 @media only screen and (min-width: 960px) {
 	body.page-template-template-fullwidth .entry-content > .alignwide,
 	body.page-template-template-fullwidth-no-title .entry-content > .alignwide {
-		margin-left: calc(-100vw / 2 + 100% / 2);
-		margin-right: calc(-100vw / 2 + 100% / 2);
+		margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
+		margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
 		max-width: 100vw;
 	}
 }

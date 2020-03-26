@@ -785,6 +785,18 @@ textarea {
 	max-width: 800px;
 }
 
+.site-content {
+	padding-top: 1.25rem;
+}
+
+/* Alignments */
+.entry-content > .alignwide,
+.entry-content > .alignfull {
+	margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
+	margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
+	max-width: 100vw;
+}
+
 /*--------------------------------------------------------------
 # - Header
 --------------------------------------------------------------*/
@@ -1621,10 +1633,6 @@ body.site-description-hidden .site-description {
 /*--------------------------------------------------------------
 # - Posts and pages
 --------------------------------------------------------------*/
-.site-content {
-	padding-top: 1.25rem;
-}
-
 .type-post,
 .type-page,
 .type-attachment {
@@ -1704,13 +1712,6 @@ body.site-description-hidden .site-description {
 
 .entry-content::after {
 	clear: both;
-}
-
-.entry-content > .alignwide,
-.entry-content > .alignfull {
-	margin-left: calc(-100vw / 2 + 100% / 2);
-	margin-right: calc(-100vw / 2 + 100% / 2);
-	max-width: 100vw;
 }
 
 .post-nav-links {
@@ -3404,8 +3405,8 @@ body.page-template-template-fullwidth-no-title .site-content .site-main {
 @media only screen and (min-width: 960px) {
 	body.page-template-template-fullwidth .entry-content > .alignwide,
 	body.page-template-template-fullwidth-no-title .entry-content > .alignwide {
-		margin-left: calc(-100vw / 2 + 100% / 2);
-		margin-right: calc(-100vw / 2 + 100% / 2);
+		margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
+		margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
 		max-width: 100vw;
 	}
 }
