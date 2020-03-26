@@ -40,7 +40,7 @@ function gt_drive_customize_register_blog_settings( $wp_customize ) {
 
 	// Add Partial for Number of Posts setting.
 	$wp_customize->selective_refresh->add_partial( 'gt_drive_blog_partial', array(
-		'selector'         => '.site-content .site-main',
+		'selector'         => '.is-blog-page .site-content .site-main',
 		'settings'         => array( 'posts_per_page' ),
 		'render_callback'  => 'gt_drive_customize_blog_partial',
 		'fallback_refresh' => false,
