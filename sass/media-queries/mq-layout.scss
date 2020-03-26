@@ -111,14 +111,18 @@
 		margin-bottom: 1.75rem;
 	}
 
-	.entry-content > .alignwide {
+	.entry-content > .alignwide,
+	.entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
+	.entry-content > .alignfull > [class*="__inner-container"] > .alignwide {
 		margin-left: -60px;
 		margin-right: -60px;
 	}
 }
 
 @media only screen and (min-width: 1120px) {
-	.entry-content > .alignwide {
+	.entry-content > .alignwide,
+	.entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
+	.entry-content > .alignfull > [class*="__inner-container"] > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
 	}
@@ -146,7 +150,9 @@
 		margin-bottom: 2rem;
 	}
 
-	.entry-content > .alignwide {
+	.entry-content > .alignwide,
+	.entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
+	.entry-content > .alignfull > [class*="__inner-container"] > .alignwide {
 		margin-left: -200px;
 		margin-right: -200px;
 	}
