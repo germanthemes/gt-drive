@@ -26,6 +26,7 @@
 /* Page Title */
 .editor-post-title__block {
 	.editor-post-title__input {
+		@include color(--title-color);
 		@include font-size(28);
 		@include font-family(--title-font);
 		@include font-weight(--title-font-weight);

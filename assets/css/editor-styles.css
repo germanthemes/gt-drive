@@ -15,6 +15,7 @@
 	--light-gray-color: #f0f0f0;
 	--gray-color: #808080;
 	--dark-gray-color: #303030;
+	--body-background-color: #ffffff;
 	--text-color: #303030;
 	--light-text-color: rgba(0, 0, 0, 0.5);
 	--light-background-color: rgba(0, 0, 0, 0.05);
@@ -87,6 +88,8 @@
 
 /* Page Title */
 .editor-post-title__block .editor-post-title__input {
+	color: #303030;
+	color: var(--title-color);
 	font-size: 28px;
 	font-size: 1.75rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
@@ -150,12 +153,15 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 /* Typography */
 .editor-styles-wrapper {
-	background: #fff;
 	color: #303030;
 	color: var(--text-color);
+	background-color: #ffffff;
+	background-color: var(--body-background-color);
 }
 
 .editor-styles-wrapper > * {
+	color: #303030;
+	color: var(--text-color);
 	font-family: "Roboto", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-size: 17px;
