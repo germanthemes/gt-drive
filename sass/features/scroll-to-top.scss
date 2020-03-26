@@ -33,3 +33,7 @@
 .scroll-to-top-button:active .icon {
 	@include fill(--button-text-hover-color);
 }
+
+.scroll-to-top-hidden .scroll-to-top-button {
+	display: none !important;
+}

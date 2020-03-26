@@ -2813,6 +2813,10 @@ p.has-background {
 	fill: var(--button-text-hover-color);
 }
 
+.scroll-to-top-hidden .scroll-to-top-button {
+	display: none !important;
+}
+
 /*--------------------------------------------------------------
 # - Media Queries
 --------------------------------------------------------------*/

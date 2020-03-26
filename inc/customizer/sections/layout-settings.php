@@ -131,7 +131,7 @@ function gt_drive_customize_register_layout_settings( $wp_customize ) {
 	$wp_customize->add_setting( 'gt_drive_theme_options[scroll_to_top]', array(
 		'default'           => $default['scroll_to_top'],
 		'type'              => 'option',
-		'transport'         => 'refresh',
+		'transport'         => 'postMessage',
 		'sanitize_callback' => 'gt_drive_sanitize_checkbox',
 	) );
 

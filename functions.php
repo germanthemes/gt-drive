@@ -126,7 +126,7 @@ function gt_drive_scripts() {
 	endif;
 
 	// Register and enqueue scroll-to-top.js if enabled
-	if ( true === gt_drive_get_option( 'scroll_to_top' ) ) :
+	if ( true === gt_drive_get_option( 'scroll_to_top' ) || is_customize_preview() ) :
 
 		wp_enqueue_script( 'gt-drive-scroll-to-top', get_theme_file_uri( '/assets/js/scroll-to-top.min.js' ), array( 'jquery' ), '20200318', true );
 		wp_localize_script( 'gt-drive-scroll-to-top', 'gtDriveScrollButton', gt_drive_get_svg( 'collapse' ) );

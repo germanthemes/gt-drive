@@ -71,6 +71,11 @@ function gt_drive_body_classes( $classes ) {
 		$classes[] = 'has-sidebar';
 	}
 
+	// Hide Scroll-to-Top Button in Customizer for instant live preview.
+	if ( is_customize_preview() && false === $theme_options['scroll_to_top'] ) {
+		$classes[] = 'scroll-to-top-hidden';
+	}
+
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
 		$classes[] = 'hfeed';

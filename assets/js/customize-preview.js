@@ -83,6 +83,17 @@
 		} );
 	} );
 
+	/* Scroll to Top checkbox */
+	wp.customize( 'gt_drive_theme_options[scroll_to_top]', function( value ) {
+		value.bind( function( newval ) {
+			if ( false === newval ) {
+				$( 'body' ).addClass( 'scroll-to-top-hidden' );
+			} else {
+				$( 'body' ).removeClass( 'scroll-to-top-hidden' );
+			}
+		} );
+	} );
+
 	// Post Date checkbox.
 	wp.customize( 'gt_drive_theme_options[meta_date]', function( value ) {
 		value.bind( function( newval ) {
