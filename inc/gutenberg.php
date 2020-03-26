@@ -96,6 +96,16 @@ function gt_drive_gutenberg_support() {
 			'slug' => 'huge',
 		),
 	) ) );
+
+	// Register Heading Block style.
+	$heading_block_style = array(
+		'name'         => 'gt-heading',
+		'label'        => esc_html__( 'GT Drive', 'gt-drive' ),
+		'style_handle' => 'gt-drive-stylesheet',
+	);
+
+	register_block_style( 'core/heading', $heading_block_style );
+	register_block_style( 'gt-blocks/heading', $heading_block_style );
 }
 add_action( 'after_setup_theme', 'gt_drive_gutenberg_support' );
 
