@@ -790,11 +790,35 @@ textarea {
 }
 
 /* Alignments */
+.entry-content > .alignwide {
+	max-width: 1200px;
+}
+
+.entry-content > .alignfull {
+	max-width: 100vw;
+}
+
 .entry-content > .alignwide,
 .entry-content > .alignfull {
 	margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
 	margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
-	max-width: 100vw;
+}
+
+.entry-content > .alignwide [class*="__inner-container"] > *,
+.entry-content > .alignfull [class*="__inner-container"] > * {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+}
+
+.entry-content > .alignwide [class*="__inner-container"] > *.alignwide,
+.entry-content > .alignfull [class*="__inner-container"] > *.alignwide {
+	max-width: 1200px;
+}
+
+.entry-content > .alignwide [class*="__inner-container"] > *.alignfull,
+.entry-content > .alignfull [class*="__inner-container"] > *.alignfull {
+	max-width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -3038,7 +3062,6 @@ p.has-background {
 	.entry-content > .alignwide {
 		margin-left: -60px;
 		margin-right: -60px;
-		max-width: 1200px;
 	}
 }
 
