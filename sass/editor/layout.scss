@@ -51,19 +51,22 @@
 }
 
 @media only screen and (min-width: 640px) {
-	.editor-post-title__block .editor-post-title__input {
+	.editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .wp-block h1.is-style-gt-heading {
 		@include font-size(34);
 	}
 }
 
 @media only screen and (min-width: 960px) {
-	.editor-post-title__block .editor-post-title__input {
+	.editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .wp-block h1.is-style-gt-heading {
 		@include font-size(40);
 	}
 }
 
 @media only screen and (min-width: 1280px) {
-	.editor-post-title__block .editor-post-title__input {
+	.editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .wp-block h1.is-style-gt-heading {
 		@include font-size(48);
 	}
 }

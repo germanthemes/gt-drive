@@ -119,21 +119,24 @@
 }
 
 @media only screen and (min-width: 640px) {
-	.editor-post-title__block .editor-post-title__input {
+	.editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .wp-block h1.is-style-gt-heading {
 		font-size: 34px;
 		font-size: 2.125rem;
 	}
 }
 
 @media only screen and (min-width: 960px) {
-	.editor-post-title__block .editor-post-title__input {
+	.editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .wp-block h1.is-style-gt-heading {
 		font-size: 40px;
 		font-size: 2.5rem;
 	}
 }
 
 @media only screen and (min-width: 1280px) {
-	.editor-post-title__block .editor-post-title__input {
+	.editor-post-title__block .editor-post-title__input,
+	.editor-styles-wrapper .wp-block h1.is-style-gt-heading {
 		font-size: 48px;
 		font-size: 3rem;
 	}
@@ -613,7 +616,6 @@ p.has-background {
 /* GT Drive Heading Block Style */
 .is-style-gt-heading {
 	position: relative;
-	margin-top: 0;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 	color: #303030;
@@ -636,6 +638,11 @@ p.has-background {
 	content: "";
 	background-color: #e34333;
 	background-color: var(--widget-title-border-color);
+}
+
+h1.is-style-gt-heading {
+	font-size: 28px;
+	font-size: 1.75rem;
 }
 
 @media only screen and (min-width: 480px) {

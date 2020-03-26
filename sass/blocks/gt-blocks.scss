@@ -1,7 +1,6 @@
 /* GT Drive Heading Block Style */
 .is-style-gt-heading {
 	position: relative;
-	margin-top: 0;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 	@include color(--widget-title-color);
@@ -19,6 +18,10 @@
 		content: "";
 		@include background(--widget-title-border-color);
 	}
+}
+
+h1.is-style-gt-heading {
+	@include font-size(28);
 }
 
 @media only screen and (min-width: 480px) {

@@ -2458,7 +2458,6 @@ p.has-background {
 /* GT Drive Heading Block Style */
 .is-style-gt-heading {
 	position: relative;
-	margin-top: 0;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 	color: #303030;
@@ -2481,6 +2480,11 @@ p.has-background {
 	content: "";
 	background-color: #e34333;
 	background-color: var(--widget-title-border-color);
+}
+
+h1.is-style-gt-heading {
+	font-size: 28px;
+	font-size: 1.75rem;
 }
 
 @media only screen and (min-width: 480px) {
@@ -2859,14 +2863,16 @@ p.has-background {
 ## - Media Queries for Typography
 --------------------------------------------------------------*/
 @media only screen and (min-width: 320px) {
-	.entry-title {
+	.entry-title,
+	h1.is-style-gt-heading {
 		font-size: 30px;
 		font-size: 1.875rem;
 	}
 }
 
 @media only screen and (min-width: 640px) {
-	.entry-title {
+	.entry-title,
+	h1.is-style-gt-heading {
 		font-size: 34px;
 		font-size: 2.125rem;
 	}
@@ -2902,7 +2908,8 @@ p.has-background {
 		font-size: 0.875rem;
 	}
 
-	.entry-title {
+	.entry-title,
+	h1.is-style-gt-heading {
 		font-size: 40px;
 		font-size: 2.5rem;
 	}
@@ -2927,7 +2934,8 @@ p.has-background {
 }
 
 @media only screen and (min-width: 1280px) {
-	.entry-title {
+	.entry-title,
+	h1.is-style-gt-heading {
 		font-size: 48px;
 		font-size: 3rem;
 	}

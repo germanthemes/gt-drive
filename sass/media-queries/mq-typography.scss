@@ -1,11 +1,13 @@
 @media only screen and (min-width: 320px) {
-	.entry-title {
+	.entry-title,
+	h1.is-style-gt-heading {
 		@include font-size(30);
 	}
 }
 
 @media only screen and (min-width: 640px) {
-	.entry-title {
+	.entry-title,
+	h1.is-style-gt-heading {
 		@include font-size(34);
 	}
 
@@ -35,7 +37,8 @@
 		@include font-size(14);
 	}
 
-	.entry-title {
+	.entry-title,
+	h1.is-style-gt-heading {
 		@include font-size(40);
 	}
 
@@ -56,7 +59,8 @@
 }
 
 @media only screen and (min-width: 1280px) {
-	.entry-title {
+	.entry-title,
+	h1.is-style-gt-heading {
 		@include font-size(48);
 	}
 
