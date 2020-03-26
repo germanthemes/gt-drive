@@ -1587,6 +1587,7 @@ body.site-description-hidden .site-description {
 
 	.has-sidebar .site-content .site-main {
 		flex-basis: 70%;
+		max-width: 800px;
 	}
 
 	.has-sidebar .site-content .site-main .entry-header,
@@ -1594,9 +1595,6 @@ body.site-description-hidden .site-description {
 	.has-sidebar .site-content .site-main .comments-area,
 	.has-sidebar .site-content .site-main .entry-content > .alignwide,
 	.has-sidebar .site-content .site-main .entry-content > .alignfull {
-		margin-left: 0;
-		margin-right: 0;
-		max-width: 100%;
 		width: auto;
 	}
 

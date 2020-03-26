@@ -85,15 +85,13 @@
 
 			.site-main {
 				flex-basis: 70%;
+				max-width: $contentWidth;
 
 				.entry-header,
 				.entry-content > *,
 				.comments-area,
 				.entry-content > .alignwide,
 				.entry-content > .alignfull {
-					margin-left: 0;
-					margin-right: 0;
-					max-width: 100%;
 					width: auto;
 				}
 			}
