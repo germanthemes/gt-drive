@@ -2,6 +2,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	max-width: $contentWidth;
+	width: calc(100% - 2.5rem);
 
 	.widget {
 		border: 1px solid;
@@ -54,6 +55,8 @@
 
 @media only screen and (min-width: 480px) {
 	.sidebar {
+		width: calc(100% - 3rem);
+
 		.widget {
 			padding: 2rem 2rem 0;
 			margin-bottom: 1.5rem;
@@ -63,6 +66,8 @@
 
 @media only screen and (min-width: 640px) {
 	.sidebar {
+		width: calc(100% - 3.5rem);
+
 		.widget {
 			margin-bottom: 2rem;
 		}
@@ -75,25 +80,27 @@
 			display: flex;
 			margin-left: auto;
 			margin-right: auto;
-			max-width: calc(#{$contentFullwidth} + 4rem);
-
-			.site-main,
-			.sidebar {
-				margin: 0;
-				box-sizing: border-box;
-			}
+			max-width: $contentFullwidth;
+			width: calc(100% - 4rem);
 
 			.site-main {
 				flex-basis: 70%;
 
+				.entry-header,
+				.entry-content > *,
+				.comments-area,
 				.entry-content > .alignwide,
 				.entry-content > .alignfull {
 					margin-left: 0;
 					margin-right: 0;
+					max-width: 100%;
+					width: auto;
 				}
 			}
 
 			.sidebar {
+				margin: 0;
+				width: auto;
 				max-width: 100%;
 				min-width: 300px;
 				padding-left: 2rem;
