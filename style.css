@@ -1497,7 +1497,6 @@ body.site-description-hidden .site-description {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 800px;
-	width: calc(100% - 2.5rem);
 }
 
 .sidebar .widget {
@@ -1556,10 +1555,6 @@ body.site-description-hidden .site-description {
 }
 
 @media only screen and (min-width: 480px) {
-	.sidebar {
-		width: calc(100% - 3rem);
-	}
-
 	.sidebar .widget {
 		padding: 2rem 2rem 0;
 		margin-bottom: 1.5rem;
@@ -1567,10 +1562,6 @@ body.site-description-hidden .site-description {
 }
 
 @media only screen and (min-width: 640px) {
-	.sidebar {
-		width: calc(100% - 3.5rem);
-	}
-
 	.sidebar .widget {
 		margin-bottom: 2rem;
 	}
@@ -1581,28 +1572,26 @@ body.site-description-hidden .site-description {
 		display: flex;
 		margin-left: auto;
 		margin-right: auto;
-		max-width: 1200px;
-		width: calc(100% - 4rem);
+		max-width: calc(1200px + 4rem);
+	}
+
+	.has-sidebar .site-content .site-main,
+	.has-sidebar .site-content .sidebar {
+		margin: 0;
+		box-sizing: border-box;
 	}
 
 	.has-sidebar .site-content .site-main {
 		flex-basis: 70%;
 	}
 
-	.has-sidebar .site-content .site-main .entry-header,
-	.has-sidebar .site-content .site-main .entry-content > *,
-	.has-sidebar .site-content .site-main .comments-area,
 	.has-sidebar .site-content .site-main .entry-content > .alignwide,
 	.has-sidebar .site-content .site-main .entry-content > .alignfull {
 		margin-left: 0;
 		margin-right: 0;
-		max-width: 100%;
-		width: auto;
 	}
 
 	.has-sidebar .site-content .sidebar {
-		margin: 0;
-		width: auto;
 		max-width: 100%;
 		min-width: 300px;
 		padding-left: 2rem;
