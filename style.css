@@ -3189,18 +3189,29 @@ p.has-background {
 		left: -999em;
 		top: 100%;
 		z-index: 99999;
-		padding: 0.5rem 0.75rem;
-		background-color: #c92919;
-		background-color: var(--header-color);
-		border-top: 1px solid;
-		border-color: #fff;
-		border-color: var(--header-text-color);
+		padding: 0;
+		background: none;
+		border-top: 1px solid transparent;
 	}
 
 	.main-navigation ul ul li:hover > ul,
 	.main-navigation ul ul li.focus > ul {
 		right: 100%;
 		left: auto;
+	}
+
+	.main-navigation ul ul li {
+		padding: 0 0.75rem;
+		background-color: #c92919;
+		background-color: var(--header-color);
+	}
+
+	.main-navigation ul ul li:first-child {
+		padding-top: 0.5rem;
+	}
+
+	.main-navigation ul ul li:last-child {
+		padding-bottom: 0.5rem;
 	}
 
 	.main-navigation ul ul a {

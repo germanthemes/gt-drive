@@ -43,16 +43,28 @@
 		left: -999em;
 		top: 100%;
 		z-index: 99999;
-		padding: 0.5rem 0.75rem;
-		@include background(--header-color);
-		border-top: 1px solid;
-		@include border-color(--header-text-color);
+		padding: 0;
+		background: none;
+		border-top: 1px solid transparent;
 	}
 
 	.main-navigation ul ul li:hover > ul,
 	.main-navigation ul ul li.focus > ul {
 		right: 100%;
 		left: auto;
+	}
+
+	.main-navigation ul ul li {
+		padding: 0 0.75rem;
+		@include background(--header-color);
+	}
+
+	.main-navigation ul ul li:first-child {
+		padding-top: 0.5rem;
+	}
+
+	.main-navigation ul ul li:last-child {
+		padding-bottom: 0.5rem;
 	}
 
 	.main-navigation ul ul a {
