@@ -109,7 +109,7 @@ function gt_drive_scripts() {
 
 	// Register and enqueue navigation.js.
 	if ( has_nav_menu( 'primary' ) or has_nav_menu( 'social-header' ) ) {
-		wp_enqueue_script( 'gt-drive-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20200318', true );
+		wp_enqueue_script( 'gt-drive-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20200327', true );
 		$gt_drive_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'gt-drive' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'gt-drive' ),
@@ -121,14 +121,14 @@ function gt_drive_scripts() {
 	// Register and enqueue header-search.js if enabled
 	if ( true === gt_drive_get_option( 'header_search' ) || is_customize_preview() ) :
 
-		wp_enqueue_script( 'gt-drive-header-search', get_theme_file_uri( '/assets/js/header-search.min.js' ), array( 'jquery' ), '20200318', true );
+		wp_enqueue_script( 'gt-drive-header-search', get_theme_file_uri( '/assets/js/header-search.min.js' ), array( 'jquery' ), '20200327', true );
 
 	endif;
 
 	// Register and enqueue scroll-to-top.js if enabled
 	if ( true === gt_drive_get_option( 'scroll_to_top' ) || is_customize_preview() ) :
 
-		wp_enqueue_script( 'gt-drive-scroll-to-top', get_theme_file_uri( '/assets/js/scroll-to-top.min.js' ), array( 'jquery' ), '20200318', true );
+		wp_enqueue_script( 'gt-drive-scroll-to-top', get_theme_file_uri( '/assets/js/scroll-to-top.min.js' ), array( 'jquery' ), '20200327', true );
 		wp_localize_script( 'gt-drive-scroll-to-top', 'gtDriveScrollButton', gt_drive_get_svg( 'collapse' ) );
 
 	endif;
