@@ -1,3 +1,14 @@
+/* Buttons Block */
+.wp-block-buttons {
+	.wp-block-button:last-child {
+		margin-right: 0.75rem;
+	}
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	background: transparent !important;
+}
+
 /* Columns Block */
 @media only screen and (min-width: 782px) {
 	.wp-block-columns > .block-editor-inner-blocks > .block-editor-block-list__layout > [data-type="core/column"]:not(:first-child) {

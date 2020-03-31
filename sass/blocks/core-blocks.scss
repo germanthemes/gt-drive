@@ -1,5 +1,6 @@
 /* Block Spacing */
 .wp-block-audio,
+.wp-block-button,
 .wp-block-buttons,
 .wp-block-columns,
 .wp-block-embed,
@@ -21,15 +22,53 @@ p.has-background {
 	font-weight: bold;
 }
 
+/* Buttons Block */
+.wp-block-buttons {
+	.wp-block-button {
+		margin: 0 0.5rem 0 0;
+	}
+
+	.wp-block-button:last-child {
+		margin-right: 0;
+	}
+}
+
 /* Button Block */
+.wp-block-button {
+	color: inherit;
+}
+
+.wp-block-button__link {
+	margin: 0;
+	padding: 0.75rem 1.25rem;
+	border: none;
+	border-radius: 0;
+	text-decoration: none;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	padding: calc(0.75rem - 2px) calc(1.25rem - 2px);
+}
+
 .wp-block-button__link:link,
 .wp-block-button__link:visited {
 	text-decoration: none;
 }
 
-.wp-block-button__link:hover,
-.wp-block-button__link:active {
-	text-decoration: underline;
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color),
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):link,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):visited {
+	@include color(--button-text-color);
+}
+
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
+	@include background(--button-color);
+}
+
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:active {
+	@include color(--button-text-hover-color);
+	@include background(--button-hover-color);
 }
 
 /* Group Block */
