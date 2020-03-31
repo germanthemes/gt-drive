@@ -7,33 +7,34 @@
 /*--------------------------------------------------------------
 # - Variables
 --------------------------------------------------------------*/
-@import '_mixins';
-@import '_variables';
-@import '_root';
+@import '_mixins.scss';
+@import '_variables.scss';
+@import '_root.scss';
 
 /*--------------------------------------------------------------
 # - Layout
 --------------------------------------------------------------*/
-@import 'editor/layout';
+@import 'editor/layout.scss';
 
 /*--------------------------------------------------------------
 # - Elements
 --------------------------------------------------------------*/
-@import 'editor/elements';
+@import 'editor/elements.scss';
 
 /*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
-@import 'blocks/core-blocks';
-@import 'blocks/gt-blocks';
-@import 'editor/editor-blocks';
+@import 'blocks/core-blocks.scss';
+@import 'media-queries/mq-blocks.scss';
+@import 'blocks/gt-blocks.scss';
+@import 'editor/editor-blocks.scss';
 
 /*--------------------------------------------------------------
 # - Colors
 --------------------------------------------------------------*/
-@import 'blocks/colors';
+@import 'blocks/colors.scss';
 
 /*--------------------------------------------------------------
 # - Font Sizes
 --------------------------------------------------------------*/
-@import 'blocks/font-sizes';
+@import 'blocks/font-sizes.scss';

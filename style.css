@@ -2495,19 +2495,6 @@ h1.is-style-gt-heading {
 	}
 }
 
-/* GT Section Block */
-.gt-background-section .gt-section-content.gt-default-width {
-	max-width: 800px;
-}
-
-.gt-background-section .gt-section-content.gt-wide-width {
-	max-width: 1200px;
-}
-
-.gt-background-section .gt-section-content.gt-full-width {
-	max-width: 1200px;
-}
-
 /* Block Text Colors */
 .has-primary-color {
 	color: #e34333;
