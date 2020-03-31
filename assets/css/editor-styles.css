@@ -182,7 +182,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	font-size: 1rem;
 	line-height: 1.75;
 	line-height: var(--text-line-height);
-	margin-bottom: 1.5em;
+	margin-bottom: 1.75rem;
 }
 
 @media only screen and (min-width: 640px) {
@@ -211,11 +211,11 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 /* Paragraph Block */
 .editor-styles-wrapper p.has-background {
-	padding: 1em 1.5em;
+	padding: 1rem 1.5rem;
 }
 
 .editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter {
-	font-size: 4em;
+	font-size: 4.5rem;
 	line-height: 0.7;
 	font-weight: bold;
 }
@@ -237,7 +237,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 .editor-styles-wrapper .wp-block h5,
 .editor-styles-wrapper .wp-block h6 {
 	clear: both;
-	margin: 1em 0 0.75em;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	line-height: 1.25;
@@ -276,7 +277,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 /* Separator */
 .editor-styles-wrapper hr {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.75rem;
 	height: 1px;
 	border: 0;
 	background-color: rgba(0, 0, 0, 0.1);
@@ -287,8 +288,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 .editor-styles-wrapper pre,
 .wp-block-code {
 	overflow: auto;
-	margin-bottom: 1.5em;
-	padding: 1.5em;
+	margin-bottom: 1.75rem;
+	padding: 1.75rem;
 	max-width: 100%;
 	border: 1px solid;
 	border-radius: 0;
@@ -332,8 +333,8 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 /* Blockquotes */
 .editor-styles-wrapper blockquote {
-	margin: 0 0 1.5em;
-	padding-left: 1.5em;
+	margin: 0 0 1.75rem;
+	padding-left: 1.75rem;
 	border-left: 4px solid;
 	border-color: #303030;
 	border-color: var(--text-color);
@@ -376,15 +377,15 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 /* Lists */
 .editor-styles-wrapper .block-library-list ol,
 .editor-styles-wrapper .block-library-list ul {
-	margin: 0 0 1.5em;
-	padding: 0 0 0 1.25em;
+	margin: 0 0 1.75rem;
+	padding: 0 0 0 1.25rem;
 }
 
 .editor-styles-wrapper .block-library-list li > ul,
 .editor-styles-wrapper .block-library-list li > ol {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-left: 1.5em;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+	margin-left: 1.25rem;
 }
 
 .editor-styles-wrapper .block-library-list ul {
@@ -393,7 +394,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 
 /* Tables */
 .editor-styles-wrapper table {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.75rem;
 	width: 100%;
 	border: none;
 	table-layout: fixed;
@@ -433,7 +434,7 @@ figcaption,
 .wp-block-embed figcaption,
 .wp-block-image figcaption,
 .wp-block-audio figcaption {
-	margin: 0.5em 0 1em;
+	margin: 0.75rem 0 1.25rem;
 	max-width: 100%;
 	width: auto !important;
 	text-align: center;
@@ -453,16 +454,16 @@ figcaption,
 .wp-block-gallery,
 .wp-block-group,
 .wp-block-cover {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.75rem;
 }
 
 /* Paragraph Block */
 p.has-background {
-	padding: 1em 1.5em;
+	padding: 1rem 1.5rem;
 }
 
 .has-drop-cap:not(:focus)::first-letter {
-	font-size: 4em;
+	font-size: 4.5rem;
 	line-height: 0.7;
 	font-weight: bold;
 }
@@ -533,7 +534,7 @@ p.has-background {
 /* Quote Block */
 .wp-block-quote.is-style-large {
 	border: none;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.75rem;
 	padding: 0;
 	font-size: 24px;
 	font-size: 1.5rem;
@@ -555,8 +556,8 @@ p.has-background {
 
 /* Pullquote Block */
 .wp-block-pullquote {
-	margin-bottom: 1.5em;
-	padding: 1.5em 0;
+	margin-bottom: 1.75rem;
+	padding: 1.75rem 0;
 	border-bottom: 1px solid;
 	border-top: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
@@ -588,12 +589,12 @@ p.has-background {
 
 .wp-block-pullquote.is-style-solid-color blockquote {
 	max-width: 100%;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	padding-left: 1.75rem;
+	padding-right: 1.75rem;
 }
 
 .wp-block-pullquote.is-style-solid-color blockquote p {
-	margin-bottom: 0.75em;
+	margin-bottom: 1rem;
 	font-size: inherit;
 }
 

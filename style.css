@@ -342,7 +342,8 @@ h4,
 h5,
 h6 {
 	clear: both;
-	margin: 1em 0 0.75em;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: bold;
@@ -384,7 +385,7 @@ h6 {
 }
 
 p {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.75rem;
 }
 
 dfn,
@@ -395,13 +396,13 @@ i {
 }
 
 address {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.75rem;
 }
 
 pre {
 	overflow: auto;
-	margin-bottom: 1.5em;
-	padding: 1.5em;
+	margin-bottom: 1.75rem;
+	padding: 1.75rem;
 	max-width: 100%;
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
@@ -469,8 +470,8 @@ body {
 }
 
 blockquote {
-	margin: 0 0 1.5em;
-	padding-left: 1.5em;
+	margin: 0 0 1.75rem;
+	padding-left: 1.75rem;
 	border-left: 4px solid;
 	border-color: #303030;
 	border-color: var(--text-color);
@@ -481,7 +482,7 @@ blockquote {
 }
 
 blockquote p {
-	margin-bottom: 0.75em;
+	margin-bottom: 1rem;
 }
 
 blockquote cite {
@@ -497,7 +498,7 @@ blockquote cite::before {
 }
 
 hr {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.75rem;
 	height: 1px;
 	border: 0;
 	background-color: rgba(0, 0, 0, 0.1);
@@ -506,8 +507,8 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em;
-	padding: 0 0 0 1.25em;
+	margin: 0 0 1.75rem;
+	padding: 0 0 0 1.25rem;
 }
 
 ul {
@@ -520,9 +521,9 @@ ol {
 
 li > ul,
 li > ol {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-left: 1.5em;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+	margin-left: 1.25rem;
 }
 
 ul ul,
@@ -535,7 +536,7 @@ dt {
 }
 
 dd {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.5rem;
 }
 
 img {
@@ -545,7 +546,7 @@ img {
 }
 
 table {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.5rem;
 	width: 100%;
 	border: none;
 	table-layout: fixed;
@@ -553,7 +554,7 @@ table {
 
 th,
 td {
-	padding: 0.4em 0.6em;
+	padding: 0.5rem 1rem;
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--light-border-color);
@@ -597,7 +598,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	margin: 0;
-	padding: 0.6em 1.2em;
+	padding: 0.75rem 1.25rem;
 	border: none;
 	color: #fff;
 	color: var(--button-text-color);
@@ -634,7 +635,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	padding: 0.3em 0.6em;
+	padding: 0.4rem 0.8rem;
 	max-width: 100%;
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
@@ -680,7 +681,7 @@ textarea {
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0.6em 1em;
+	padding: 0.4rem 0.8rem;
 	min-width: 150px;
 	width: 100%;
 	-webkit-appearance: none;
@@ -689,7 +690,7 @@ textarea {
 .search-form .search-submit {
 	display: flex;
 	margin-left: 0.5rem;
-	padding: 0.6em 0.8em;
+	padding: 0.4rem 0.8rem;
 	align-items: center;
 }
 
@@ -1958,7 +1959,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 
 .comment-meta .comment-author img {
 	float: left;
-	margin-right: 1em;
+	margin-right: 1rem;
 }
 
 .bypostauthor {
@@ -1974,7 +1975,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 }
 
 .comment-meta .comment-metadata a {
-	margin-right: 1em;
+	margin-right: 1rem;
 }
 
 .comment-meta .comment-metadata a:link,
@@ -2121,7 +2122,7 @@ body.tags-hidden.single-post .type-post .entry-tags {
 }
 
 .comment-reply-title small a {
-	margin-left: 1em;
+	margin-left: 1rem;
 	text-transform: none;
 	font-size: 15px;
 	font-size: 0.9375rem;
@@ -2168,7 +2169,7 @@ figcaption,
 .wp-block-image figcaption,
 .wp-block-audio figcaption,
 .wp-block-gallery > figcaption {
-	margin: 0.75em 0 1em;
+	margin: 0.75rem 0 1.25rem;
 	max-width: 100%;
 	width: auto !important;
 	text-align: center;
@@ -2287,16 +2288,16 @@ figcaption,
 .wp-block-gallery,
 .wp-block-group,
 .wp-block-cover {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.75rem;
 }
 
 /* Paragraph Block */
 p.has-background {
-	padding: 1em 1.5em;
+	padding: 1rem 1.5rem;
 }
 
 .has-drop-cap:not(:focus)::first-letter {
-	font-size: 4em;
+	font-size: 4.5rem;
 	line-height: 0.7;
 	font-weight: bold;
 }
@@ -2367,7 +2368,7 @@ p.has-background {
 /* Quote Block */
 .wp-block-quote.is-style-large {
 	border: none;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.75rem;
 	padding: 0;
 	font-size: 24px;
 	font-size: 1.5rem;
@@ -2389,8 +2390,8 @@ p.has-background {
 
 /* Pullquote Block */
 .wp-block-pullquote {
-	margin-bottom: 1.5em;
-	padding: 1.5em 0;
+	margin-bottom: 1.75rem;
+	padding: 1.75rem 0;
 	border-bottom: 1px solid;
 	border-top: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
@@ -2422,12 +2423,12 @@ p.has-background {
 
 .wp-block-pullquote.is-style-solid-color blockquote {
 	max-width: 100%;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	padding-left: 1.75rem;
+	padding-right: 1.75rem;
 }
 
 .wp-block-pullquote.is-style-solid-color blockquote p {
-	margin-bottom: 0.75em;
+	margin-bottom: 1rem;
 	font-size: inherit;
 }
 
@@ -3216,7 +3217,7 @@ h1.is-style-gt-heading {
 	.main-navigation ul ul .page_item_has_children > a > .icon {
 		position: absolute;
 		left: auto;
-		right: 1em;
+		right: 1rem;
 		top: 50%;
 		margin-top: -0.5rem;
 		-webkit-transform: rotate(-90deg);

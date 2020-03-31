@@ -8,16 +8,16 @@
 .wp-block-gallery,
 .wp-block-group,
 .wp-block-cover {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.75rem;
 }
 
 /* Paragraph Block */
 p.has-background {
-	padding: 1em 1.5em;
+	padding: 1rem 1.5rem;
 }
 
 .has-drop-cap:not(:focus)::first-letter {
-	font-size: 4em;
+	font-size: 4.5rem;
 	line-height: 0.7;
 	font-weight: bold;
 }
@@ -87,7 +87,7 @@ p.has-background {
 /* Quote Block */
 .wp-block-quote.is-style-large {
 	border: none;
-	margin: 0 0 1.5em;
+	margin: 0 0 1.75rem;
 	padding: 0;
 	@include font-size(24);
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -107,8 +107,8 @@ p.has-background {
 
 /* Pullquote Block */
 .wp-block-pullquote {
-	margin-bottom: 1.5em;
-	padding: 1.5em 0;
+	margin-bottom: 1.75rem;
+	padding: 1.75rem 0;
 	border-bottom: 1px solid;
 	border-top: 1px solid;
 	@include border-color(--light-border-color);
@@ -136,12 +136,12 @@ p.has-background {
 
 .wp-block-pullquote.is-style-solid-color blockquote {
 	max-width: 100%;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
+	padding-left: 1.75rem;
+	padding-right: 1.75rem;
 }
 
 .wp-block-pullquote.is-style-solid-color blockquote p {
-	margin-bottom: 0.75em;
+	margin-bottom: 1rem;
 	font-size: inherit;
 }
 
