@@ -2279,7 +2279,10 @@ figcaption,
 
 /* Block Spacing */
 .wp-block-audio,
+.wp-block-buttons,
+.wp-block-columns,
 .wp-block-embed,
+.wp-block-image,
 .wp-block-media-text,
 .wp-block-gallery,
 .wp-block-group,
@@ -3239,21 +3242,36 @@ h1.is-style-gt-heading {
 	}
 }
 
+/* Columns Block */
+@media only screen and (min-width: 782px) {
+	.wp-block-column:not(:first-child) {
+		margin-left: 1.5rem;
+	}
+}
+
 @media only screen and (min-width: 960px) {
 	.wp-block-group.has-background {
 		padding: 2rem;
+	}
+
+	.wp-block-column:not(:first-child) {
+		margin-left: 2rem;
 	}
 }
 
 @media only screen and (min-width: 1120px) {
 	.wp-block-group.has-background {
-		padding: 2.5rem;
+		padding: 3rem;
+	}
+
+	.wp-block-column:not(:first-child) {
+		margin-left: 3rem;
 	}
 }
 
 @media only screen and (min-width: 1280px) {
 	.wp-block-group.has-background {
-		padding: 3rem;
+		padding: 4rem;
 	}
 }
 
