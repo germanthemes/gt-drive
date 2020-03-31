@@ -32,15 +32,15 @@ p.has-background {
 
 /* Group Block */
 .wp-block-group.has-background {
-	padding: 2rem;
-}
+	padding: 1.25rem;
 
-.wp-block-group.has-background > .wp-block-group__inner-container > *:first-child {
-	margin-top: 0;
-}
+	> .wp-block-group__inner-container > *:first-child {
+		margin-top: 0;
+	}
 
-.wp-block-group.has-background > .wp-block-group__inner-container > *:last-child {
-	margin-bottom: 0;
+	> .wp-block-group__inner-container > *:last-child {
+		margin-bottom: 0;
+	}
 }
 
 /* Image Block */
@@ -55,11 +55,11 @@ p.has-background {
 .wp-block-cover-image {
 	width: auto;
 
-	.wp-block-cover__inner-container > *:first-child {
+	> .wp-block-cover__inner-container > *:first-child {
 		margin-top: 0;
 	}
 
-	.wp-block-cover__inner-container > *:last-child {
+	> .wp-block-cover__inner-container > *:last-child {
 		margin-bottom: 0;
 	}
 }

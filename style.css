@@ -2311,7 +2311,7 @@ p.has-background {
 
 /* Group Block */
 .wp-block-group.has-background {
-	padding: 2rem;
+	padding: 1.25rem;
 }
 
 .wp-block-group.has-background > .wp-block-group__inner-container > *:first-child {
@@ -2333,13 +2333,13 @@ p.has-background {
 	width: auto;
 }
 
-.wp-block-cover .wp-block-cover__inner-container > *:first-child,
-.wp-block-cover-image .wp-block-cover__inner-container > *:first-child {
+.wp-block-cover > .wp-block-cover__inner-container > *:first-child,
+.wp-block-cover-image > .wp-block-cover__inner-container > *:first-child {
 	margin-top: 0;
 }
 
-.wp-block-cover .wp-block-cover__inner-container > *:last-child,
-.wp-block-cover-image .wp-block-cover__inner-container > *:last-child {
+.wp-block-cover > .wp-block-cover__inner-container > *:last-child,
+.wp-block-cover-image > .wp-block-cover__inner-container > *:last-child {
 	margin-bottom: 0;
 }
 
@@ -3225,6 +3225,39 @@ h1.is-style-gt-heading {
 }
 
 /*--------------------------------------------------------------
+## - Media Queries for Blocks
+--------------------------------------------------------------*/
+@media only screen and (min-width: 480px) {
+	.wp-block-group.has-background {
+		padding: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 640px) {
+	.wp-block-group.has-background {
+		padding: 1.75rem;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.wp-block-group.has-background {
+		padding: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.wp-block-group.has-background {
+		padding: 2.5rem;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.wp-block-group.has-background {
+		padding: 3rem;
+	}
+}
+
+/*--------------------------------------------------------------
 ## - Media Queries for Media
 --------------------------------------------------------------*/
 @media only screen and (min-width: 320px) {
@@ -3240,7 +3273,6 @@ h1.is-style-gt-heading {
 }
 
 @media only screen and (min-width: 480px) {
-	/* Gallery */
 	.gallery-columns-3,
 	.gallery-columns-5,
 	.gallery-columns-6,
@@ -3256,7 +3288,6 @@ h1.is-style-gt-heading {
 }
 
 @media only screen and (min-width: 720px) {
-	/* Gallery */
 	.gallery-columns-5 {
 		grid-template-columns: repeat(5, 1fr);
 	}
@@ -3271,7 +3302,6 @@ h1.is-style-gt-heading {
 }
 
 @media only screen and (min-width: 800px) {
-	/* Gallery */
 	.gallery-columns-8 {
 		grid-template-columns: repeat(8, 1fr);
 	}
