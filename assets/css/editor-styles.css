@@ -488,21 +488,6 @@ p.has-background {
 	margin-bottom: 0;
 }
 
-/* Nested Group Blocks */
-.wp-block-group .wp-block-group {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 800px;
-}
-
-.wp-block-group .wp-block-group.alignwide {
-	max-width: 1200px;
-}
-
-.wp-block-group .wp-block-group.alignfull {
-	max-width: 100%;
-}
-
 /* Image Block */
 .wp-block-image img {
 	vertical-align: top;
