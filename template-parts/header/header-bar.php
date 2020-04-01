@@ -7,7 +7,14 @@
  */
 ?>
 
-<?php if ( has_nav_menu( 'social-header' ) or is_customize_preview() ) : ?>
+<?php
+if ( has_nav_menu( 'social-header' ) or
+	'' !== gt_drive_get_option( 'header_phone' ) or
+	'' !== gt_drive_get_option( 'header_email' ) or
+	'' !== gt_drive_get_option( 'header_address' ) or
+	is_customize_preview()
+) :
+	?>
 
 	<div id="header-bar" class="header-bar">
 
