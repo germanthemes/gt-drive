@@ -36,7 +36,7 @@ function gt_drive_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set default Post Thumbnail size.
-	set_post_thumbnail_size( 800, 500, true );
+	set_post_thumbnail_size( 1600, 900, true );
 
 	// Add image size for header image on single posts and pages.
 	add_image_size( 'gt-drive-header-image', 9999, 640, true );
