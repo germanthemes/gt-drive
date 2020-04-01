@@ -57,8 +57,10 @@ class GT_Drive_Custom_Colors {
 		$color_variables = '';
 
 		// Set Background Color.
-		if ( get_theme_mod( 'background_color' ) !== 'ffffff' ) {
-			$color_variables .= '--body-background-color: #' . get_theme_mod( 'background_color' ) . ';';
+		$background_color = get_theme_mod( 'background_color' );
+
+		if ( '' !== $background_color && 'ffffff' !== $background_color ) {
+			$color_variables .= '--body-background-color: #' . $background_color . ';';
 
 			// Set Text Color if dark background color was chosen.
 			if ( self::is_color_dark( get_theme_mod( 'background_color' ) ) ) {

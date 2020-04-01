@@ -141,22 +141,28 @@
 	/* Background Color Option */
 	wp.customize( 'background_color', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, light_text_color, light_border_color, medium_border_color;
+			var text_color, light_text_color, light_background_color, medium_background_color, light_border_color, medium_border_color;
 
 			if( isColorDark( newval ) ) {
-				text_color          = '#ffffff';
-				light_text_color    = 'rgba(255, 255, 255, 0.5)';
-				light_border_color  = 'rgba(255, 255, 255, 0.1)';
-				medium_border_color = 'rgba(255, 255, 255, 0.3)';
+				text_color              = '#ffffff';
+				light_text_color        = 'rgba(255, 255, 255, 0.5)';
+				light_background_color  = 'rgba(255, 255, 255, 0.05)';
+				medium_background_color = 'rgba(255, 255, 255, 0.15)';
+				light_border_color      = 'rgba(255, 255, 255, 0.1)';
+				medium_border_color     = 'rgba(255, 255, 255, 0.3)';
 			} else {
-				text_color          = '#303030';
-				light_text_color    = 'rgba(0, 0, 0, 0.5)';
-				light_border_color  = 'rgba(0, 0, 0, 0.1)';
-				medium_border_color = 'rgba(0, 0, 0, 0.3)';
+				text_color              = '#303030';
+				light_text_color        = 'rgba(0, 0, 0, 0.5)';
+				light_background_color  = 'rgba(0, 0, 0, 0.05)';
+				medium_background_color = 'rgba(0, 0, 0, 0.15)';
+				light_border_color      = 'rgba(0, 0, 0, 0.1)';
+				medium_border_color     = 'rgba(0, 0, 0, 0.3)';
 			}
 
 			document.documentElement.style.setProperty( '--text-color', text_color );
 			document.documentElement.style.setProperty( '--light-text-color', light_text_color );
+			document.documentElement.style.setProperty( '--light-background-color', light_background_color );
+			document.documentElement.style.setProperty( '--medium-background-color', medium_background_color );
 			document.documentElement.style.setProperty( '--post-meta-color', light_text_color );
 			document.documentElement.style.setProperty( '--light-border-color', light_border_color );
 			document.documentElement.style.setProperty( '--widget-border-color', light_border_color );
