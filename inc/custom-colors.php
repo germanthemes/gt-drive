@@ -57,7 +57,7 @@ class GT_Drive_Custom_Colors {
 		$color_variables = '';
 
 		// Set Background Color.
-		$background_color = get_theme_mod( 'background_color' );
+		$background_color = get_theme_mod( 'background_color', 'ffffff' );
 
 		if ( '' !== $background_color && 'ffffff' !== $background_color ) {
 			$color_variables .= '--body-background-color: #' . $background_color . ';';
