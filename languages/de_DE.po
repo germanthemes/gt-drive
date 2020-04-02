@@ -1,13 +1,12 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: GT Drive\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
 "POT-Creation-Date: 2020-04-02 14:12+0200\n"
-"PO-Revision-Date: 2016-09-15 21:02+0100\n"
+"PO-Revision-Date: 2020-04-02 14:16+0200\n"
 "Last-Translator: \n"
 "Language-Team: GermanThemes <support@germanthemes.de>\n"
-"Language: en_US\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,170 +16,173 @@ msgstr ""
 "esc_html_x:1,2c\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-Basepath: ..\n"
+"X-Poedit-Basepath: .\n"
 "X-Textdomain-Support: yes\n"
-"X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:17
 msgid "404: Page not found"
-msgstr ""
+msgstr "404: Seite nicht gefunden"
 
 #: 404.php:22
 msgid ""
 "It looks like nothing was found at this location. Maybe try a search or one "
 "of the links below?"
 msgstr ""
+"Unter dieser Adresse wurde nichts gefunden. Möglicherweise hilft eine Suche "
+"oder einer der Links unterhalb?"
 
 #: comments.php:33
 msgid "One comment"
-msgstr ""
+msgstr "Ein Kommentar"
 
 #: comments.php:36
 #, php-format
 msgid "%s comments"
-msgstr ""
+msgstr "%s Kommentare"
 
 #: comments.php:58
 msgid "Comments are closed."
-msgstr ""
+msgstr "Kommentare sind geschlossen."
 
 #: functions.php:46
 msgid "Main Navigation"
-msgstr ""
+msgstr "Hauptnavigation"
 
 #: functions.php:47
 msgid "Footer Navigation"
-msgstr ""
+msgstr "Footer Navigation"
 
 #: functions.php:48
 msgid "Social Icons (Header)"
-msgstr ""
+msgstr "Social Icons (Header)"
 
 #: functions.php:49
 msgid "Social Icons (Footer)"
-msgstr ""
+msgstr "Social Icons (Footer)"
 
 #: functions.php:114
 msgid "Expand child menu"
-msgstr ""
+msgstr "Untermenü öffnen"
 
 #: functions.php:115
 msgid "Collapse child menu"
-msgstr ""
+msgstr "Untermenü schließen"
 
 #: functions.php:166
 msgid "Sidebar"
-msgstr ""
+msgstr "Sidebar"
 
 #: functions.php:168
 msgctxt "widget area description"
 msgid "Appears on blog pages and single posts."
-msgstr ""
+msgstr "Erscheint auf Blog-Seiten und einzelnen Beiträgen."
 
 #: functions.php:177
 msgid "Before Header"
-msgstr ""
+msgstr "Vor dem Header"
 
 #: functions.php:179
 msgctxt "widget area description"
 msgid "Appears above the header area."
-msgstr ""
+msgstr "Erscheint über dem Header-Bereich."
 
 #: functions.php:188
 msgid "After Header"
-msgstr ""
+msgstr "Nach dem Header"
 
 #: functions.php:190
 msgctxt "widget area description"
 msgid "Appears below the header area."
-msgstr ""
+msgstr "Erscheint unter dem Header-Bereich."
 
 #: functions.php:199
 msgid "Before Content"
-msgstr ""
+msgstr "Vor dem Inhalt"
 
 #: functions.php:201
 msgctxt "widget area description"
 msgid "Appears above the content area."
-msgstr ""
+msgstr "Erscheint über dem Content-Bereich."
 
 #: functions.php:210
 msgid "After Single Posts"
-msgstr ""
+msgstr "Nach einzelnen Beiträgen"
 
 #: functions.php:212
 msgctxt "widget area description"
 msgid "Appears below single posts."
-msgstr ""
+msgstr "Erscheint unter einzelnen Beiträgen."
 
 #: functions.php:221
 msgid "After Pages"
-msgstr ""
+msgstr "Nach Seiten"
 
 #: functions.php:223
 msgctxt "widget area description"
 msgid "Appears below static pages."
-msgstr ""
+msgstr "Erscheint unter statischen Seiten."
 
 #: functions.php:232
 msgid "Before Footer"
-msgstr ""
+msgstr "Vor dem Footer"
 
 #: functions.php:234
 msgctxt "widget area description"
 msgid "Appears above the footer area."
-msgstr ""
+msgstr "Erscheint über dem Footer-Bereich."
 
 #: functions.php:243
 msgid "Footer Column 1"
-msgstr ""
+msgstr "Footer Spalte 1"
 
 #: functions.php:245
 msgctxt "widget area description"
 msgid "Appears in the first column in footer."
-msgstr ""
+msgstr "Erscheint in der ersten Spalte im Footer."
 
 #: functions.php:254
 msgid "Footer Column 2"
-msgstr ""
+msgstr "Footer Spalte 2"
 
 #: functions.php:256
 msgctxt "widget area description"
 msgid "Appears in the second column in footer."
-msgstr ""
+msgstr "Erscheint in der zweiten Spalte im Footer."
 
 #: functions.php:265
 msgid "Footer Column 3"
-msgstr ""
+msgstr "Footer Spalte 3"
 
 #: functions.php:267
 msgctxt "widget area description"
 msgid "Appears in the third column in footer."
-msgstr ""
+msgstr "Erscheint in der dritten Spalte im Footer."
 
 #: functions.php:276
 msgid "Footer Column 4"
-msgstr ""
+msgstr "Footer Spalte 4"
 
 #: functions.php:278
 msgctxt "widget area description"
 msgid "Appears in the fourth column in footer."
-msgstr ""
+msgstr "Erscheint in der vierten Spalte im Footer."
 
 #: functions.php:287
 msgid "Footer Copyright"
-msgstr ""
+msgstr "Footer Copyright"
 
 #: functions.php:289
 msgctxt "widget area description"
 msgid "Appears in the bottom footer line."
-msgstr ""
+msgstr "Erscheint in der unteren Zeile im Footer."
 
 #: functions.php:319
 msgid ""
 "Updating this theme will lose any customizations you have made. 'Cancel' to "
 "stop, 'OK' to update."
 msgstr ""
+"Bei der Aktualisierung dieses Themes gehen alle Modifikationen verloren. "
+"Klicke \"Abbrechen\" um zu stoppen, \"OK\" um zu aktualisieren."
 
 #: functions.php:320
 #, php-format
@@ -189,10 +191,13 @@ msgid ""
 "title=\"%4$s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</"
 "a>."
 msgstr ""
+"<strong>%1$s %2$s</strong> ist verfügbar. <a href=\"%3$s\" class=\"thickbox"
+"\" title=\"%4$s\">Finde heraus, was es Neues gibt</a> oder <a href=\"%5$s"
+"\"%6$s>aktualisiere jetzt</a>."
 
 #: header.php:26
 msgid "Skip to content"
-msgstr ""
+msgstr "Zum Inhalt springen"
 
 #: inc/admin/back-compat.php:42 inc/admin/back-compat.php:52
 #: inc/admin/back-compat.php:65
@@ -201,511 +206,551 @@ msgid ""
 "%1$s requires at least WordPress version %2$s. You are running version %3$s. "
 "Please upgrade and try again."
 msgstr ""
+"%1$s benötigt mindestens WordPress Version %2$s. Du verwendest Version %3$s. "
+"Bitte aktualisiere und versuche es erneut."
 
 #: inc/customizer/controls/font-control.php:51
 msgid "Previous Font"
-msgstr ""
+msgstr "Vorherige Schriftart"
 
 #: inc/customizer/controls/font-control.php:52
 msgid "Next Font"
-msgstr ""
+msgstr "Nächste Schriftart"
 
 #: inc/customizer/controls/font-control.php:53
 msgctxt "default font button"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: inc/customizer/controls/license-control.php:51
 msgid "Activate License"
-msgstr ""
+msgstr "Lizenz aktivieren"
 
 #: inc/customizer/controls/license-control.php:52
 msgid "Deactivate License"
-msgstr ""
+msgstr "Lizenz deaktivieren"
 
 #: inc/customizer/controls/license-control.php:53
 msgid "Loading..."
-msgstr ""
+msgstr "Wird geladen..."
 
 #: inc/customizer/controls/license-control.php:54
 msgid "Active"
-msgstr ""
+msgstr "Aktiv"
 
 #: inc/customizer/controls/license-control.php:55
 msgid "Invalid"
-msgstr ""
+msgstr "Ungültig"
 
 #: inc/customizer/controls/license-control.php:56
 msgid "Expired"
-msgstr ""
+msgstr "Abgelaufen"
 
 #: inc/customizer/controls/license-control.php:57
 msgid "Inactive"
-msgstr ""
+msgstr "Inaktiv"
 
 #: inc/customizer/controls/license-control.php:58
 msgid "You are receiving updates."
-msgstr ""
+msgstr "Du erhältst Updates."
 
 #: inc/customizer/controls/license-control.php:59
 msgid ""
 "Please make sure you have not reached site limits and/or expiration date."
 msgstr ""
+"Bitte stelle sicher, dass du nicht das Seiten-Limit und/oder Ablaufdatum "
+"erreicht hast."
 
 #: inc/customizer/controls/license-control.php:60
 msgid ""
 "Your license has expired, renew today to continue getting updates and "
 "support!"
 msgstr ""
+"Deine Lizenz ist abgelaufen. Bitte erneuere sie, um weiterhin Updates und "
+"Support zu erhalten!"
 
 #: inc/customizer/controls/license-control.php:81
 msgid "License Status"
-msgstr ""
+msgstr "Lizenz-Status"
 
 #: inc/customizer/controls/links-control.php:25
 msgid "Theme Links"
-msgstr ""
+msgstr "Theme Links"
 
 #: inc/customizer/controls/links-control.php:28
 msgid "https://germanthemes.de/en/themes/gt-drive/"
-msgstr ""
+msgstr "https://germanthemes.de/themes/gt-drive/"
 
 #: inc/customizer/controls/links-control.php:29
 msgid "Theme Page"
-msgstr ""
+msgstr "Theme Seite"
 
 #: inc/customizer/controls/links-control.php:35
 msgid "Theme Demo"
-msgstr ""
+msgstr "Theme Demo"
 
 #: inc/customizer/controls/links-control.php:40
 msgid "https://germanthemes.de/en/docs/gt-drive-documentation/"
-msgstr ""
+msgstr "https://germanthemes.de/doku/gt-drive-dokumentation/"
 
 #: inc/customizer/controls/links-control.php:41
 msgid "Theme Documentation"
-msgstr ""
+msgstr "Theme Dokumentation"
 
 #: inc/customizer/controls/plugin-control.php:33
 msgid "Install Plugin"
-msgstr ""
+msgstr "Plugin installieren"
 
 #: inc/customizer/customizer.php:39
 msgid "Theme Options"
-msgstr ""
+msgstr "Theme Optionen"
 
 #: inc/customizer/customizer.php:44
 msgid "Background"
-msgstr ""
+msgstr "Hintergrund"
 
 #: inc/customizer/sections/block-color-settings.php:17
 msgid "Block Colors"
-msgstr ""
+msgstr "Block Farben"
 
 #: inc/customizer/sections/block-color-settings.php:34
 msgctxt "Color Option"
 msgid "Primary"
-msgstr ""
+msgstr "Primär"
 
 #: inc/customizer/sections/block-color-settings.php:50
 msgctxt "Color Option"
 msgid "Secondary"
-msgstr ""
+msgstr "Sekundär"
 
 #: inc/customizer/sections/block-color-settings.php:66
 msgctxt "Color Option"
 msgid "Accent"
-msgstr ""
+msgstr "Akzent"
 
 #: inc/customizer/sections/block-color-settings.php:82
 msgctxt "Color Option"
 msgid "Highlight"
-msgstr ""
+msgstr "Highlight"
 
 #: inc/customizer/sections/block-color-settings.php:98
 msgctxt "Color Option"
 msgid "Light Gray"
-msgstr ""
+msgstr "Hellgrau"
 
 #: inc/customizer/sections/block-color-settings.php:114
 msgctxt "Color Option"
 msgid "Gray"
-msgstr ""
+msgstr "Grau"
 
 #: inc/customizer/sections/block-color-settings.php:130
 msgctxt "Color Option"
 msgid "Dark Gray"
-msgstr ""
+msgstr "Dunkelgrau"
 
 #: inc/customizer/sections/blog-settings.php:17
 msgid "Blog Settings"
-msgstr ""
+msgstr "Blog-Einstellungen"
 
 #: inc/customizer/sections/blog-settings.php:34
 msgid "Number of Posts"
-msgstr ""
+msgstr "Anzahl der Beiträge"
 
 #: inc/customizer/sections/blog-settings.php:52
 msgid "Post Details"
-msgstr ""
+msgstr "Beitrag-Details"
 
 #: inc/customizer/sections/blog-settings.php:68
 msgid "Display date"
-msgstr ""
+msgstr "Datum anzeigen"
 
 #: inc/customizer/sections/blog-settings.php:84
 msgid "Display author"
-msgstr ""
+msgstr "Autor anzeigen"
 
 #: inc/customizer/sections/blog-settings.php:100
 msgid "Display categories"
-msgstr ""
+msgstr "Kategorien anzeigen"
 
 #: inc/customizer/sections/blog-settings.php:110
 msgid "Single Post"
-msgstr ""
+msgstr "Einzelner Beitrag"
 
 #: inc/customizer/sections/blog-settings.php:126
 msgid "Display tags"
-msgstr ""
+msgstr "Schlagwörter anzeigen"
 
 #: inc/customizer/sections/layout-settings.php:17
 msgid "Layout Settings"
-msgstr ""
+msgstr "Layout-Einstellungen"
 
 #: inc/customizer/sections/layout-settings.php:34
 msgid "Phone Number"
-msgstr ""
+msgstr "Telefonnummer"
 
 #: inc/customizer/sections/layout-settings.php:57
 msgid "Email Address"
-msgstr ""
+msgstr "E-Mail-Adresse"
 
 #: inc/customizer/sections/layout-settings.php:80
 msgid "Location"
-msgstr ""
+msgstr "Standort"
 
 #: inc/customizer/sections/layout-settings.php:97
 msgid "Header Search"
-msgstr ""
+msgstr "Header Suche"
 
 #: inc/customizer/sections/layout-settings.php:113
 msgid "Enable search function in header"
-msgstr ""
+msgstr "Suchfunktion im Header aktivieren"
 
 #: inc/customizer/sections/layout-settings.php:123
 msgid "Scroll-to-Top Button"
-msgstr ""
+msgstr "Scroll-to-Top Button"
 
 #: inc/customizer/sections/layout-settings.php:139
 msgid "Enable Scroll-to-Top Button"
-msgstr ""
+msgstr "Scroll-to-Top Button aktivieren"
 
 #: inc/customizer/sections/license-settings.php:19
 msgid "License"
-msgstr ""
+msgstr "Lizenz"
 
 #: inc/customizer/sections/license-settings.php:20
 msgid ""
 "Please enter your license key. An active license key is necessary for "
 "automatic theme updates and support."
 msgstr ""
+"Bitte trage deinen Lizenzschlüssel ein. Eine aktive Lizenz ist notwendig, um "
+"automatische Updates und Support zu erhalten."
 
 #: inc/customizer/sections/license-settings.php:44
 msgid "License Key"
-msgstr ""
+msgstr "Lizenzschlüssel"
 
 #: inc/customizer/sections/license-settings.php:55
 msgid "GT Blocks"
-msgstr ""
+msgstr "GT Blocks"
 
 #: inc/customizer/sections/license-settings.php:56
 msgid ""
 "With our flexible and innovative blocks for the new WordPress Editor, you "
 "can create complex layouts for your business website in just a few minutes."
 msgstr ""
+"Mit unseren flexiblen und innovativen Blocks für den neuen WordPress Editor "
+"kannst du in wenigen Minuten komplexe Layouts für deine Business-Website "
+"erstellen."
 
 #: inc/customizer/sections/theme-color-settings.php:17
 msgid "Theme Colors"
-msgstr ""
+msgstr "Theme Farben"
 
 #: inc/customizer/sections/theme-color-settings.php:34
 msgctxt "Color Option"
 msgid "Header Bar"
-msgstr ""
+msgstr "Header Bar"
 
 #: inc/customizer/sections/theme-color-settings.php:50
 msgctxt "Color Option"
 msgid "Header Bar Icons"
-msgstr ""
+msgstr "Header Bar Icons"
 
 #: inc/customizer/sections/theme-color-settings.php:66
 msgctxt "Color Option"
 msgid "Header"
-msgstr ""
+msgstr "Header"
 
 #: inc/customizer/sections/theme-color-settings.php:82
 msgctxt "Color Option"
 msgid "Titles"
-msgstr ""
+msgstr "Titel"
 
 #: inc/customizer/sections/theme-color-settings.php:98
 msgctxt "Color Option"
 msgid "Title Hover"
-msgstr ""
+msgstr "Titel-Hover"
 
 #: inc/customizer/sections/theme-color-settings.php:114
 msgctxt "Color Option"
 msgid "Title Border"
-msgstr ""
+msgstr "Titel-Rahmen"
 
 #: inc/customizer/sections/theme-color-settings.php:130
 msgctxt "Color Option"
 msgid "Links"
-msgstr ""
+msgstr "Links"
 
 #: inc/customizer/sections/theme-color-settings.php:146
 msgctxt "Color Option"
 msgid "Link Hover"
-msgstr ""
+msgstr "Link-Hover"
 
 #: inc/customizer/sections/theme-color-settings.php:162
 msgctxt "Color Option"
 msgid "Buttons"
-msgstr ""
+msgstr "Buttons"
 
 #: inc/customizer/sections/theme-color-settings.php:178
 msgctxt "Color Option"
 msgid "Button Hover"
-msgstr ""
+msgstr "Button-Hover"
 
 #: inc/customizer/sections/theme-color-settings.php:194
 msgctxt "Color Option"
 msgid "Footer"
-msgstr ""
+msgstr "Footer"
 
 #: inc/customizer/sections/typography-settings.php:19
 msgid "Typography"
-msgstr ""
+msgstr "Typografie"
 
 #: inc/customizer/sections/typography-settings.php:37
 msgid "Body Font"
-msgstr ""
+msgstr "Basis Schriftart"
 
 #: inc/customizer/sections/typography-settings.php:54
 msgctxt "Font Setting"
 msgid "Headings"
-msgstr ""
+msgstr "Überschriften"
 
 #: inc/customizer/sections/typography-settings.php:70
 #: inc/customizer/sections/typography-settings.php:119
 msgctxt "Font Setting"
 msgid "Bold"
-msgstr ""
+msgstr "Fett"
 
 #: inc/customizer/sections/typography-settings.php:86
 #: inc/customizer/sections/typography-settings.php:135
 msgctxt "Font Setting"
 msgid "Uppercase"
-msgstr ""
+msgstr "Großbuchstaben"
 
 #: inc/customizer/sections/typography-settings.php:103
 msgctxt "Font Setting"
 msgid "Navigation"
-msgstr ""
+msgstr "Navigation"
 
 #: inc/customizer/sections/typography-settings.php:146
 msgid "More Fonts"
-msgstr ""
+msgstr "Weitere Schriftarten"
 
 #: inc/customizer/sections/typography-settings.php:147
 msgid ""
 "You can install the GT Local Fonts plugin to extend the typography options "
 "with additional local GDPR-compatible fonts."
 msgstr ""
+"Du kannst das GT Local Fonts Plugin installieren, um die Typografie-Optionen "
+"mit zusätzlichen, lokalen und DSGVO-kompatiblen Schriftarten zu erweitern."
 
 #: inc/customizer/sections/website-settings.php:34
 msgid "Retina Logo"
-msgstr ""
+msgstr "Retina Logo"
 
 #: inc/customizer/sections/website-settings.php:50
 msgid "Scale down logo image for retina displays"
-msgstr ""
+msgstr "Logo-Bild für Retina-Displays verkleinern"
 
 #: inc/customizer/sections/website-settings.php:66
 msgid "Display Site Title"
-msgstr ""
+msgstr "Titel der Website anzeigen"
 
 #: inc/customizer/sections/website-settings.php:82
 msgid "Display Tagline"
-msgstr ""
+msgstr "Untertitel anzeigen"
 
 #: inc/gutenberg.php:25
 msgctxt "block color"
 msgid "Primary"
-msgstr ""
+msgstr "Primär"
 
 #: inc/gutenberg.php:30
 msgctxt "block color"
 msgid "Secondary"
-msgstr ""
+msgstr "Sekundär"
 
 #: inc/gutenberg.php:35
 msgctxt "block color"
 msgid "Accent"
-msgstr ""
+msgstr "Akzent"
 
 #: inc/gutenberg.php:40
 msgctxt "block color"
 msgid "Highlight"
-msgstr ""
+msgstr "Highlight"
 
 #: inc/gutenberg.php:45
 msgctxt "block color"
 msgid "White"
-msgstr ""
+msgstr "Weiß"
 
 #: inc/gutenberg.php:50
 msgctxt "block color"
 msgid "Light Gray"
-msgstr ""
+msgstr "Hellgrau"
 
 #: inc/gutenberg.php:55
 msgctxt "block color"
 msgid "Gray"
-msgstr ""
+msgstr "Grau"
 
 #: inc/gutenberg.php:60
 msgctxt "block color"
 msgid "Dark Gray"
-msgstr ""
+msgstr "Dunkelgrau"
 
 #: inc/gutenberg.php:65
 msgctxt "block color"
 msgid "Black"
-msgstr ""
+msgstr "Schwarz"
 
 #: inc/gutenberg.php:74
 msgctxt "block font size"
 msgid "Small"
-msgstr ""
+msgstr "Klein"
 
 #: inc/gutenberg.php:79
 msgctxt "block font size"
 msgid "Medium"
-msgstr ""
+msgstr "Mittel"
 
 #: inc/gutenberg.php:84
 msgctxt "block font size"
 msgid "Large"
-msgstr ""
+msgstr "Groß"
 
 #: inc/gutenberg.php:89
 msgctxt "block font size"
 msgid "Extra Large"
-msgstr ""
+msgstr "Sehr groß"
 
 #: inc/gutenberg.php:94
 msgctxt "block font size"
 msgid "Huge"
-msgstr ""
+msgstr "Riesig"
 
 #: inc/gutenberg.php:103
 msgid "GT Drive"
-msgstr ""
+msgstr "GT Drive"
 
 #: inc/template-tags.php:98
 msgid "Search"
-msgstr ""
+msgstr "Suchen"
 
 #: inc/template-tags.php:187
 #, php-format
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Suchergebnisse für: %s"
 
 #: inc/template-tags.php:266
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr ""
+msgstr "Veröffentlicht am %s"
 
 #: inc/template-tags.php:284
 #, php-format
 msgid "View all posts by %s"
-msgstr ""
+msgstr "Alle Artikel von %s ansehen"
 
 #: inc/template-tags.php:290
 #, php-format
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "von %s"
 
 #: inc/template-tags.php:312
 #, php-format
 msgctxt "post category"
 msgid "in %s"
-msgstr ""
+msgstr "in %s"
 
 #: inc/template-tags.php:327
 msgid "Tags: "
-msgstr ""
+msgstr "Schlagwörter: "
 
 #: inc/template-tags.php:345
 msgctxt "pagination"
 msgid "Previous Posts"
-msgstr ""
+msgstr "Vorherige Beiträge"
 
 #: inc/template-tags.php:346
 msgctxt "pagination"
 msgid "Next Posts"
-msgstr ""
+msgstr "Nächste Beiträge"
 
 #: searchform.php:13 searchform.php:17
 msgctxt "label"
 msgid "Search for:"
-msgstr ""
+msgstr "Suche nach:"
 
 #: searchform.php:15
 msgctxt "placeholder"
 msgid "Search &hellip;"
-msgstr ""
+msgstr "Suchen &hellip;"
 
 #: searchform.php:21
 msgctxt "submit button"
 msgid "Search"
-msgstr ""
+msgstr "Suchen"
 
 #: template-parts/footer/footer-menus.php:19
 #: template-parts/header/site-navigation.php:24
 msgid "Primary Menu"
-msgstr ""
+msgstr "Hauptmenü"
 
 #: template-parts/header/site-navigation.php:17
 msgid "Menu"
-msgstr ""
+msgstr "Menü"
 
 #: template-parts/page/content-none.php:14
 msgid "Nothing Found"
-msgstr ""
+msgstr "Nichts gefunden"
 
 #: template-parts/page/content-none.php:23
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
+"Bereit, deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Starte "
+"hier</a>."
 
 #: template-parts/page/content-none.php:27
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
+"Es gibt keine passenden Suchergebnisse. Bitte versuche es mit anderen "
+"Suchbegriffen."
 
 #: template-parts/page/content-none.php:32
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Es sieht so aus, als ob wir nicht das finden konnten, wonach du gesucht "
+"hast. Möglicherweise hilft eine Suche."
 
 #: template-parts/post/content.php:24
 msgid "Continue reading"
-msgstr ""
+msgstr "Weiterlesen"
+
+#~ msgid "Theme Settings"
+#~ msgstr "Theme Einstellungen"
+
+#~ msgid "Page Options"
+#~ msgstr "Seiten-Optionen"
+
+#~ msgid "Page Layout"
+#~ msgstr "Seiten-Layout"
+
+#~ msgid "Default"
+#~ msgstr "Standard"
+
+#~ msgid "Full-width"
+#~ msgstr "Volle Breite"
+
+#~ msgid "Hide title?"
+#~ msgstr "﻿Titel ausblenden?"
+
+#~ msgid "Remove bottom margin?"
+#~ msgstr "Abstand nach unten entfernen?"
