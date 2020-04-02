@@ -6,7 +6,7 @@
 	.widget {
 		border: 1px solid;
 		@include border-color(--widget-border-color);
-		padding: 1.5rem 1.5rem 0;
+		padding: 1.5rem;
 		margin-bottom: 1.25rem;
 	}
 
@@ -50,12 +50,19 @@
 	.widget .menu-navigation-container > ul a:active {
 		text-decoration: underline;
 	}
+
+	.widget .textwidget > *:last-child,
+	.widget .menu-navigation-container > ul,
+	.widget > ul:last-child,
+	.widget > ol:last-child {
+		margin-bottom: 0;
+	}
 }
 
 @media only screen and (min-width: 480px) {
 	.sidebar {
 		.widget {
-			padding: 2rem 2rem 0;
+			padding: 2rem;
 			margin-bottom: 1.5rem;
 		}
 	}

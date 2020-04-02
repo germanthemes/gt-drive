@@ -1496,7 +1496,7 @@ body.site-description-hidden .site-description {
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
 	border-color: var(--widget-border-color);
-	padding: 1.5rem 1.5rem 0;
+	padding: 1.5rem;
 	margin-bottom: 1.25rem;
 }
 
@@ -1547,9 +1547,16 @@ body.site-description-hidden .site-description {
 	text-decoration: underline;
 }
 
+.sidebar .widget .textwidget > *:last-child,
+.sidebar .widget .menu-navigation-container > ul,
+.sidebar .widget > ul:last-child,
+.sidebar .widget > ol:last-child {
+	margin-bottom: 0;
+}
+
 @media only screen and (min-width: 480px) {
 	.sidebar .widget {
-		padding: 2rem 2rem 0;
+		padding: 2rem;
 		margin-bottom: 1.5rem;
 	}
 }
