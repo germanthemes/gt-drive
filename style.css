@@ -3506,28 +3506,31 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 	max-width: 1440px;
 }
 
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"],
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"],
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"],
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] {
+body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *,
+body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *,
+body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *,
+body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > * {
 	max-width: 1200px;
 }
 
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
-body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > .alignwide,
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
-body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > .alignwide {
+body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignwide,
+body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignwide,
+body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignwide,
+body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignwide {
 	max-width: 1440px;
+}
+
+body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignfull,
+body.page-template-template-fullwidth .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignfull,
+body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignwide > [class*="__inner-container"] > *.alignfull,
+body.page-template-template-fullwidth-no-title .site-content .site-main .entry-content > .alignfull > [class*="__inner-container"] > *.alignfull {
+	max-width: 100%;
 }
 
 /* Adjust Wide Blocks */
 @media only screen and (min-width: 960px) {
 	body.page-template-template-fullwidth .entry-content > .alignwide,
-	body.page-template-template-fullwidth .entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
-	body.page-template-template-fullwidth .entry-content > .alignfull > [class*="__inner-container"] > .alignwide,
-	body.page-template-template-fullwidth-no-title .entry-content > .alignwide,
-	body.page-template-template-fullwidth-no-title .entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
-	body.page-template-template-fullwidth-no-title .entry-content > .alignfull > [class*="__inner-container"] > .alignwide {
+	body.page-template-template-fullwidth-no-title .entry-content > .alignwide {
 		margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
 		margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
 	}
@@ -3535,11 +3538,7 @@ body.page-template-template-fullwidth-no-title .site-content .site-main .entry-c
 
 @media only screen and (min-width: 1440px) {
 	body.page-template-template-fullwidth .entry-content > .alignwide,
-	body.page-template-template-fullwidth .entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
-	body.page-template-template-fullwidth .entry-content > .alignfull > [class*="__inner-container"] > .alignwide,
-	body.page-template-template-fullwidth-no-title .entry-content > .alignwide,
-	body.page-template-template-fullwidth-no-title .entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
-	body.page-template-template-fullwidth-no-title .entry-content > .alignfull > [class*="__inner-container"] > .alignwide {
+	body.page-template-template-fullwidth-no-title .entry-content > .alignwide {
 		margin-left: -120px;
 		margin-right: -120px;
 	}

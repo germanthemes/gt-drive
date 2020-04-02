@@ -11,11 +11,15 @@ body.page-template-template-fullwidth-no-title {
 		.entry-content > .alignwide,
 		.entry-content > .alignfull {
 
-			> [class*="__inner-container"] {
+			> [class*="__inner-container"] > * {
 				max-width: $contentFullwidth;
 
-				> .alignwide {
+				&.alignwide {
 					max-width: $wideBlockFullwidth;
+				}
+
+				&.alignfull {
+					max-width: 100%;
 				}
 			}
 		}
@@ -26,9 +30,7 @@ body.page-template-template-fullwidth-no-title {
 @media only screen and (min-width: 960px) {
 	body.page-template-template-fullwidth,
 	body.page-template-template-fullwidth-no-title {
-		.entry-content > .alignwide,
-		.entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
-		.entry-content > .alignfull > [class*="__inner-container"] > .alignwide {
+		.entry-content > .alignwide {
 			margin-left: calc(-100vw / 2 + 100% / 2 + 8px);
 			margin-right: calc(-100vw / 2 + 100% / 2 + 8px);
 		}
@@ -38,9 +40,7 @@ body.page-template-template-fullwidth-no-title {
 @media only screen and (min-width: 1440px) {
 	body.page-template-template-fullwidth,
 	body.page-template-template-fullwidth-no-title {
-		.entry-content > .alignwide,
-		.entry-content > .alignwide > [class*="__inner-container"] > .alignwide,
-		.entry-content > .alignfull > [class*="__inner-container"] > .alignwide {
+		.entry-content > .alignwide {
 			margin-left: -120px;
 			margin-right: -120px;
 		}
