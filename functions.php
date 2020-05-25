@@ -68,7 +68,7 @@ function gt_drive_setup() {
 	// Set up the WordPress core custom header feature.
 	add_theme_support( 'custom-header', apply_filters( 'gt_drive_custom_header_args', array(
 		'header-text' => false,
-		'width'       => 1920,
+		'width'       => 9999,
 		'height'      => 640,
 	) ) );
 

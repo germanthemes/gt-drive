@@ -24,7 +24,9 @@
 /*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
-@import 'blocks/core-blocks.scss';
+@import "blocks/formatting-blocks";
+@import "blocks/media-blocks";
+@import "blocks/container-blocks";
 @import 'media-queries/mq-blocks.scss';
 @import 'blocks/gt-blocks.scss';
 @import 'editor/editor-blocks.scss';

@@ -519,56 +519,12 @@ p.has-background {
 	background-color: var(--button-hover-color);
 }
 
-/* Group Block */
-.wp-block-group.has-background {
-	padding: 1.25rem;
-}
-
-.wp-block-group.has-background > .wp-block-group__inner-container > *:first-child {
-	margin-top: 0;
-}
-
-.wp-block-group.has-background > .wp-block-group__inner-container > *:last-child {
-	margin-bottom: 0;
-}
-
-/* Image Block */
-.wp-block-image img {
-	vertical-align: top;
-}
-
-/* Cover Block */
-.wp-block-cover,
-.wp-block-cover-image {
-	width: auto;
-}
-
-.wp-block-cover > .wp-block-cover__inner-container > *:first-child,
-.wp-block-cover-image > .wp-block-cover__inner-container > *:first-child {
-	margin-top: 0;
-}
-
-.wp-block-cover > .wp-block-cover__inner-container > *:last-child,
-.wp-block-cover-image > .wp-block-cover__inner-container > *:last-child {
-	margin-bottom: 0;
-}
-
-/* Gallery Block */
-.wp-block-gallery {
-	justify-content: center;
-}
-
 /* Separator Block */
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	max-width: 4rem;
 	height: 4px;
 	background-color: #e34333;
 	background-color: var(--title-border-color);
-}
-
-/* Video Embed Block */
-.wp-block-embed-vimeo.alignfull iframe {
-	width: 100%;
 }
 
 /* Quote Block */
@@ -640,6 +596,50 @@ p.has-background {
 
 .wp-block-pullquote.is-style-solid-color blockquote cite {
 	color: inherit;
+}
+
+/* Image Block */
+.wp-block-image img {
+	vertical-align: top;
+}
+
+/* Cover Block */
+.wp-block-cover,
+.wp-block-cover-image {
+	width: auto;
+}
+
+.wp-block-cover > .wp-block-cover__inner-container > *:first-child,
+.wp-block-cover-image > .wp-block-cover__inner-container > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-cover > .wp-block-cover__inner-container > *:last-child,
+.wp-block-cover-image > .wp-block-cover__inner-container > *:last-child {
+	margin-bottom: 0;
+}
+
+/* Gallery Block */
+.wp-block-gallery {
+	justify-content: center;
+}
+
+/* Video Embed Block */
+.wp-block-embed-vimeo.alignfull iframe {
+	width: 100%;
+}
+
+/* Group Block */
+.wp-block-group.has-background {
+	padding: 1.25rem;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > *:last-child {
+	margin-bottom: 0;
 }
 
 @media only screen and (min-width: 480px) {
