@@ -105,7 +105,6 @@ function gt_drive_gutenberg_support() {
 	);
 
 	register_block_style( 'core/heading', $heading_block_style );
-	register_block_style( 'gt-blocks/heading', $heading_block_style );
 }
 add_action( 'after_setup_theme', 'gt_drive_gutenberg_support' );
 
