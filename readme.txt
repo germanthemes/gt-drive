@@ -24,6 +24,9 @@ For more information about GT Drive please go to https://germanthemes.de/en/them
 
 == Changelog ==
 
+= 1.1 - 2020-06-30 =
+* Added small and large Button styles to Button blocks
+
 = 1.0 - 2020-04-02 =
 * First Release
 
