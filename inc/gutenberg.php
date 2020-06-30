@@ -98,13 +98,25 @@ function gt_drive_gutenberg_support() {
 	) ) );
 
 	// Register Heading Block style.
-	$heading_block_style = array(
+	register_block_style( 'core/heading', array(
 		'name'         => 'gt-heading',
 		'label'        => esc_html__( 'GT Drive', 'gt-drive' ),
 		'style_handle' => 'gt-drive-stylesheet',
-	);
+	) );
 
-	register_block_style( 'core/heading', $heading_block_style );
+	// Register Small Buttons Block style.
+	register_block_style( 'core/buttons', array(
+		'name'         => 'gt-small',
+		'label'        => esc_html__( 'GT Small', 'gt-drive' ),
+		'style_handle' => 'gt-drive-stylesheet',
+	) );
+
+	// Register Large Buttons Block style.
+	register_block_style( 'core/buttons', array(
+		'name'         => 'gt-large',
+		'label'        => esc_html__( 'GT Large', 'gt-drive' ),
+		'style_handle' => 'gt-drive-stylesheet',
+	) );
 }
 add_action( 'after_setup_theme', 'gt_drive_gutenberg_support' );
 
