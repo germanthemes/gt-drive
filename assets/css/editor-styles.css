@@ -143,7 +143,7 @@
 }
 
 /* Hidden Page Title */
-body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-post-title {
+body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
 	background-color: #ffffff;
 	background-color: var(--body-background-color);
 	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15)), linear-gradient(45deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15));
