@@ -75,8 +75,7 @@
 			event.preventDefault();
 			var select = this.container.find( 'select' );
 
-			select.find( 'option[selected]' ).removeAttr( 'selected' );
-			select.find( 'option[value="' + this.font + '"]' ).attr( 'selected', 'selected' );
+			select.val( this.font );
 			select.trigger( 'change' );
 		},
 		/**
@@ -87,11 +86,10 @@
 		next: function( event ) {
 			event.preventDefault();
 			var select = this.container.find( 'select' );
-			var current = select.find( 'option' ).filter( ':selected' );
+			var current = select.find( 'option[value="' + select.val() + '"]' );
 			var next = this.nextOrFirst( current );
 
-			current.removeAttr( 'selected' );
-			next.attr( 'selected', 'selected' );
+			select.val( next.val() );
 			select.trigger( 'change' );
 		},
 		/**
@@ -102,11 +100,10 @@
 		previous: function( event ) {
 			event.preventDefault();
 			var select = this.container.find( 'select' );
-			var current = select.find( 'option' ).filter( ':selected' );
+			var current = select.find( 'option[value="' + select.val() + '"]' );
 			var previous = this.prevOrLast( current );
 
-			current.removeAttr( 'selected' );
-			previous.attr( 'selected', 'selected' );
+			select.val( previous.val() );
 			select.trigger( 'change' );
 		},
 		/**
