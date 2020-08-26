@@ -308,7 +308,7 @@ function gt_drive_theme_updater() {
 		$theme_updater = new GT_Drive_Theme_Updater(
 			array(
 				'remote_api_url' => GT_DRIVE_STORE_API_URL,
-				'version'        => '1.1',
+				'version'        => '1.2',
 				'license'        => trim( gt_drive_get_option( 'license_key' ) ),
 				'item_id'        => GT_DRIVE_PRODUCT_ID,
 				'item_name'      => 'GT Drive',
