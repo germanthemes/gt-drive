@@ -148,10 +148,34 @@ add_action( 'wp_enqueue_scripts', 'gt_drive_scripts' );
 * Enqueue theme fonts.
 */
 function gt_drive_theme_fonts() {
-	wp_enqueue_style( 'gt-drive-theme-fonts', get_template_directory_uri() . '/assets/css/theme-fonts.css', array(), '20200320' );
+	$fonts_url = gt_drive_get_fonts_url();
+
+	// Load Fonts if necessary.
+	if ( $fonts_url ) {
+		require_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
+		wp_enqueue_style( 'gt-drive-theme-fonts', wptt_get_webfont_url( $fonts_url ), array(), '20210105' );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'gt_drive_theme_fonts', 1 );
 add_action( 'enqueue_block_editor_assets', 'gt_drive_theme_fonts', 1 );
+
+
+/**
+ * Retrieve webfont URL to load fonts locally.
+ */
+function gt_drive_get_fonts_url() {
+	$font_families = array(
+		'Roboto:400,400italic,700,700italic',
+	);
+
+	$query_args = array(
+		'family'  => urlencode( implode( '|', $font_families ) ),
+		'subset'  => urlencode( 'latin,latin-ext' ),
+		'display' => urlencode( 'swap' ),
+	);
+
+	return apply_filters( 'gt_drive_get_fonts_url', add_query_arg( $query_args, 'https://fonts.googleapis.com/css' ) );
+}
 
 
 /**
