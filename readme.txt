@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/en/themes/gt-drive/
 Contributors: germanthemes
 Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 Requires at least: 5.3
-Tested up to: 5.5
+Tested up to: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,10 @@ For more information about GT Drive please go to https://germanthemes.de/en/them
 3. Go to https://germanthemes.de/en/docs/gt-drive-documentation/ for a guide on how to use and customize this theme.
 
 == Changelog ==
+
+= 1.2.2 - 2021-01-08 =
+* added WPTT Webfont loader to embed default theme fonts
+* updated typography options to use WPTT Webfont loader
 
 = 1.2.1 - 2020-09-08 =
 * fixed undefined function error for older WordPress Core versions
@@ -81,6 +85,10 @@ Copyright: 2017 IcoMoon.io
 License: Distributed under the terms of the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
 Copyright: Christian Robertson
 
-7. The photo used in screenshot.png is from Rebecca Li: https://unsplash.com/photos/nJ5hINhz6Fs
+7. WPTT Webfont Loader - https://github.com/WPTT/webfont-loader
+License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
+Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
+
+8. The photo used in screenshot.png is from Rebecca Li: https://unsplash.com/photos/nJ5hINhz6Fs
 License: Distributed under the terms of the Unsplash License (https://unsplash.com/license)
 Copyright: Rebecca Li (https://unsplash.com/@rbccali)
