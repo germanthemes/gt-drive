@@ -159,64 +159,64 @@
 				medium_border_color     = 'rgba(0, 0, 0, 0.3)';
 			}
 
-			document.documentElement.style.setProperty( '--text-color', text_color );
-			document.documentElement.style.setProperty( '--light-text-color', light_text_color );
-			document.documentElement.style.setProperty( '--light-background-color', light_background_color );
-			document.documentElement.style.setProperty( '--medium-background-color', medium_background_color );
-			document.documentElement.style.setProperty( '--post-meta-color', light_text_color );
-			document.documentElement.style.setProperty( '--light-border-color', light_border_color );
-			document.documentElement.style.setProperty( '--widget-border-color', light_border_color );
-			document.documentElement.style.setProperty( '--comments-border-color', light_border_color );
-			document.documentElement.style.setProperty( '--medium-border-color', medium_border_color );
+			document.documentElement.style.setProperty( '--gt-drive--text-color', text_color );
+			document.documentElement.style.setProperty( '--gt-drive--light-text-color', light_text_color );
+			document.documentElement.style.setProperty( '--gt-drive--light-background-color', light_background_color );
+			document.documentElement.style.setProperty( '--gt-drive--medium-background-color', medium_background_color );
+			document.documentElement.style.setProperty( '--gt-drive--post-meta-color', light_text_color );
+			document.documentElement.style.setProperty( '--gt-drive--light-border-color', light_border_color );
+			document.documentElement.style.setProperty( '--gt-drive--widget-border-color', light_border_color );
+			document.documentElement.style.setProperty( '--gt-drive--comments-border-color', light_border_color );
+			document.documentElement.style.setProperty( '--gt-drive--medium-border-color', medium_border_color );
 		} );
 	} );
 
 	/* Primary Color Option */
 	wp.customize( 'gt_drive_theme_options[primary_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--primary-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--primary-color', newval );
 		} );
 	} );
 
 	/* Secondary Color Option */
 	wp.customize( 'gt_drive_theme_options[secondary_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--secondary-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--secondary-color', newval );
 		} );
 	} );
 
 	/* Accent Color Option */
 	wp.customize( 'gt_drive_theme_options[accent_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--accent-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--accent-color', newval );
 		} );
 	} );
 
 	/* Highlight Color Option */
 	wp.customize( 'gt_drive_theme_options[highlight_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--highlight-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--highlight-color', newval );
 		} );
 	} );
 
 	/* Light Gray Color Option */
 	wp.customize( 'gt_drive_theme_options[light_gray_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--light-gray-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--light-gray-color', newval );
 		} );
 	} );
 
 	/* Gray Color Option */
 	wp.customize( 'gt_drive_theme_options[gray_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--gray-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--gray-color', newval );
 		} );
 	} );
 
 	/* Dark Gray Color Option */
 	wp.customize( 'gt_drive_theme_options[dark_gray_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--dark-gray-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--dark-gray-color', newval );
 		} );
 	} );
 
@@ -233,16 +233,16 @@
 				hover_color = 'rgba(0, 0, 0, 0.5)';
 			}
 
-			document.documentElement.style.setProperty( '--header-bar-color', newval );
-			document.documentElement.style.setProperty( '--header-bar-text-color', text_color );
-			document.documentElement.style.setProperty( '--header-bar-hover-color', hover_color );
+			document.documentElement.style.setProperty( '--gt-drive--header-bar-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--header-bar-text-color', text_color );
+			document.documentElement.style.setProperty( '--gt-drive--header-bar-hover-color', hover_color );
 		} );
 	} );
 
 	/* Header Bar Icon Color Option */
 	wp.customize( 'gt_drive_theme_options[header_bar_icon_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--header-bar-icon-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--header-bar-icon-color', newval );
 		} );
 	} );
 
@@ -259,47 +259,47 @@
 				hover_color = 'rgba(255, 255, 255, 0.5)';
 			}
 
-			document.documentElement.style.setProperty( '--header-color', newval );
-			document.documentElement.style.setProperty( '--header-text-color', text_color );
-			document.documentElement.style.setProperty( '--header-hover-color', hover_color );
+			document.documentElement.style.setProperty( '--gt-drive--header-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--header-text-color', text_color );
+			document.documentElement.style.setProperty( '--gt-drive--header-hover-color', hover_color );
 		} );
 	} );
 
 	/* Title Color Option */
 	wp.customize( 'gt_drive_theme_options[title_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--title-color', newval );
-			document.documentElement.style.setProperty( '--widget-title-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--title-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--widget-title-color', newval );
 		} );
 	} );
 
 	/* Title Hover Color Option */
 	wp.customize( 'gt_drive_theme_options[title_hover_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--title-hover-color', newval );
-			document.documentElement.style.setProperty( '--widget-title-hover-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--title-hover-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--widget-title-hover-color', newval );
 		} );
 	} );
 
 	/* Title Border Option */
 	wp.customize( 'gt_drive_theme_options[title_border_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--title-border-color', newval );
-			document.documentElement.style.setProperty( '--widget-title-border-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--title-border-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--widget-title-border-color', newval );
 		} );
 	} );
 
 	/* Link Color Option */
 	wp.customize( 'gt_drive_theme_options[link_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--link-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--link-color', newval );
 		} );
 	} );
 
 	/* Link Color Hover Option */
 	wp.customize( 'gt_drive_theme_options[link_hover_color]', function( value ) {
 		value.bind( function( newval ) {
-			document.documentElement.style.setProperty( '--link-hover-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--link-hover-color', newval );
 		} );
 	} );
 
@@ -314,8 +314,8 @@
 				text_color = '#ffffff';
 			}
 
-			document.documentElement.style.setProperty( '--button-color', newval );
-			document.documentElement.style.setProperty( '--button-text-color', text_color );
+			document.documentElement.style.setProperty( '--gt-drive--button-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--button-text-color', text_color );
 		} );
 	} );
 
@@ -330,8 +330,8 @@
 				text_color = '#ffffff';
 			}
 
-			document.documentElement.style.setProperty( '--button-hover-color', newval );
-			document.documentElement.style.setProperty( '--button-text-hover-color', text_color );
+			document.documentElement.style.setProperty( '--gt-drive--button-hover-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--button-text-hover-color', text_color );
 		} );
 	} );
 
@@ -350,11 +350,11 @@
 				border_color = 'rgba(255, 255, 255, 0.1)';
 			}
 
-			document.documentElement.style.setProperty( '--footer-background-color', newval );
-			document.documentElement.style.setProperty( '--footer-text-color', text_color );
-			document.documentElement.style.setProperty( '--footer-link-color', link_color );
-			document.documentElement.style.setProperty( '--footer-link-hover-color', text_color );
-			document.documentElement.style.setProperty( '--footer-border-color', border_color );
+			document.documentElement.style.setProperty( '--gt-drive--footer-background-color', newval );
+			document.documentElement.style.setProperty( '--gt-drive--footer-text-color', text_color );
+			document.documentElement.style.setProperty( '--gt-drive--footer-link-color', link_color );
+			document.documentElement.style.setProperty( '--gt-drive--footer-link-hover-color', text_color );
+			document.documentElement.style.setProperty( '--gt-drive--footer-border-color', border_color );
 		} );
 	} );
 
@@ -370,7 +370,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--text-font', newFont );
+			document.documentElement.style.setProperty( '--gt-drive--text-font', newFont );
 		} );
 	} );
 
@@ -386,7 +386,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--title-font', newFont );
+			document.documentElement.style.setProperty( '--gt-drive--title-font', newFont );
 		} );
 	} );
 
@@ -394,7 +394,7 @@
 	wp.customize( 'gt_drive_theme_options[title_is_bold]', function( value ) {
 		value.bind( function( newval ) {
 			var fontWeight = newval ? 'bold' : 'normal';
-			document.documentElement.style.setProperty( '--title-font-weight', fontWeight );
+			document.documentElement.style.setProperty( '--gt-drive--title-font-weight', fontWeight );
 		} );
 	} );
 
@@ -402,7 +402,7 @@
 	wp.customize( 'gt_drive_theme_options[title_is_uppercase]', function( value ) {
 		value.bind( function( newval ) {
 			var textTransform = newval ? 'uppercase' : 'none';
-			document.documentElement.style.setProperty( '--title-text-transform', textTransform );
+			document.documentElement.style.setProperty( '--gt-drive--title-text-transform', textTransform );
 		} );
 	} );
 
@@ -418,7 +418,7 @@
 			var newFont = newval === 'SystemFontStack' ? systemFont : newval;
 
 			// Set CSS.
-			document.documentElement.style.setProperty( '--navi-font', newFont );
+			document.documentElement.style.setProperty( '--gt-drive--navi-font', newFont );
 		} );
 	} );
 
@@ -426,7 +426,7 @@
 	wp.customize( 'gt_drive_theme_options[navi_is_bold]', function( value ) {
 		value.bind( function( newval ) {
 			var fontWeight = newval ? 'bold' : 'normal';
-			document.documentElement.style.setProperty( '--navi-font-weight', fontWeight );
+			document.documentElement.style.setProperty( '--gt-drive--navi-font-weight', fontWeight );
 		} );
 	} );
 
@@ -434,7 +434,7 @@
 	wp.customize( 'gt_drive_theme_options[navi_is_uppercase]', function( value ) {
 		value.bind( function( newval ) {
 			var textTransform = newval ? 'uppercase' : 'none';
-			document.documentElement.style.setProperty( '--navi-text-transform', textTransform );
+			document.documentElement.style.setProperty( '--gt-drive--navi-text-transform', textTransform );
 		} );
 	} );
 

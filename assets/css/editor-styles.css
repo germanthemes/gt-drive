@@ -8,54 +8,54 @@
 # - Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #e34333;
-	--secondary-color: #c92919;
-	--accent-color: #33a2e3;
-	--highlight-color: #7aca56;
-	--light-gray-color: #f0f0f0;
-	--gray-color: #808080;
-	--dark-gray-color: #303030;
-	--body-background-color: #ffffff;
-	--text-color: #303030;
-	--light-text-color: rgba(0, 0, 0, 0.5);
-	--light-background-color: rgba(0, 0, 0, 0.05);
-	--medium-background-color: rgba(0, 0, 0, 0.15);
-	--light-border-color: rgba(0, 0, 0, 0.1);
-	--medium-border-color: rgba(0, 0, 0, 0.3);
-	--link-color: #e34333;
-	--link-hover-color: #c92919;
-	--button-color: #e34333;
-	--button-text-color: #fff;
-	--button-hover-color: #c92919;
-	--button-text-hover-color: #fff;
-	--header-bar-color: #fff;
-	--header-bar-text-color: #303030;
-	--header-bar-icon-color: #e34333;
-	--header-color: #c92919;
-	--header-text-color: #fff;
-	--header-hover-color: rgba(255, 255, 255, 0.5);
-	--title-color: #303030;
-	--title-hover-color: #e34333;
-	--title-border-color: #e34333;
-	--post-meta-color: rgba(0, 0, 0, 0.5);
-	--widget-title-color: #303030;
-	--widget-title-border-color: #e34333;
-	--widget-border-color: rgba(0, 0, 0, 0.1);
-	--comments-border-color: rgba(0, 0, 0, 0.1);
-	--footer-background-color: #202020;
-	--footer-text-color: rgba(255, 255, 255, 0.5);
-	--footer-link-color: rgba(255, 255, 255, 0.95);
-	--footer-link-hover-color: rgba(255, 255, 255, 0.5);
-	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font: "Roboto", arial, helvetica, sans-serif;
-	--navi-font: "Roboto", arial, helvetica, sans-serif;
-	--title-font-weight: bold;
-	--navi-font-weight: bold;
-	--title-text-transform: none;
-	--navi-text-transform: none;
-	--text-line-height: 1.75;
-	--title-line-height: 1.25;
+	--gt-drive--primary-color: #e34333;
+	--gt-drive--secondary-color: #c92919;
+	--gt-drive--accent-color: #33a2e3;
+	--gt-drive--highlight-color: #7aca56;
+	--gt-drive--light-gray-color: #f0f0f0;
+	--gt-drive--gray-color: #808080;
+	--gt-drive--dark-gray-color: #303030;
+	--gt-drive--body-background-color: #ffffff;
+	--gt-drive--text-color: #303030;
+	--gt-drive--light-text-color: rgba(0, 0, 0, 0.5);
+	--gt-drive--light-background-color: rgba(0, 0, 0, 0.05);
+	--gt-drive--medium-background-color: rgba(0, 0, 0, 0.15);
+	--gt-drive--light-border-color: rgba(0, 0, 0, 0.1);
+	--gt-drive--medium-border-color: rgba(0, 0, 0, 0.3);
+	--gt-drive--link-color: #e34333;
+	--gt-drive--link-hover-color: #c92919;
+	--gt-drive--button-color: #e34333;
+	--gt-drive--button-text-color: #fff;
+	--gt-drive--button-hover-color: #c92919;
+	--gt-drive--button-text-hover-color: #fff;
+	--gt-drive--header-bar-color: #fff;
+	--gt-drive--header-bar-text-color: #303030;
+	--gt-drive--header-bar-icon-color: #e34333;
+	--gt-drive--header-color: #c92919;
+	--gt-drive--header-text-color: #fff;
+	--gt-drive--header-hover-color: rgba(255, 255, 255, 0.5);
+	--gt-drive--title-color: #303030;
+	--gt-drive--title-hover-color: #e34333;
+	--gt-drive--title-border-color: #e34333;
+	--gt-drive--post-meta-color: rgba(0, 0, 0, 0.5);
+	--gt-drive--widget-title-color: #303030;
+	--gt-drive--widget-title-border-color: #e34333;
+	--gt-drive--widget-border-color: rgba(0, 0, 0, 0.1);
+	--gt-drive--comments-border-color: rgba(0, 0, 0, 0.1);
+	--gt-drive--footer-background-color: #202020;
+	--gt-drive--footer-text-color: rgba(255, 255, 255, 0.5);
+	--gt-drive--footer-link-color: rgba(255, 255, 255, 0.95);
+	--gt-drive--footer-link-hover-color: rgba(255, 255, 255, 0.5);
+	--gt-drive--footer-border-color: rgba(255, 255, 255, 0.1);
+	--gt-drive--text-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-drive--title-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-drive--navi-font: "Roboto", arial, helvetica, sans-serif;
+	--gt-drive--title-font-weight: bold;
+	--gt-drive--navi-font-weight: bold;
+	--gt-drive--title-text-transform: none;
+	--gt-drive--navi-text-transform: none;
+	--gt-drive--text-line-height: 1.75;
+	--gt-drive--title-line-height: 1.25;
 }
 
 /*--------------------------------------------------------------
@@ -89,17 +89,17 @@
 /* Page Title */
 .editor-post-title__block .editor-post-title__input {
 	color: #303030;
-	color: var(--title-color);
+	color: var(--gt-drive--title-color);
 	font-size: 28px;
 	font-size: 1.75rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-drive--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-drive--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-drive--title-text-transform);
 	line-height: 1.25;
-	line-height: var(--title-line-height);
+	line-height: var(--gt-drive--title-line-height);
 }
 
 .editor-post-title__block > div {
@@ -115,7 +115,7 @@
 	height: 4px;
 	content: "";
 	background-color: #e34333;
-	background-color: var(--title-border-color);
+	background-color: var(--gt-drive--title-border-color);
 }
 
 @media only screen and (min-width: 640px) {
@@ -145,7 +145,7 @@
 /* Hidden Page Title */
 body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-visual-editor__post-title-wrapper {
 	background-color: #ffffff;
-	background-color: var(--body-background-color);
+	background-color: var(--gt-drive--body-background-color);
 	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15)), linear-gradient(45deg, rgba(0, 0, 0, 0.15) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15));
 	background-image: linear-gradient(45deg, var(--medium-background-color) 25%, transparent 25%, transparent 75%, var(--medium-background-color) 75%, var(--medium-background-color)), linear-gradient(45deg, var(--medium-background-color) 25%, transparent 25%, transparent 75%, var(--medium-background-color) 75%, var(--medium-background-color));
 	background-size: 20px 20px;
@@ -159,29 +159,29 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 /* Typography */
 .editor-styles-wrapper {
 	color: #303030;
-	color: var(--text-color);
+	color: var(--gt-drive--text-color);
 	background-color: #ffffff;
-	background-color: var(--body-background-color);
+	background-color: var(--gt-drive--body-background-color);
 }
 
 .editor-styles-wrapper > * {
 	color: #303030;
-	color: var(--text-color);
+	color: var(--gt-drive--text-color);
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-drive--text-font);
 	font-size: 17px;
 	font-size: 1.0625rem;
 	line-height: 1.75;
-	line-height: var(--text-line-height);
+	line-height: var(--gt-drive--text-line-height);
 }
 
 .editor-styles-wrapper .wp-block p {
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-drive--text-font);
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.75;
-	line-height: var(--text-line-height);
+	line-height: var(--gt-drive--text-line-height);
 	margin-bottom: 1.75rem;
 }
 
@@ -222,7 +222,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 
 .editor-styles-wrapper a {
 	color: #e34333;
-	color: var(--link-color);
+	color: var(--gt-drive--link-color);
 }
 
 .editor-styles-wrapper .has-text-color a {
@@ -240,9 +240,9 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 	margin-top: 1.5rem;
 	margin-bottom: 1rem;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-drive--title-font);
 	line-height: 1.25;
-	line-height: var(--title-line-height);
+	line-height: var(--gt-drive--title-line-height);
 }
 
 .editor-styles-wrapper .wp-block h1 {
@@ -281,7 +281,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 	height: 1px;
 	border: 0;
 	background-color: rgba(0, 0, 0, 0.1);
-	background-color: var(--light-border-color);
+	background-color: var(--gt-drive--light-border-color);
 }
 
 /* Code */
@@ -294,16 +294,16 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 	border: 1px solid;
 	border-radius: 0;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--light-border-color);
+	border-color: var(--gt-drive--light-border-color);
 	color: #303030;
-	color: var(--text-color);
+	color: var(--gt-drive--text-color);
 	background-color: rgba(0, 0, 0, 0.05);
-	background-color: var(--light-background-color);
+	background-color: var(--gt-drive--light-background-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	line-height: 1.75;
-	line-height: var(--text-line-height);
+	line-height: var(--gt-drive--text-line-height);
 }
 
 .wp-block-code {
@@ -325,7 +325,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 	font-size: 0.9375rem;
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	background-color: rgba(0, 0, 0, 0.05);
-	background-color: var(--light-background-color);
+	background-color: var(--gt-drive--light-background-color);
 	color: inherit;
 	border-radius: 3px;
 	padding: 2px 4px;
@@ -337,9 +337,9 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 	padding-left: 1.75rem;
 	border-left: 4px solid;
 	border-color: #303030;
-	border-color: var(--text-color);
+	border-color: var(--gt-drive--text-color);
 	color: rgba(0, 0, 0, 0.5);
-	color: var(--light-text-color);
+	color: var(--gt-drive--light-text-color);
 	font-size: 18px;
 	font-size: 1.125rem;
 }
@@ -357,7 +357,7 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 .wp-block-pullquote .wp-block-pullquote__citation {
 	display: block;
 	color: #303030;
-	color: var(--text-color);
+	color: var(--gt-drive--text-color);
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: none;
@@ -405,14 +405,14 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-post-
 	padding: 0.4em 0.6em;
 	border: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--light-border-color);
+	border-color: var(--gt-drive--light-border-color);
 }
 
 .editor-styles-wrapper th {
 	font-weight: normal;
 	text-align: inherit;
 	background-color: rgba(0, 0, 0, 0.05);
-	background-color: var(--light-background-color);
+	background-color: var(--gt-drive--light-background-color);
 }
 
 .wp-block-table__cell-content {
@@ -428,7 +428,7 @@ figcaption,
 	font-size: 15px;
 	font-size: 0.9375rem;
 	color: rgba(0, 0, 0, 0.5);
-	color: var(--light-text-color);
+	color: var(--gt-drive--light-text-color);
 }
 
 .wp-block-embed figcaption,
@@ -503,20 +503,20 @@ p.has-background {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-drive--button-text-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 	background-color: #e34333;
-	background-color: var(--button-color);
+	background-color: var(--gt-drive--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:active {
 	color: #fff;
-	color: var(--button-text-hover-color);
+	color: var(--gt-drive--button-text-hover-color);
 	background-color: #c92919;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-drive--button-hover-color);
 }
 
 /* Separator Block */
@@ -524,7 +524,7 @@ p.has-background {
 	max-width: 4rem;
 	height: 4px;
 	background-color: #e34333;
-	background-color: var(--title-border-color);
+	background-color: var(--gt-drive--title-border-color);
 }
 
 /* Quote Block */
@@ -547,7 +547,7 @@ p.has-background {
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-drive--text-font);
 }
 
 /* Pullquote Block */
@@ -557,7 +557,7 @@ p.has-background {
 	border-bottom: 1px solid;
 	border-top: 1px solid;
 	border-color: rgba(0, 0, 0, 0.1);
-	border-color: var(--light-border-color);
+	border-color: var(--gt-drive--light-border-color);
 }
 
 .wp-block-pullquote blockquote {
@@ -577,9 +577,9 @@ p.has-background {
 
 .wp-block-pullquote blockquote cite {
 	color: #303030;
-	color: var(--text-color);
+	color: var(--gt-drive--text-color);
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-drive--text-font);
 	font-style: normal;
 }
 
@@ -693,13 +693,13 @@ p.has-background {
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 	color: #303030;
-	color: var(--widget-title-color);
+	color: var(--gt-drive--widget-title-color);
 	font-family: "Roboto", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-drive--title-font);
 	font-weight: bold;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-drive--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-drive--title-text-transform);
 }
 
 .is-style-gt-heading::before {
@@ -711,7 +711,7 @@ p.has-background {
 	height: 4px;
 	content: "";
 	background-color: #e34333;
-	background-color: var(--widget-title-border-color);
+	background-color: var(--gt-drive--widget-title-border-color);
 }
 
 h1.is-style-gt-heading {
@@ -803,22 +803,22 @@ h1.is-style-gt-heading {
 /* Block Text Colors */
 .has-primary-color {
 	color: #e34333;
-	color: var(--primary-color);
+	color: var(--gt-drive--primary-color);
 }
 
 .has-secondary-color {
 	color: #c92919;
-	color: var(--secondary-color);
+	color: var(--gt-drive--secondary-color);
 }
 
 .has-accent-color {
 	color: #33a2e3;
-	color: var(--accent-color);
+	color: var(--gt-drive--accent-color);
 }
 
 .has-highlight-color {
 	color: #7aca56;
-	color: var(--highlight-color);
+	color: var(--gt-drive--highlight-color);
 }
 
 .has-white-color {
@@ -827,17 +827,17 @@ h1.is-style-gt-heading {
 
 .has-light-gray-color {
 	color: #f0f0f0;
-	color: var(--light-gray-color);
+	color: var(--gt-drive--light-gray-color);
 }
 
 .has-gray-color {
 	color: #808080;
-	color: var(--gray-color);
+	color: var(--gt-drive--gray-color);
 }
 
 .has-dark-gray-color {
 	color: #303030;
-	color: var(--dark-gray-color);
+	color: var(--gt-drive--dark-gray-color);
 }
 
 .has-black-color {
@@ -847,22 +847,22 @@ h1.is-style-gt-heading {
 /* Block Background Colors */
 .has-primary-background-color {
 	background-color: #e34333;
-	background-color: var(--primary-color);
+	background-color: var(--gt-drive--primary-color);
 }
 
 .has-secondary-background-color {
 	background-color: #c92919;
-	background-color: var(--secondary-color);
+	background-color: var(--gt-drive--secondary-color);
 }
 
 .has-accent-background-color {
 	background-color: #33a2e3;
-	background-color: var(--accent-color);
+	background-color: var(--gt-drive--accent-color);
 }
 
 .has-highlight-background-color {
 	background-color: #7aca56;
-	background-color: var(--highlight-color);
+	background-color: var(--gt-drive--highlight-color);
 }
 
 .has-white-background-color {
@@ -871,17 +871,17 @@ h1.is-style-gt-heading {
 
 .has-light-gray-background-color {
 	background-color: #f0f0f0;
-	background-color: var(--light-gray-color);
+	background-color: var(--gt-drive--light-gray-color);
 }
 
 .has-gray-background-color {
 	background-color: #808080;
-	background-color: var(--gray-color);
+	background-color: var(--gt-drive--gray-color);
 }
 
 .has-dark-gray-background-color {
 	background-color: #303030;
-	background-color: var(--dark-gray-color);
+	background-color: var(--gt-drive--dark-gray-color);
 }
 
 .has-black-background-color {
