@@ -4,7 +4,7 @@ Theme URI: https://germanthemes.de/en/themes/gt-drive/
 Contributors: germanthemes
 Tags: custom-background, custom-logo, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 Requires at least: 5.3
-Tested up to: 5.7
+Tested up to: 5.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,11 @@ For more information about GT Drive please go to https://germanthemes.de/en/them
 
 == Changelog ==
 
+= 1.3 - 2021-07-15 =
+* removed license key settings for free theme release
+
 = 1.2.3 - 2021-04-08 =
+* added prefix for CSS variables
 * fixed deprecated parameter warning of wp_localize_script()
 
 = 1.2.2 - 2021-01-08 =
@@ -92,6 +96,6 @@ Copyright: Christian Robertson
 License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
 Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
 
-8. The photo used in screenshot.png is from Rebecca Li: https://unsplash.com/photos/nJ5hINhz6Fs
-License: Distributed under the terms of the Unsplash License (https://unsplash.com/license)
-Copyright: Rebecca Li (https://unsplash.com/@rbccali)
+8. The photo used in screenshot.png is from Rebecca Li: https://stocksnap.io/photo/architecture-building-W96AQMBLF5
+License: Distributed under the terms of the CC0 license (https://creativecommons.org/publicdomain/zero/1.0/)
+Copyright: Rebecca Li (https://stocksnap.io/author/48928s)
