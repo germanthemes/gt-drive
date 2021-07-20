@@ -24,6 +24,11 @@ For more information about GT Drive please go to https://germanthemes.de/en/them
 
 == Changelog ==
 
+= 1.3.1 - 2021-07-20 =
+* updated screenshot for wp.org guidelines
+* removed placeholder content for top bar contact info
+* fixed error messages on new block-based Widgets Editor for WP 5.8
+
 = 1.3 - 2021-07-15 =
 * removed license key settings for free theme release
 

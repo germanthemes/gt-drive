@@ -170,8 +170,13 @@ function gt_drive_block_editor_assets() {
 	// Enqueue Editor Styling.
 	wp_enqueue_style( 'gt-drive-editor-styles', get_theme_file_uri( '/assets/css/editor-styles.css' ), array(), $theme_version, 'all' );
 
+	// Get current screen.
+	$current_screen = get_current_screen();
+
 	// Enqueue Theme Settings Editor plugin.
-	wp_enqueue_script( 'gt-drive-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
+	if ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() && 'post' === $current_screen->base ) {
+		wp_enqueue_script( 'gt-drive-editor-theme-settings', get_theme_file_uri( '/assets/js/editor-theme-settings.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), $theme_version );
+	}
 }
 add_action( 'enqueue_block_editor_assets', 'gt_drive_block_editor_assets' );
 
@@ -184,7 +189,7 @@ function gt_drive_gutenberg_add_admin_body_class( $classes ) {
 	$current_screen = get_current_screen();
 
 	// Return early if we are not in the Gutenberg Editor.
-	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() ) ) {
+	if ( ! ( method_exists( $current_screen, 'is_block_editor' ) && $current_screen->is_block_editor() && 'post' === $current_screen->base ) ) {
 		return $classes;
 	}
 
