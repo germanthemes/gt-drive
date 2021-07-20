@@ -12,7 +12,7 @@ if ( has_nav_menu( 'social-header' ) or
 	'' !== gt_drive_get_option( 'header_phone' ) or
 	'' !== gt_drive_get_option( 'header_email' ) or
 	'' !== gt_drive_get_option( 'header_address' ) or
-	is_customize_preview()
+	( is_customize_preview() && current_user_can( 'edit_theme_options' ) )
 ) :
 	?>
 
@@ -22,7 +22,7 @@ if ( has_nav_menu( 'social-header' ) or
 
 			<div class="header-bar-content">
 
-				<?php if ( '' !== gt_drive_get_option( 'header_phone' ) || is_customize_preview() ) : ?>
+				<?php if ( '' !== gt_drive_get_option( 'header_phone' ) || ( is_customize_preview() && current_user_can( 'edit_theme_options' ) ) ) : ?>
 
 					<div class="header-phone">
 						<?php echo gt_drive_get_svg( 'phone' ); ?>
@@ -31,7 +31,7 @@ if ( has_nav_menu( 'social-header' ) or
 
 				<?php endif; ?>
 
-				<?php if ( '' !== gt_drive_get_option( 'header_email' ) || is_customize_preview() ) : ?>
+				<?php if ( '' !== gt_drive_get_option( 'header_email' ) || ( is_customize_preview() && current_user_can( 'edit_theme_options' ) ) ) : ?>
 
 					<div class="header-email">
 						<?php echo gt_drive_get_svg( 'mail' ); ?>
@@ -40,7 +40,7 @@ if ( has_nav_menu( 'social-header' ) or
 
 				<?php endif; ?>
 
-				<?php if ( '' !== gt_drive_get_option( 'header_address' ) || is_customize_preview() ) : ?>
+				<?php if ( '' !== gt_drive_get_option( 'header_address' ) || ( is_customize_preview() && current_user_can( 'edit_theme_options' ) ) ) : ?>
 
 					<div class="header-address">
 						<?php echo gt_drive_get_svg( 'location' ); ?>
